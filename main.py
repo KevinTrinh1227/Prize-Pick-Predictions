@@ -1,30 +1,38 @@
 import json
-from tabulate import tabulate
 
-# Read JSON file
-with open('league_7_projections.json') as f:
+pre_json = "pre_formatted_projections.json" #where we copied and paste api into
+post_json = "post_formatted_projections.json" #after it gets cleaned up & formatted
+
+
+with open(pre_json) as f:
     data = json.load(f)
 
-# Get the data for new players
-new_players = [item for item in data["included"] if item["type"] == "new_player"]
+# Create dictionary to store results
+results = {}
 
-# Print the total number of rows
-num_rows = len(new_players)
-print(f"Total rows: {num_rows}\n")
+# Loop through included data to get player names and IDs
+for item in data['included']:
+    if item['type'] == 'new_player':
+        player_id = item['id']
+        player_name = item['attributes']['name']
+        results[player_id] = {
+            'name': player_name,
+            'strike_values': []
+        }
 
-# Initialize the index counter
-index = 1
+# Loop through projection data and match player IDs to add stat_type and line_score
+for projection in data['data']:
+    if projection['type'] == 'projection':
+        player_id = projection['relationships']['new_player']['data']['id']
+        stat_type = projection['attributes']['stat_type']
+        line_score = projection['attributes']['line_score']
+        results[player_id]['strike_values'].append({
+            'stat_type': stat_type,
+            'line_score': line_score
+        })
+        # Add player attributes to results dictionary
+        results[player_id]['attributes'] = data['included'][0]['attributes']
 
-# Print the table with index numbers
-print("{:<8} {:<30} {:<10} {:<10} {:<10}".format("Index", "Name", "Team", "Position", "ID"))
-for player in new_players:
-    name = player["attributes"]["name"]
-    team = player["attributes"]["team_name"]
-    position = player["attributes"]["position"]
-    id = player["id"]
-    print("{:<8} {:<30} {:<10} {:<10} {:<10}".format(f"{index}.", name, team, position, id))
-    index += 1
-
-
-
-#print(f"\nA total of {total_players} were printed")
+# Write results to JSON file
+with open(post_json, 'w') as f:
+    json.dump(results, f, indent=2)
