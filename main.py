@@ -1,50 +1,30 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-import pandas as pd
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import json
+from tabulate import tabulate
 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
-driver = webdriver.Chrome(PATH)
-driver.get("https://app.prizepicks.com/")
+# Read JSON file
+with open('league_7_projections.json') as f:
+    data = json.load(f)
+
+# Get the data for new players
+new_players = [item for item in data["included"] if item["type"] == "new_player"]
+
+# Print the total number of rows
+num_rows = len(new_players)
+print(f"Total rows: {num_rows}\n")
+
+# Initialize the index counter
+index = 1
+
+# Print the table with index numbers
+print("{:<8} {:<30} {:<10} {:<10} {:<10}".format("Index", "Name", "Team", "Position", "ID"))
+for player in new_players:
+    name = player["attributes"]["name"]
+    team = player["attributes"]["team_name"]
+    position = player["attributes"]["position"]
+    id = player["id"]
+    print("{:<8} {:<30} {:<10} {:<10} {:<10}".format(f"{index}.", name, team, position, id))
+    index += 1
 
 
-driver.find_element(By.CLASS_NAME, "close").click()
 
-
-time.sleep(2)
-
-driver.find_element(By.XPATH, "//div[@class='name'][normalize-space()='NBA']").click()
-
-time.sleep(2)
-
-# Wait for the stat-container element to be present and visible
-stat_container = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "stat-container")))
-
-# Find all stat elements within the stat-container
-stat_elements = driver.find_elements(By.CSS_SELECTOR, "div.stat")
-
-# Iterate over each stat element
-for stat in stat_elements:
-
-    try:
-        # Click the stat element
-        stat.click()
-
-        projections = WebDriverWait(driver, 20).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".projection")))
-        print("\n\n=================================================================")
-        
-        for projection in projections:
-            names = projection.find_element(By.XPATH, './/div[@class="name"]').text
-            points = projection.find_element(By.XPATH, './/div[@class="presale-score"]').get_attribute('innerHTML')
-            print(f"Player: {names:30} Strike Value: {points} pts")
-            
-    except:
-        pass
-
-   
-print("===================================================================\n")
-
-driver.quit()
+#print(f"\nA total of {total_players} were printed")
