@@ -1,11 +1,24 @@
 import json
+import requests
+import numpy as np
 
 pre_json = "pre_formatted_projections.json" #where we copied and paste api into
 post_json = "post_formatted_projections.json" #after it gets cleaned up & formatted
 
 
-with open(pre_json) as f:
-    data = json.load(f)
+# Read the JSON file
+with open("input.json", "r") as file:
+    # Load the JSON data into a Python dictionary
+    data = json.load(file)
+    # Format the JSON with indentation
+    json_str = json.dumps(data, indent=4)
+    
+
+# 1 line json --> formatted json
+json_dict = json.loads(json_str)
+with open(pre_json, "w") as file:
+    json.dump(json_dict, file, indent=4)
+
 
 # Create dictionary to store results
 results = {}
