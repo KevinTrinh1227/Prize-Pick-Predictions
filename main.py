@@ -7,7 +7,7 @@ post_json = "post_formatted_projections.json" #after it gets cleaned up & format
 
 
 # Read the JSON file
-with open("input.json", "r") as file:
+with open(pre_json, "r") as file:
     # Load the JSON data into a Python dictionary
     data = json.load(file)
     # Format the JSON with indentation
