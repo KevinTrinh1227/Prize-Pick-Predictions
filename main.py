@@ -1,12 +1,23 @@
+"""
+    Project name: Prize Pick Predictions
+    Author: Kevin Huy Trinh
+    Date created: March, 2022
+    Python Version: 3.11.1
+    Description: Linear regression python program that makes
+        recommendations on betting in favor/against a player's prize
+        pick line_score value using numerous machine learning algorithms. 
+"""
+
+#api link --> https://api.prizepicks.com/projections?league_id=7
+
 import json
-import requests
 import numpy as np
 
 pre_json = "pre_formatted_projections.json" #where we copied and paste api into
 post_json = "post_formatted_projections.json" #after it gets cleaned up & formatted
 
 
-# Read the JSON file
+# reads the pre_formmatted json file
 with open(pre_json, "r") as file:
     # Load the JSON data into a Python dictionary
     data = json.load(file)
@@ -14,7 +25,7 @@ with open(pre_json, "r") as file:
     json_str = json.dumps(data, indent=4)
     
 
-# 1 line json --> formatted json
+# pre_formmatted json --> post_formatted json
 json_dict = json.loads(json_str)
 with open(pre_json, "w") as file:
     json.dump(json_dict, file, indent=4)
@@ -44,8 +55,21 @@ for projection in data['data']:
             'line_score': line_score
         })
         # Add player attributes to results dictionary
-        results[player_id]['attributes'] = data['included'][0]['attributes']
+        for player in data['included']:
+            if player['type'] == 'new_player' and player['id'] == player_id:
+                results[player_id]['attributes'] = player['attributes']
 
 # Write results to JSON file
 with open(post_json, 'w') as f:
     json.dump(results, f, indent=2)
+with open(post_json, 'r') as f:
+    data = json.load(f)
+    
+num_players = len(data)
+print(f"Total number of players: {num_players}\n")
+"""
+for key in data:
+    name = data[key]['name']
+    team_name = data[key]['attributes']['team_name']
+    print(name, team_name)
+"""
