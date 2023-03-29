@@ -1,31 +1,43 @@
-|   ## | Name               | Market    | Team Name   |   Pts |   T.O |   Rebs |   Pts+Ast |   Pts+Rebs |   Pts+Rebs+Ast |
-|------+--------------------+-----------+-------------+-------+-------+--------+-----------+------------+----------------|
-|    1 | Fred VanVleet      | Toronto   | Raptors     |  20.5 |   2.5 |    4   |      28.5 |       24.5 |           32.5 |
-|    2 | Donovan Mitchell   | Cleveland | Cavaliers   |  27.5 |   2.5 |    4.5 |      31.5 |       31.5 |           35.5 |
-|    3 | John Collins       | Atlanta   | Hawks       |  11.5 |   2.5 |    4.5 |      13.5 |       17.5 |           18.5 |
-|    4 | Jimmy Butler       | Miami     | Heat        |  23.5 |   2.5 |    6.5 |      28.5 |       29.5 |           34.5 |
-|    5 | Scottie Barnes     | Toronto   | Raptors     |  15.5 |   2.5 |    6.5 |      20.5 |       22.5 |           26.5 |
-|    6 | Markelle Fultz     | Orlando   | Magic       |  15.5 |   2.5 |    4.5 |      22.5 |       19.5 |           26.5 |
-|    7 | Paolo Banchero     | Orlando   | Magic       |  19.5 |   2.5 |    7   |      23.5 |       27.5 |           30.5 |
-|    8 | Darius Garland     | Cleveland | Cavaliers   |  21.5 |   2.5 |    7   |      28.5 |       24.5 |           31.5 |
-|    9 | Trae Young         | Atlanta   | Hawks       |  25.5 |   2.5 |    7   |      35.5 |       28.5 |           38.5 |
-|   10 | Jaren Jackson Jr.  | Memphis   | Grizzlies   |  21.5 |   2.5 |    7   |      22.5 |       28.5 |           29.5 |
-|   11 | Tyus Jones         | Memphis   | Grizzlies   |  15.5 |   2.5 |    3.5 |      23.5 |       18.5 |           27.5 |
-|   12 | Tyler Herro        | Miami     | Heat        |  18.5 |   2.5 |    5   |      22.5 |       23.5 |           27.5 |
-|   13 | Xavier Tillman     | Memphis   | Grizzlies   |   9.5 |   2.5 |    6.5 |      11.5 |       15.5 |           18.5 |
-|   14 | Al Horford         | Boston    | Celtics     |   7.5 |   0.5 |    6.5 |      10.5 |       15.5 |           18.5 |
-|   15 | Marcus Smart       | Boston    | Celtics     |  10.5 |   0.5 |    6.5 |      15.5 |       13.5 |           18.5 |
-|   16 | Kevin Love         | Miami     | Heat        |   7.5 |   0.5 |    5.5 |      15.5 |       13.5 |           18.5 |
-|   17 | Jaylen Brown       | Boston    | Celtics     |  26.5 |   0.5 |    6   |      29.5 |       32.5 |           35.5 |
-|   18 | De'Andre Hunter    | Atlanta   | Hawks       |  13.5 |   0.5 |    4   |      14.5 |       17.5 |           18.5 |
-|   19 | Bam Adebayo        | Miami     | Heat        |  18.5 |   2.5 |    8   |      22.5 |       27.5 |           30.5 |
-|   20 | Desmond Bane       | Memphis   | Grizzlies   |  24.5 |   2.5 |    5   |      29.5 |       29.5 |           34.5 |
-|   21 | Franz Wagner       | Orlando   | Magic       |  17.5 |   2.5 |    4.5 |      20.5 |       21.5 |           25.5 |
-|   22 | Clint Capela       | Atlanta   | Hawks       |  10.5 |   2.5 |   12   |      11.5 |       22.5 |           23.5 |
-|   23 | Dejounte Murray    | Atlanta   | Hawks       |  18.5 |   2.5 |    4.5 |      23.5 |       22.5 |           28.5 |
-|   24 | Jakob Poeltl       | Toronto   | Raptors     |  12.5 |   2.5 |    9.5 |      14.5 |       21.5 |           23.5 |
-|   25 | Pascal Siakam      | Toronto   | Raptors     |  22.5 |   2.5 |    7.5 |      27.5 |       29.5 |           34.5 |
-|   26 | Dillon Brooks      | Memphis   | Grizzlies   |  22.5 |   2.5 |    7.5 |      15.5 |       15.5 |           18.5 |
-|   27 | Jayson Tatum       | Boston    | Celtics     |  28.5 |   2.5 |    8.5 |      33.5 |       37.5 |           41.5 |
-|   28 | OG Anunoby         | Toronto   | Raptors     |  15.5 |   2.5 |    5   |      17.5 |       20.5 |           22.5 |
-|   29 | Wendell Carter Jr. | Orlando   | Magic       |  15.5 |   1.5 |    9.5 |      17.5 |       25.5 |           27.5 |
+|   ## | Name                  | Market      | Team Name    | Pts   | Rebs   | Ast   | T.O   | Pts+Ast   |   Pts+Rebs | Pts+Rebs+Ast   |
+|------+-----------------------+-------------+--------------+-------+--------+-------+-------+-----------+------------+----------------|
+|    1 | Jrue Holiday          | Milwaukee   | Bucks        | 16.5  | --     | 7.5   | 2.5   | 24.5      |       20.5 | 28.5           |
+|    2 | Nicolas Claxton       | Brooklyn    | Nets         | 11.5  | 9.5    | --    | --    | 13.5      |       21.5 | 23.5           |
+|    3 | Zach Collins          | San Antonio | Spurs        | --    | 8      | 3.5   | --    | 20.5      |       24.5 | 28.5           |
+|    4 | Harrison Barnes       | Sacramento  | Kings        | 15.5  | 5      | --    | --    | 16.5      |       20.5 | 22.5           |
+|    5 | Chris Paul            | Phoenix     | Suns         | 12.5  | 4.5    | 9     | --    | 21.5      |       16.5 | 25.5           |
+|    6 | Devin Booker          | Phoenix     | Suns         | 27.5  | 5      | 5     | 2.5   | 32.5      |       32.5 | 37.5           |
+|    7 | Rudy Gobert           | Minnesota   | Timberwolves | 12.5  | 11     | --    | 1.5   | 14.5      |       23.5 | 25.5           |
+|    8 | Giannis Antetokounmpo | Milwaukee   | Bucks        | 31.5  | 12.5   | 6.5   | 3.5   | 38.5      |       43.5 | 50.5           |
+|    9 | Kevin Porter Jr.      | Houston     | Rockets      | 16.5  | 5      | 5.5   | --    | 22.5      |       21.5 | 27.5           |
+|   10 | Patrick Beverley      | Chicago     | Bulls        | 6.5   | 4.5    | --    | --    | --        |       11.5 | --             |
+|   11 | Alperen Sengun        | Houston     | Rockets      | 13.5  | 8      | --    | 2.5   | 17.5      |       22.5 | 25.5           |
+|   12 | Grayson Allen         | Milwaukee   | Bucks        | 10.5  | --     | --    | --    | 12.5      |       13.5 | --             |
+|   13 | Mikal Bridges         | Brooklyn    | Nets         | 26.5  | --     | --    | 1.5   | 28.5      |       30.5 | 33.5           |
+|   14 | Luka Doncic           | Dallas      | Mavericks    | 30.5  | 8      | 7.5   | --    | 38.5      |       38.5 | 46.5           |
+|   15 | Anthony Davis         | Los Angeles | Lakers       | 25.5  | 11.5   | --    | --    | 27.5      |       37.5 | 39.5           |
+|   16 | DeMar DeRozan         | Chicago     | Bulls        | 22.5  | 5      | 5     | --    | 27.5      |       27.5 | 33.5           |
+|   17 | Tre Jones             | San Antonio | Spurs        | 12.5  | 3.5    | 6     | 1.5   | 19.5      |       16.5 | 22.5           |
+|   18 | Anthony Edwards       | Minnesota   | Timberwolves | 22.5  | --     | 3.5   | --    | 25.5      |       26.5 | 30.5           |
+|   19 | Karl-Anthony Towns    | Minnesota   | Timberwolves | 17.5  | --     | 3.5   | 2.5   | 21.5      |       24.5 | 28.5           |
+|   20 | Brook Lopez           | Milwaukee   | Bucks        | 17.5  | 7      | --    | --    | 19.5      |       24.5 | 26.5           |
+|   21 | KJ Martin Jr.         | Houston     | Rockets      | 14.5  | 5.5    | --    | --    | 15.5      |       19.5 | 21.5           |
+|   22 | Spencer Dinwiddie     | Brooklyn    | Nets         | 18.5  | 3.5    | --    | --    | 28.5      |       22.5 | 31.5           |
+|   23 | Mike Conley           | Minnesota   | Timberwolves | 11.5  | 2.5    | 4.5   | --    | 16.5      |       13.5 | 18.5           |
+|   24 | Dorian Finney-Smith   | Brooklyn    | Nets         | --    | 4      | --    | --    | --        |       11.5 | --             |
+|   25 | Zach LaVine           | Chicago     | Bulls        | 26.5  | 4      | 4     | 2.5   | 30.5      |       30.5 | 35.5           |
+|   26 | Keegan Murray         | Sacramento  | Kings        | 12.5  | 5.5    | --    | 0.5   | 13.5      |       17.5 | 19.5           |
+|   27 | Kevin Huerter         | Sacramento  | Kings        | 14.5  | --     | --    | --    | 18.5      |       18.5 | 21.5           |
+|   28 | Reggie Bullock        | Dallas      | Mavericks    | 7.5   | --     | --    | --    | --        |       10.5 | --             |
+|   29 | Deandre Ayton         | Phoenix     | Suns         | 15.5  | 9.5    | --    | --    | 16.5      |       24.5 | 26.5           |
+|   30 | Cameron Johnson       | Brooklyn    | Nets         | 15.5  | 4      | --    | --    | 17.5      |       19.5 | 21.5           |
+|   31 | Jabari Smith Jr.      | Houston     | Rockets      | 13.5  | 7      | --    | --    | 15.5      |       21.5 | 22.5           |
+|   32 | Jalen Green           | Houston     | Rockets      | 21.5  | --     | --    | --    | 24.5      |       24.5 | 27.5           |
+|   33 | Kyrie Irving          | Dallas      | Mavericks    | 24.5  | 4.5    | 5     | --    | 29.5      |       28.5 | 33.5           |
+|   34 | Nikola Vucevic        | Chicago     | Bulls        | 15.5  | 10.5   | --    | --    | 19.5      |       26.5 | 29.5           |
+|   35 | De'Aaron Fox          | Sacramento  | Kings        | 24.5  | --     | 5.5   | --    | 30.5      |       28.5 | 34.5           |
+|   36 | Domantas Sabonis      | Sacramento  | Kings        | 19.5  | 12.5   | 7     | 2.5   | 26.5      |       31.5 | 38.5           |
+
+31 players have at least one 'N/A' stat.
+A total of 36 player objects in json file.
+36/36 were printed out in table format.
+

@@ -77,7 +77,18 @@ with open('output.txt', 'w') as f:
         team_name = data[key]['attributes']['team_name']
         team_city_state = data[key]['attributes']['market']
         
-        # strike value line scores
+        # initialize values to "--" which is N/A
+        n_a = "--"
+        
+        points = n_a
+        rebounds = n_a
+        assists = n_a
+        turnovers = n_a
+        points_assists = n_a
+        points_rebounds = n_a
+        points_rebounds_assists = n_a
+        
+        # check if player has stat_type and update value accordingly
         for item in data[key]['strike_values']:
             if item['stat_type'] == 'Points':
                 points = item['line_score']
@@ -85,6 +96,8 @@ with open('output.txt', 'w') as f:
                 turnovers = item['line_score']
             elif item['stat_type'] == 'Rebounds':
                 rebounds = item['line_score']
+            elif item['stat_type'] == 'Assists':
+                assists = item['line_score']
             elif item['stat_type'] == 'Pts+Asts':
                 points_assists = item['line_score']
             elif item['stat_type'] == 'Pts+Rebs':
@@ -92,12 +105,18 @@ with open('output.txt', 'w') as f:
             elif item['stat_type'] == 'Pts+Rebs+Asts':
                 points_rebounds_assists = item['line_score']
         
-        table.append([idx+1, name, team_city_state, team_name, points, turnovers, rebounds, points_assists, points_rebounds, points_rebounds_assists])
+        table.append([idx+1, name, team_city_state, team_name, points, rebounds, assists, turnovers, points_assists, points_rebounds, points_rebounds_assists])
         players_printed += 1
-    f.write(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "T.O", "Rebs", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
+    f.write(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n\n")
     
-print(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "T.O", "Rebs", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
+    #number of players with atleast 1 missing stat
+    num_na_stats = sum(1 for row in table if n_a in row) 
+    f.write(f"{num_na_stats} players have at least one 'N/A' stat.\n")
+    f.write(f"A total of {num_players} player objects in json file.\n")
+    f.write(f"{players_printed}/{num_players} were printed out in table format.\n\n")
+    
+print(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
 
-
+print(f"\n{num_na_stats} players have at least one missing stat.")
 print(f"A total of {num_players} player objects in json file.")
 print(f"{players_printed}/{num_players} were printed out in table format.\n\n")
