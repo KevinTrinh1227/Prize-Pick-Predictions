@@ -23,7 +23,7 @@ with open(pre_json, "r") as file:
     data = json.load(file)
     # Format the JSON with indentation
     json_str = json.dumps(data, indent=4)
-    
+
 
 # pre_formmatted json --> post_formatted json
 json_dict = json.loads(json_str)
@@ -76,10 +76,10 @@ with open('output.txt', 'w') as f:
         name = data[key]['name']
         team_name = data[key]['attributes']['team_name']
         team_city_state = data[key]['attributes']['market']
-        
+
         # initialize values to "--" which is N/A
         n_a = "--"
-        
+
         points = n_a
         rebounds = n_a
         assists = n_a
@@ -87,7 +87,7 @@ with open('output.txt', 'w') as f:
         points_assists = n_a
         points_rebounds = n_a
         points_rebounds_assists = n_a
-        
+
         # check if player has stat_type and update value accordingly
         for item in data[key]['strike_values']:
             if item['stat_type'] == 'Points':
@@ -104,17 +104,17 @@ with open('output.txt', 'w') as f:
                 points_rebounds = item['line_score']
             elif item['stat_type'] == 'Pts+Rebs+Asts':
                 points_rebounds_assists = item['line_score']
-        
+
         table.append([idx+1, name, team_city_state, team_name, points, rebounds, assists, turnovers, points_assists, points_rebounds, points_rebounds_assists])
         players_printed += 1
     f.write(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n\n")
-    
+
     #number of players with atleast 1 missing stat
-    num_na_stats = sum(1 for row in table if n_a in row) 
+    num_na_stats = sum(1 for row in table if n_a in row)
     f.write(f"{num_na_stats} players have at least one 'N/A' stat.\n")
     f.write(f"A total of {num_players} player objects in json file.\n")
     f.write(f"{players_printed}/{num_players} were printed out in table format.\n\n")
-    
+
 print(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
 
 print(f"\n{num_na_stats} players have at least one missing stat.")
