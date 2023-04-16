@@ -1,19 +1,24 @@
-import requests
+from find_player import get_player_stats
 
-# Enter the player's name and team name to look up
-player_name = 'LeBron'
-team_name = 'Lakers'
+# Get player name from user input
+player_name = input("Enter player name: ")
 
-# Make a request to theballdontlie API to get all players on the team
-response = requests.get(f'https://www.balldontlie.io/api/v1/players?per_page=100&team={team_name}')
+# Get player stats
+player_stats, player_id, team_name, points, rebounds, assists, turnovers, blocks, steals, free_throws_made, points_rebounds, points_assists, points_rebounds_assists = get_player_stats(player_name)
 
-# Iterate through each player on the team and check if their name matches the given name
-for player in response.json()['data']:
-    if player['first_name'] + ' ' + player['last_name'] == player_name:
-        player_id = player['id']
-        print(f"The player's ID is {player_id}")
-        break
-
-# If no player with the given name was found on the team, print an error message
-else:
-    print(f"No player named {player_name} was found on the {team_name}")
+try:
+    # Print player stats
+    print("Player ID: " + str(player_id))
+    print("Team: " + team_name)
+    print("Points per game: " + str(points))
+    print("Rebounds per game: " + str(rebounds))
+    print("Assists per game: " + str(assists))
+    print("Turnovers per game: " + str(turnovers))
+    print("Blocks per game: " + str(blocks))
+    print("Steals per game: " + str(steals))
+    print("Free throws made per game: " + str(free_throws_made))
+    print("Points + rebounds per game: " + str(points_rebounds))
+    print("Points + assists per game: " + str(points_assists))
+    print("Points + rebounds + assists per game: " + str(points_rebounds_assists))
+except:
+    print("Player not found.")

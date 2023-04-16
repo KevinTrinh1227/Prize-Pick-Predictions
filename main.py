@@ -11,8 +11,8 @@
 #api link --> https://api.prizepicks.com/projections?league_id=7
 
 import json
-import numpy as np
 from tabulate import tabulate
+from find_player import get_player_stats
 
 pre_json = "pre_formatted_projections.json" #where we copied and paste api into
 post_json = "post_formatted_projections.json" #after it gets cleaned up & formatted
@@ -88,6 +88,7 @@ with open('output.txt', 'w') as f:
         points_rebounds = n_a
         points_rebounds_assists = n_a
 
+
         # check if player has stat_type and update value accordingly
         for item in data[key]['strike_values']:
             if item['stat_type'] == 'Points':
@@ -105,9 +106,32 @@ with open('output.txt', 'w') as f:
             elif item['stat_type'] == 'Pts+Rebs+Asts':
                 points_rebounds_assists = item['line_score']
 
-        table.append([idx+1, name, team_city_state, team_name, points, rebounds, assists, turnovers, points_assists, points_rebounds, points_rebounds_assists])
+
+        try:
+            player_name = name
+            fp_player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_turnovers, fp_blocks, fp_steals, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists = get_player_stats(
+                player_name)
+            # Print player stats
+            print("Player stats for: " + player_name)
+            print("Player ID: " + str(fp_player_id))
+            print("Team: " + fp_team_name)
+            print("Points per game: " + str(fp_points))
+            print("Rebounds per game: " + str(fp_rebounds))
+            print("Assists per game: " + str(fp_assists))
+            print("Turnovers per game: " + str(fp_turnovers))
+            print("Blocks per game: " + str(fp_blocks))
+            print("Steals per game: " + str(fp_steals))
+            print("Free throws made per game: " + str(fp_ftm))
+            print("Points + rebounds per game: " + str(fp_points_rebounds))
+            print("Points + assists per game: " + str(fp_points_assists))
+            print("Points + rebounds + assists per game: " + str(fp_points_rebounds_assists))
+            print("\n\n")
+        except:
+            print(f"Failed to find {player_name}. Now skipping. \n\n")
+
+        table.append([idx+1, name, team_name, points, fp_points, rebounds, fp_rebounds, assists, turnovers, points_assists, points_rebounds, points_rebounds_assists])
         players_printed += 1
-    f.write(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n\n")
+    f.write(tabulate(table, headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Rebs", "FP_reb", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n\n")
 
     #number of players with atleast 1 missing stat
     num_na_stats = sum(1 for row in table if n_a in row)
@@ -115,7 +139,7 @@ with open('output.txt', 'w') as f:
     f.write(f"A total of {num_players} player objects in json file.\n")
     f.write(f"{players_printed}/{num_players} were printed out in table format.\n\n")
 
-print(tabulate(table, headers=['##', 'Name', 'Market', 'Team Name', 'Pts', "Rebs", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
+print(tabulate(table, headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Rebs", "FP_reb", "Ast", "T.O", "Pts+Ast", "Pts+Rebs", "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
 
 print(f"\n{num_na_stats} players have at least one missing stat.")
 print(f"A total of {num_players} player objects in json file.")
