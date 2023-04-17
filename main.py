@@ -13,6 +13,7 @@
 import json
 from tabulate import tabulate
 from find_player import get_player_stats
+import time
 
 pre_json = "pre_formatted_projections.json" #where we copied and paste api into
 post_json = "post_formatted_projections.json" #after it gets cleaned up & formatted
@@ -126,8 +127,10 @@ with open('output.txt', 'w') as f:
             print("Points + assists per game: " + str(fp_points_assists))
             print("Points + rebounds + assists per game: " + str(fp_points_rebounds_assists))
             print("\n\n")
+            #time.sleep(1) #to avoid being rate limited
         except:
             print(f"Failed to find {player_name}. Now skipping. \n\n")
+
 
         table.append([idx+1, name, team_name, points, fp_points, rebounds, fp_rebounds, assists, turnovers, points_assists, points_rebounds, points_rebounds_assists])
         players_printed += 1

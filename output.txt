@@ -17,25 +17,25 @@
 |   15 | Anthony Davis         | Lakers       | 25.5  |    25.88 | 11.5   |    12.58 | --    | --    | 27.5      |       37.5 | 39.5           |
 |   16 | DeMar DeRozan         | Bulls        | 22.5  |    24.54 | 5      |     4.66 | 5     | --    | 27.5      |       27.5 | 33.5           |
 |   17 | Tre Jones             | Spurs        | 12.5  |    12.87 | 3.5    |     3.6  | 6     | 1.5   | 19.5      |       16.5 | 22.5           |
-|   18 | Anthony Edwards       | Timberwolves | 22.5  |    12.87 | --     |     3.6  | 3.5   | --    | 25.5      |       26.5 | 30.5           |
-|   19 | Karl-Anthony Towns    | Timberwolves | 17.5  |    12.87 | --     |     3.6  | 3.5   | 2.5   | 21.5      |       24.5 | 28.5           |
-|   20 | Brook Lopez           | Bucks        | 17.5  |    12.87 | 7      |     3.6  | --    | --    | 19.5      |       24.5 | 26.5           |
-|   21 | KJ Martin Jr.         | Rockets      | 14.5  |    12.87 | 5.5    |     3.6  | --    | --    | 15.5      |       19.5 | 21.5           |
-|   22 | Spencer Dinwiddie     | Nets         | 18.5  |    12.87 | 3.5    |     3.6  | --    | --    | 28.5      |       22.5 | 31.5           |
-|   23 | Mike Conley           | Timberwolves | 11.5  |    12.87 | 2.5    |     3.6  | 4.5   | --    | 16.5      |       13.5 | 18.5           |
-|   24 | Dorian Finney-Smith   | Nets         | --    |    12.87 | 4      |     3.6  | --    | --    | --        |       11.5 | --             |
-|   25 | Zach LaVine           | Bulls        | 26.5  |    12.87 | 4      |     3.6  | 4     | 2.5   | 30.5      |       30.5 | 35.5           |
-|   26 | Keegan Murray         | Kings        | 12.5  |    12.87 | 5.5    |     3.6  | --    | 0.5   | 13.5      |       17.5 | 19.5           |
-|   27 | Kevin Huerter         | Kings        | 14.5  |    12.87 | --     |     3.6  | --    | --    | 18.5      |       18.5 | 21.5           |
-|   28 | Reggie Bullock        | Mavericks    | 7.5   |    12.87 | --     |     3.6  | --    | --    | --        |       10.5 | --             |
-|   29 | Deandre Ayton         | Suns         | 15.5  |    12.87 | 9.5    |     3.6  | --    | --    | 16.5      |       24.5 | 26.5           |
-|   30 | Cameron Johnson       | Nets         | 15.5  |    12.87 | 4      |     3.6  | --    | --    | 17.5      |       19.5 | 21.5           |
-|   31 | Jabari Smith Jr.      | Rockets      | 13.5  |    12.87 | 7      |     3.6  | --    | --    | 15.5      |       21.5 | 22.5           |
-|   32 | Jalen Green           | Rockets      | 21.5  |    12.87 | --     |     3.6  | --    | --    | 24.5      |       24.5 | 27.5           |
-|   33 | Kyrie Irving          | Mavericks    | 24.5  |    12.87 | 4.5    |     3.6  | 5     | --    | 29.5      |       28.5 | 33.5           |
-|   34 | Nikola Vucevic        | Bulls        | 15.5  |    12.87 | 10.5   |     3.6  | --    | --    | 19.5      |       26.5 | 29.5           |
-|   35 | De'Aaron Fox          | Kings        | 24.5  |    12.87 | --     |     3.6  | 5.5   | --    | 30.5      |       28.5 | 34.5           |
-|   36 | Domantas Sabonis      | Kings        | 19.5  |    12.87 | 12.5   |     3.6  | 7     | 2.5   | 26.5      |       31.5 | 38.5           |
+|   18 | Anthony Edwards       | Timberwolves | 22.5  |    24.37 | --     |     5.88 | 3.5   | --    | 25.5      |       26.5 | 30.5           |
+|   19 | Karl-Anthony Towns    | Timberwolves | 17.5  |    21.1  | --     |     8.32 | 3.5   | 2.5   | 21.5      |       24.5 | 28.5           |
+|   20 | Brook Lopez           | Bucks        | 17.5  |    15.88 | 7      |     6.67 | --    | --    | 19.5      |       24.5 | 26.5           |
+|   21 | KJ Martin Jr.         | Rockets      | 14.5  |    15.88 | 5.5    |     6.67 | --    | --    | 15.5      |       19.5 | 21.5           |
+|   22 | Spencer Dinwiddie     | Nets         | 18.5  |    17.33 | 3.5    |     3.42 | --    | --    | 28.5      |       22.5 | 31.5           |
+|   23 | Mike Conley           | Timberwolves | 11.5  |    12.1  | 2.5    |     2.74 | 4.5   | --    | 16.5      |       13.5 | 18.5           |
+|   24 | Dorian Finney-Smith   | Nets         | --    |     8.35 | 4      |     4.79 | --    | --    | --        |       11.5 | --             |
+|   25 | Zach LaVine           | Bulls        | 26.5  |    24.9  | 4      |     4.51 | 4     | 2.5   | 30.5      |       30.5 | 35.5           |
+|   26 | Keegan Murray         | Kings        | 12.5  |    12.2  | 5.5    |     4.64 | --    | 0.5   | 13.5      |       17.5 | 19.5           |
+|   27 | Kevin Huerter         | Kings        | 14.5  |    15.2  | --     |     3.35 | --    | --    | 18.5      |       18.5 | 21.5           |
+|   28 | Reggie Bullock        | Mavericks    | 7.5   |     7.19 | --     |     3.63 | --    | --    | --        |       10.5 | --             |
+|   29 | Deandre Ayton         | Suns         | 15.5  |    17.96 | 9.5    |     9.96 | --    | --    | 16.5      |       24.5 | 26.5           |
+|   30 | Cameron Johnson       | Nets         | 15.5  |    15.48 | 4      |     4.4  | --    | --    | 17.5      |       19.5 | 21.5           |
+|   31 | Jabari Smith Jr.      | Rockets      | 13.5  |    15.48 | 7      |     4.4  | --    | --    | 15.5      |       21.5 | 22.5           |
+|   32 | Jalen Green           | Rockets      | 21.5  |    15.48 | --     |     4.4  | --    | --    | 24.5      |       24.5 | 27.5           |
+|   33 | Kyrie Irving          | Mavericks    | 24.5  |    15.48 | 4.5    |     4.4  | 5     | --    | 29.5      |       28.5 | 33.5           |
+|   34 | Nikola Vucevic        | Bulls        | 15.5  |    15.48 | 10.5   |     4.4  | --    | --    | 19.5      |       26.5 | 29.5           |
+|   35 | De'Aaron Fox          | Kings        | 24.5  |    15.48 | --     |     4.4  | 5.5   | --    | 30.5      |       28.5 | 34.5           |
+|   36 | Domantas Sabonis      | Kings        | 19.5  |    15.48 | 12.5   |     4.4  | 7     | 2.5   | 26.5      |       31.5 | 38.5           |
 
 31 players have at least one 'N/A' stat.
 A total of 36 player objects in json file.
