@@ -126,6 +126,8 @@ for idx, key in enumerate(data):
                       points_rebounds, points_rebounds_assists])
 
 
+
+
         # Append current player to the data list
         existing_data.append({
             "name": name,
@@ -145,12 +147,15 @@ for idx, key in enumerate(data):
             "points_assists": points_assists,
             "fp_points_assists": fp_points + fp_assists,
             "recommendation_pts_ast": recommendation_pts_ast,
+            "diff_pts_ast": abs((fp_points + fp_assists) - (points_assists)),
             "points_rebounds": points_rebounds,
             "fp_points_rebounds": fp_points + fp_rebounds,
             "recommendation_pts_reb": recommendation_pts_reb,
+            "diff_pts_reb": abs((fp_points + fp_rebounds) - points_rebounds),
             "points_rebounds_assists": points_rebounds_assists,
             "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
-            "recommendation_pts_ast_reb": recommendation_pts_ast_reb
+            "recommendation_pts_ast_reb": recommendation_pts_ast_reb,
+            "diff_pts_ast_reb": abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists)
         })
 
         # Save data to a JSON file, overwriting any existing data
