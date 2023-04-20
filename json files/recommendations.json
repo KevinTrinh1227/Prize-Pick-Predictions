@@ -1,814 +1,1612 @@
 [
   {
-    "name": "Jrue Holiday",
-    "team_name": "Bucks",
-    "points": 16.5,
-    "fp_points": 19.25,
-    "recommendation_pts": "Higher",
-    "diff_pts": 2.75,
-    "rebounds": "--",
-    "fp_rebounds": 5.07,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": 7.5,
-    "fp_assists": 7.37,
-    "recommendation_ast": "Lower",
-    "diff_assists": 0.1299999999999999,
-    "points_assists": 24.5,
-    "fp_points_assists": 26.62,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 2.120000000000001,
-    "points_rebounds": 20.5,
-    "fp_points_rebounds": 24.32,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 3.8200000000000003,
-    "points_rebounds_assists": 28.5,
-    "fp_points_rebounds_assists": 31.69,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 3.1900000000000013
+    "Jrue Holiday": {
+      "general": {
+        "team_name": "Bucks",
+        "team_market": "Milwaukee",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jrue_Holiday_65700e81-3aa0-49a9-8a94-004f2cfb64e5.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 16.5,
+        "fp_points": 19.25,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.75
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 5.07,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": 7.5,
+        "fp_assists": 7.37,
+        "recommendation_ast": "Lower",
+        "diff_assists": 0.1299999999999999
+      },
+      "points_assists": {
+        "points_assists": 24.5,
+        "fp_points_assists": 26.62,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 2.120000000000001
+      },
+      "points_rebounds": {
+        "points_rebounds": 20.5,
+        "fp_points_rebounds": 24.32,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 3.8200000000000003
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 28.5,
+        "fp_points_rebounds_assists": 31.69,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 3.1900000000000013
+      }
+    }
   },
   {
-    "name": "Nicolas Claxton",
-    "team_name": "Nets",
-    "points": 11.5,
-    "fp_points": 12.64,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.1400000000000006,
-    "rebounds": 9.5,
-    "fp_rebounds": 9.24,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.2599999999999998,
-    "assists": "--",
-    "fp_assists": 1.89,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 13.5,
-    "fp_points_assists": 14.530000000000001,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 1.0300000000000011,
-    "points_rebounds": 21.5,
-    "fp_points_rebounds": 21.880000000000003,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.38000000000000256,
-    "points_rebounds_assists": 23.5,
-    "fp_points_rebounds_assists": 23.770000000000003,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.2700000000000031
+    "Nicolas Claxton": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Nicolas_Claxton_288519dc-eae8-4daf-afa4-c86322b7460e.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 11.5,
+        "fp_points": 12.64,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.1400000000000006
+      },
+      "rebounds": {
+        "rebounds": 9.5,
+        "fp_rebounds": 9.24,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.2599999999999998
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.89,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 13.5,
+        "fp_points_assists": 14.530000000000001,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.0300000000000011
+      },
+      "points_rebounds": {
+        "points_rebounds": 21.5,
+        "fp_points_rebounds": 21.880000000000003,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.38000000000000256
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 23.5,
+        "fp_points_rebounds_assists": 23.770000000000003,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.2700000000000031
+      }
+    }
   },
   {
-    "name": "Zach Collins",
-    "team_name": "Spurs",
-    "points": "--",
-    "fp_points": 11.6,
-    "recommendation_pts": "--",
-    "diff_pts": "--",
-    "rebounds": 8,
-    "fp_rebounds": 6.38,
-    "recommendation_reb": "Lower",
-    "diff_reb": 1.62,
-    "assists": 3.5,
-    "fp_assists": 2.86,
-    "recommendation_ast": "Lower",
-    "diff_assists": 0.6400000000000001,
-    "points_assists": 20.5,
-    "fp_points_assists": 14.459999999999999,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 6.040000000000001,
-    "points_rebounds": 24.5,
-    "fp_points_rebounds": 17.98,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 6.52,
-    "points_rebounds_assists": 28.5,
-    "fp_points_rebounds_assists": 20.84,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 7.66
+    "Zach Collins": {
+      "general": {
+        "team_name": "Spurs",
+        "team_market": "San Antonio",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Zach_Collins_b5310b38-a378-464f-b344-928adee0ed00.webp",
+        "player_position": "F-C"
+      },
+      "points": {
+        "points": "--",
+        "fp_points": 11.6,
+        "recommendation_pts": "--",
+        "diff_pts": "--"
+      },
+      "rebounds": {
+        "rebounds": 8,
+        "fp_rebounds": 6.38,
+        "recommendation_reb": "Lower",
+        "diff_reb": 1.62
+      },
+      "assists": {
+        "assists": 3.5,
+        "fp_assists": 2.86,
+        "recommendation_ast": "Lower",
+        "diff_assists": 0.6400000000000001
+      },
+      "points_assists": {
+        "points_assists": 20.5,
+        "fp_points_assists": 14.459999999999999,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 6.040000000000001
+      },
+      "points_rebounds": {
+        "points_rebounds": 24.5,
+        "fp_points_rebounds": 17.98,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 6.52
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 28.5,
+        "fp_points_rebounds_assists": 20.84,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 7.66
+      }
+    }
   },
   {
-    "name": "Harrison Barnes",
-    "team_name": "Kings",
-    "points": 15.5,
-    "fp_points": 15.0,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.5,
-    "rebounds": 5,
-    "fp_rebounds": 4.46,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.54,
-    "assists": "--",
-    "fp_assists": 1.56,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 16.5,
-    "fp_points_assists": 16.56,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 0.05999999999999872,
-    "points_rebounds": 20.5,
-    "fp_points_rebounds": 19.46,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.0399999999999991,
-    "points_rebounds_assists": 22.5,
-    "fp_points_rebounds_assists": 21.02,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 1.4800000000000004
+    "Harrison Barnes": {
+      "general": {
+        "team_name": "Kings",
+        "team_market": "Sacramento",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Harrison_Barnes_ce8d0944-b277-499e-9701-02a5f1828615.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 15.5,
+        "fp_points": 15.0,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.5
+      },
+      "rebounds": {
+        "rebounds": 5,
+        "fp_rebounds": 4.46,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.54
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.56,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 16.5,
+        "fp_points_assists": 16.56,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 0.05999999999999872
+      },
+      "points_rebounds": {
+        "points_rebounds": 20.5,
+        "fp_points_rebounds": 19.46,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.0399999999999991
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 22.5,
+        "fp_points_rebounds_assists": 21.02,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 1.4800000000000004
+      }
+    }
   },
   {
-    "name": "Chris Paul",
-    "team_name": "Suns",
-    "points": 12.5,
-    "fp_points": 13.88,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.3800000000000008,
-    "rebounds": 4.5,
-    "fp_rebounds": 4.25,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.25,
-    "assists": 9,
-    "fp_assists": 8.9,
-    "recommendation_ast": "Lower",
-    "diff_assists": 0.09999999999999964,
-    "points_assists": 21.5,
-    "fp_points_assists": 22.78,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 1.2800000000000011,
-    "points_rebounds": 16.5,
-    "fp_points_rebounds": 18.130000000000003,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 1.6300000000000026,
-    "points_rebounds_assists": 25.5,
-    "fp_points_rebounds_assists": 27.03,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 1.5300000000000011
+    "Chris Paul": {
+      "general": {
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Chris_Paul_942c53e3-7268-44e3-b0a9-fdff55a72c03.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 12.5,
+        "fp_points": 13.88,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.3800000000000008
+      },
+      "rebounds": {
+        "rebounds": 4.5,
+        "fp_rebounds": 4.25,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.25
+      },
+      "assists": {
+        "assists": 9,
+        "fp_assists": 8.9,
+        "recommendation_ast": "Lower",
+        "diff_assists": 0.09999999999999964
+      },
+      "points_assists": {
+        "points_assists": 21.5,
+        "fp_points_assists": 22.78,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.2800000000000011
+      },
+      "points_rebounds": {
+        "points_rebounds": 16.5,
+        "fp_points_rebounds": 18.130000000000003,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 1.6300000000000026
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 25.5,
+        "fp_points_rebounds_assists": 27.03,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 1.5300000000000011
+      }
+    }
   },
   {
-    "name": "Devin Booker",
-    "team_name": "Suns",
-    "points": 27.5,
-    "fp_points": 27.75,
-    "recommendation_pts": "Higher",
-    "diff_pts": 0.25,
-    "rebounds": 5,
-    "fp_rebounds": 4.53,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.46999999999999975,
-    "assists": 5,
-    "fp_assists": 5.53,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.5300000000000002,
-    "points_assists": 32.5,
-    "fp_points_assists": 33.28,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 0.7800000000000011,
-    "points_rebounds": 32.5,
-    "fp_points_rebounds": 32.28,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 0.21999999999999886,
-    "points_rebounds_assists": 37.5,
-    "fp_points_rebounds_assists": 37.81,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.3100000000000023
+    "Devin Booker": {
+      "general": {
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Devin_Booker_31baa84f-c759-4f92-8e1f-a92305ade3d6.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 27.5,
+        "fp_points": 27.75,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.25
+      },
+      "rebounds": {
+        "rebounds": 5,
+        "fp_rebounds": 4.53,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.46999999999999975
+      },
+      "assists": {
+        "assists": 5,
+        "fp_assists": 5.53,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.5300000000000002
+      },
+      "points_assists": {
+        "points_assists": 32.5,
+        "fp_points_assists": 33.28,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 0.7800000000000011
+      },
+      "points_rebounds": {
+        "points_rebounds": 32.5,
+        "fp_points_rebounds": 32.28,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 0.21999999999999886
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 37.5,
+        "fp_points_rebounds_assists": 37.81,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.3100000000000023
+      }
+    }
   },
   {
-    "name": "Rudy Gobert",
-    "team_name": "Timberwolves",
-    "points": 12.5,
-    "fp_points": 13.52,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.0199999999999996,
-    "rebounds": 11,
-    "fp_rebounds": 11.61,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.6099999999999994,
-    "assists": "--",
-    "fp_assists": 1.25,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 14.5,
-    "fp_points_assists": 14.77,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 0.2699999999999996,
-    "points_rebounds": 23.5,
-    "fp_points_rebounds": 25.13,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.629999999999999,
-    "points_rebounds_assists": 25.5,
-    "fp_points_rebounds_assists": 26.38,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.879999999999999
+    "Rudy Gobert": {
+      "general": {
+        "team_name": "Timberwolves",
+        "team_market": "Minnesota",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Rudy_Gobert_37fbc3a5-0d10-4e22-803b-baa2ea0cdb12.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 12.5,
+        "fp_points": 13.52,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.0199999999999996
+      },
+      "rebounds": {
+        "rebounds": 11,
+        "fp_rebounds": 11.61,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.6099999999999994
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.25,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 14.5,
+        "fp_points_assists": 14.77,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 0.2699999999999996
+      },
+      "points_rebounds": {
+        "points_rebounds": 23.5,
+        "fp_points_rebounds": 25.13,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.629999999999999
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 25.5,
+        "fp_points_rebounds_assists": 26.38,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.879999999999999
+      }
+    }
   },
   {
-    "name": "Giannis Antetokounmpo",
-    "team_name": "Bucks",
-    "points": 31.5,
-    "fp_points": 31.1,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.3999999999999986,
-    "rebounds": 12.5,
-    "fp_rebounds": 11.79,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.7100000000000009,
-    "assists": 6.5,
-    "fp_assists": 5.7,
-    "recommendation_ast": "Lower",
-    "diff_assists": 0.7999999999999998,
-    "points_assists": 38.5,
-    "fp_points_assists": 36.800000000000004,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 1.6999999999999957,
-    "points_rebounds": 43.5,
-    "fp_points_rebounds": 42.89,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.6099999999999994,
-    "points_rebounds_assists": 50.5,
-    "fp_points_rebounds_assists": 48.59,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 1.9099999999999966
+    "Giannis Antetokounmpo": {
+      "general": {
+        "team_name": "Bucks",
+        "team_market": "Milwaukee",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Giannis_Antetokounmpo_6c60282d-165a-4cba-8e5a-4f2d9d4c5905.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 31.5,
+        "fp_points": 31.1,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.3999999999999986
+      },
+      "rebounds": {
+        "rebounds": 12.5,
+        "fp_rebounds": 11.79,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.7100000000000009
+      },
+      "assists": {
+        "assists": 6.5,
+        "fp_assists": 5.7,
+        "recommendation_ast": "Lower",
+        "diff_assists": 0.7999999999999998
+      },
+      "points_assists": {
+        "points_assists": 38.5,
+        "fp_points_assists": 36.800000000000004,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 1.6999999999999957
+      },
+      "points_rebounds": {
+        "points_rebounds": 43.5,
+        "fp_points_rebounds": 42.89,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.6099999999999994
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 50.5,
+        "fp_points_rebounds_assists": 48.59,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 1.9099999999999966
+      }
+    }
   },
   {
-    "name": "Kevin Porter Jr.",
-    "team_name": "Rockets",
-    "points": 16.5,
-    "fp_points": 19.15,
-    "recommendation_pts": "Higher",
-    "diff_pts": 2.6499999999999986,
-    "rebounds": 5,
-    "fp_rebounds": 5.32,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.3200000000000003,
-    "assists": 5.5,
-    "fp_assists": 5.73,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.23000000000000043,
-    "points_assists": 22.5,
-    "fp_points_assists": 24.88,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 2.379999999999999,
-    "points_rebounds": 21.5,
-    "fp_points_rebounds": 24.47,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 2.969999999999999,
-    "points_rebounds_assists": 27.5,
-    "fp_points_rebounds_assists": 30.2,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 2.6999999999999993
+    "Kevin Porter Jr.": {
+      "general": {
+        "team_name": "Rockets",
+        "team_market": "Houston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Porter_ca5ad700-2ed9-453a-9abe-08eb8edb601c.webp",
+        "player_position": "G-F"
+      },
+      "points": {
+        "points": 16.5,
+        "fp_points": 19.15,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.6499999999999986
+      },
+      "rebounds": {
+        "rebounds": 5,
+        "fp_rebounds": 5.32,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.3200000000000003
+      },
+      "assists": {
+        "assists": 5.5,
+        "fp_assists": 5.73,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.23000000000000043
+      },
+      "points_assists": {
+        "points_assists": 22.5,
+        "fp_points_assists": 24.88,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 2.379999999999999
+      },
+      "points_rebounds": {
+        "points_rebounds": 21.5,
+        "fp_points_rebounds": 24.47,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 2.969999999999999
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 27.5,
+        "fp_points_rebounds_assists": 30.2,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.6999999999999993
+      }
+    }
   },
   {
-    "name": "Patrick Beverley",
-    "team_name": "Bulls",
-    "points": 6.5,
-    "fp_points": 6.06,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.4400000000000004,
-    "rebounds": 4.5,
-    "fp_rebounds": 3.65,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.8500000000000001,
-    "assists": "--",
-    "fp_assists": 2.88,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": "--",
-    "fp_points_assists": 8.94,
-    "recommendation_pts_ast": "--",
-    "diff_pts_ast": "--",
-    "points_rebounds": 11.5,
-    "fp_points_rebounds": 9.709999999999999,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.790000000000001,
-    "points_rebounds_assists": "--",
-    "fp_points_rebounds_assists": 12.59,
-    "recommendation_pts_ast_reb": "--",
-    "diff_pts_ast_reb": "--"
+    "Patrick Beverley": {
+      "general": {
+        "team_name": "Bulls",
+        "team_market": "Chicago",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Patrick_Beverley_912e7aa3-dd03-4a98-9980-0442e108f287.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 6.5,
+        "fp_points": 6.06,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.4400000000000004
+      },
+      "rebounds": {
+        "rebounds": 4.5,
+        "fp_rebounds": 3.65,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.8500000000000001
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 2.88,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": "--",
+        "fp_points_assists": 8.94,
+        "recommendation_pts_ast": "--",
+        "diff_pts_ast": "--"
+      },
+      "points_rebounds": {
+        "points_rebounds": 11.5,
+        "fp_points_rebounds": 9.709999999999999,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.790000000000001
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": "--",
+        "fp_points_rebounds_assists": 12.59,
+        "recommendation_pts_ast_reb": "--",
+        "diff_pts_ast_reb": "--"
+      }
+    }
   },
   {
-    "name": "Alperen Sengun",
-    "team_name": "Rockets",
-    "points": 13.5,
-    "fp_points": 14.79,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.2899999999999991,
-    "rebounds": 8,
-    "fp_rebounds": 9.04,
-    "recommendation_reb": "Higher",
-    "diff_reb": 1.0399999999999991,
-    "assists": "--",
-    "fp_assists": 3.89,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 17.5,
-    "fp_points_assists": 18.68,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 1.1799999999999997,
-    "points_rebounds": 22.5,
-    "fp_points_rebounds": 23.83,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.3299999999999983,
-    "points_rebounds_assists": 25.5,
-    "fp_points_rebounds_assists": 27.72,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 2.219999999999999
+    "Alperen Sengun": {
+      "general": {
+        "team_name": "Rockets",
+        "team_market": "Houston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Alperen_Sengun_47ff78e7-5607-48d6-9c1a-bddb075dbe70.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 13.5,
+        "fp_points": 14.79,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.2899999999999991
+      },
+      "rebounds": {
+        "rebounds": 8,
+        "fp_rebounds": 9.04,
+        "recommendation_reb": "Higher",
+        "diff_reb": 1.0399999999999991
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 3.89,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 17.5,
+        "fp_points_assists": 18.68,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.1799999999999997
+      },
+      "points_rebounds": {
+        "points_rebounds": 22.5,
+        "fp_points_rebounds": 23.83,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.3299999999999983
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 25.5,
+        "fp_points_rebounds_assists": 27.72,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.219999999999999
+      }
+    }
   },
   {
-    "name": "Grayson Allen",
-    "team_name": "Bucks",
-    "points": 10.5,
-    "fp_points": 10.42,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.08000000000000007,
-    "rebounds": "--",
-    "fp_rebounds": 3.29,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": "--",
-    "fp_assists": 2.26,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 12.5,
-    "fp_points_assists": 12.68,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 0.17999999999999972,
-    "points_rebounds": 13.5,
-    "fp_points_rebounds": 13.71,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.21000000000000085,
-    "points_rebounds_assists": "--",
-    "fp_points_rebounds_assists": 15.969999999999999,
-    "recommendation_pts_ast_reb": "--",
-    "diff_pts_ast_reb": "--"
+    "Grayson Allen": {
+      "general": {
+        "team_name": "Bucks",
+        "team_market": "Milwaukee",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Grayson_Allen_ffa9a64f-d624-4033-bd23-59dcfd805175.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 10.5,
+        "fp_points": 10.42,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.08000000000000007
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 3.29,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 2.26,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 12.5,
+        "fp_points_assists": 12.68,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 0.17999999999999972
+      },
+      "points_rebounds": {
+        "points_rebounds": 13.5,
+        "fp_points_rebounds": 13.71,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.21000000000000085
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": "--",
+        "fp_points_rebounds_assists": 15.969999999999999,
+        "recommendation_pts_ast_reb": "--",
+        "diff_pts_ast_reb": "--"
+      }
+    }
   },
   {
-    "name": "Mikal Bridges",
-    "team_name": "Nets",
-    "points": 26.5,
-    "fp_points": 20.13,
-    "recommendation_pts": "Lower",
-    "diff_pts": 6.370000000000001,
-    "rebounds": "--",
-    "fp_rebounds": 4.39,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": "--",
-    "fp_assists": 3.29,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 28.5,
-    "fp_points_assists": 23.419999999999998,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 5.080000000000002,
-    "points_rebounds": 30.5,
-    "fp_points_rebounds": 24.52,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 5.98,
-    "points_rebounds_assists": 33.5,
-    "fp_points_rebounds_assists": 27.81,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 5.690000000000001
+    "Mikal Bridges": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 26.5,
+        "fp_points": 20.13,
+        "recommendation_pts": "Lower",
+        "diff_pts": 6.370000000000001
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 4.39,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 3.29,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 28.5,
+        "fp_points_assists": 23.419999999999998,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 5.080000000000002
+      },
+      "points_rebounds": {
+        "points_rebounds": 30.5,
+        "fp_points_rebounds": 24.52,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 5.98
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 33.5,
+        "fp_points_rebounds_assists": 27.81,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 5.690000000000001
+      }
+    }
   },
   {
-    "name": "Luka Doncic",
-    "team_name": "Mavericks",
-    "points": 30.5,
-    "fp_points": 32.39,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.8900000000000006,
-    "rebounds": 8,
-    "fp_rebounds": 8.62,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.6199999999999992,
-    "assists": 7.5,
-    "fp_assists": 8.02,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.5199999999999996,
-    "points_assists": 38.5,
-    "fp_points_assists": 40.41,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 1.9099999999999966,
-    "points_rebounds": 38.5,
-    "fp_points_rebounds": 41.01,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 2.509999999999998,
-    "points_rebounds_assists": 46.5,
-    "fp_points_rebounds_assists": 49.029999999999994,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 2.529999999999994
+    "Luka Doncic": {
+      "general": {
+        "team_name": "Mavericks",
+        "team_market": "Dallas",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Luka_Doncic_d2ee92e9-3e72-45eb-b156-2dc5adc1e6f7.webp",
+        "player_position": "F-G"
+      },
+      "points": {
+        "points": 30.5,
+        "fp_points": 32.39,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.8900000000000006
+      },
+      "rebounds": {
+        "rebounds": 8,
+        "fp_rebounds": 8.62,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.6199999999999992
+      },
+      "assists": {
+        "assists": 7.5,
+        "fp_assists": 8.02,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.5199999999999996
+      },
+      "points_assists": {
+        "points_assists": 38.5,
+        "fp_points_assists": 40.41,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.9099999999999966
+      },
+      "points_rebounds": {
+        "points_rebounds": 38.5,
+        "fp_points_rebounds": 41.01,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 2.509999999999998
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 46.5,
+        "fp_points_rebounds_assists": 49.029999999999994,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.529999999999994
+      }
+    }
   },
   {
-    "name": "Anthony Davis",
-    "team_name": "Lakers",
-    "points": 25.5,
-    "fp_points": 25.88,
-    "recommendation_pts": "Higher",
-    "diff_pts": 0.379999999999999,
-    "rebounds": 11.5,
-    "fp_rebounds": 12.58,
-    "recommendation_reb": "Higher",
-    "diff_reb": 1.08,
-    "assists": "--",
-    "fp_assists": 2.67,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 27.5,
-    "fp_points_assists": 28.549999999999997,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 1.0499999999999972,
-    "points_rebounds": 37.5,
-    "fp_points_rebounds": 38.46,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.9600000000000009,
-    "points_rebounds_assists": 39.5,
-    "fp_points_rebounds_assists": 41.129999999999995,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 1.6299999999999955
+    "Anthony Davis": {
+      "general": {
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Anthony_Davis_ea8826b8-1f76-4eab-b61e-ffcb176880f3.webp",
+        "player_position": "F-C"
+      },
+      "points": {
+        "points": 25.5,
+        "fp_points": 25.88,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.379999999999999
+      },
+      "rebounds": {
+        "rebounds": 11.5,
+        "fp_rebounds": 12.58,
+        "recommendation_reb": "Higher",
+        "diff_reb": 1.08
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 2.67,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 27.5,
+        "fp_points_assists": 28.549999999999997,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.0499999999999972
+      },
+      "points_rebounds": {
+        "points_rebounds": 37.5,
+        "fp_points_rebounds": 38.46,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.9600000000000009
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 39.5,
+        "fp_points_rebounds_assists": 41.129999999999995,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 1.6299999999999955
+      }
+    }
   },
   {
-    "name": "DeMar DeRozan",
-    "team_name": "Bulls",
-    "points": 22.5,
-    "fp_points": 24.54,
-    "recommendation_pts": "Higher",
-    "diff_pts": 2.039999999999999,
-    "rebounds": 5,
-    "fp_rebounds": 4.66,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.33999999999999986,
-    "assists": 5,
-    "fp_assists": 5.12,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.1200000000000001,
-    "points_assists": 27.5,
-    "fp_points_assists": 29.66,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 2.16,
-    "points_rebounds": 27.5,
-    "fp_points_rebounds": 29.2,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 1.6999999999999993,
-    "points_rebounds_assists": 33.5,
-    "fp_points_rebounds_assists": 34.32,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.8200000000000003
+    "DeMar DeRozan": {
+      "general": {
+        "team_name": "Bulls",
+        "team_market": "Chicago",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/DeMar_DeRozan__5e86a9c3-b4d0-4fe1-a551-acd83e5d60eb.webp",
+        "player_position": "G-F"
+      },
+      "points": {
+        "points": 22.5,
+        "fp_points": 24.54,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.039999999999999
+      },
+      "rebounds": {
+        "rebounds": 5,
+        "fp_rebounds": 4.66,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.33999999999999986
+      },
+      "assists": {
+        "assists": 5,
+        "fp_assists": 5.12,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.1200000000000001
+      },
+      "points_assists": {
+        "points_assists": 27.5,
+        "fp_points_assists": 29.66,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 2.16
+      },
+      "points_rebounds": {
+        "points_rebounds": 27.5,
+        "fp_points_rebounds": 29.2,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 1.6999999999999993
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 33.5,
+        "fp_points_rebounds_assists": 34.32,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.8200000000000003
+      }
+    }
   },
   {
-    "name": "Tre Jones",
-    "team_name": "Spurs",
-    "points": 12.5,
-    "fp_points": 12.87,
-    "recommendation_pts": "Higher",
-    "diff_pts": 0.3699999999999992,
-    "rebounds": 3.5,
-    "fp_rebounds": 3.6,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.10000000000000009,
-    "assists": 6,
-    "fp_assists": 6.59,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.5899999999999999,
-    "points_assists": 19.5,
-    "fp_points_assists": 19.46,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 0.03999999999999915,
-    "points_rebounds": 16.5,
-    "fp_points_rebounds": 16.47,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 0.030000000000001137,
-    "points_rebounds_assists": 22.5,
-    "fp_points_rebounds_assists": 23.060000000000002,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.5600000000000023
+    "Tre Jones": {
+      "general": {
+        "team_name": "Spurs",
+        "team_market": "San Antonio",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Tre_Jones_2d4ce4bc-b03a-40bc-b22c-dab27591a429.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 12.5,
+        "fp_points": 12.87,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.3699999999999992
+      },
+      "rebounds": {
+        "rebounds": 3.5,
+        "fp_rebounds": 3.6,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.10000000000000009
+      },
+      "assists": {
+        "assists": 6,
+        "fp_assists": 6.59,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.5899999999999999
+      },
+      "points_assists": {
+        "points_assists": 19.5,
+        "fp_points_assists": 19.46,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 0.03999999999999915
+      },
+      "points_rebounds": {
+        "points_rebounds": 16.5,
+        "fp_points_rebounds": 16.47,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 0.030000000000001137
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 22.5,
+        "fp_points_rebounds_assists": 23.060000000000002,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.5600000000000023
+      }
+    }
   },
   {
-    "name": "Anthony Edwards",
-    "team_name": "Timberwolves",
-    "points": 22.5,
-    "fp_points": 24.37,
-    "recommendation_pts": "Higher",
-    "diff_pts": 1.870000000000001,
-    "rebounds": "--",
-    "fp_rebounds": 5.88,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": 3.5,
-    "fp_assists": 4.46,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.96,
-    "points_assists": 25.5,
-    "fp_points_assists": 28.830000000000002,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 3.330000000000002,
-    "points_rebounds": 26.5,
-    "fp_points_rebounds": 30.25,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 3.75,
-    "points_rebounds_assists": 30.5,
-    "fp_points_rebounds_assists": 34.71,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 4.210000000000001
+    "Anthony Edwards": {
+      "general": {
+        "team_name": "Timberwolves",
+        "team_market": "Minnesota",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Anthony_Edwards_d0c7135a-1aea-40cb-ba20-df656de71749.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 22.5,
+        "fp_points": 24.37,
+        "recommendation_pts": "Higher",
+        "diff_pts": 1.870000000000001
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 5.88,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": 3.5,
+        "fp_assists": 4.46,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.96
+      },
+      "points_assists": {
+        "points_assists": 25.5,
+        "fp_points_assists": 28.830000000000002,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 3.330000000000002
+      },
+      "points_rebounds": {
+        "points_rebounds": 26.5,
+        "fp_points_rebounds": 30.25,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 3.75
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 30.5,
+        "fp_points_rebounds_assists": 34.71,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 4.210000000000001
+      }
+    }
   },
   {
-    "name": "Karl-Anthony Towns",
-    "team_name": "Timberwolves",
-    "points": 17.5,
-    "fp_points": 21.1,
-    "recommendation_pts": "Higher",
-    "diff_pts": 3.6000000000000014,
-    "rebounds": "--",
-    "fp_rebounds": 8.32,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": 3.5,
-    "fp_assists": 4.77,
-    "recommendation_ast": "Higher",
-    "diff_assists": 1.2699999999999996,
-    "points_assists": 21.5,
-    "fp_points_assists": 25.87,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 4.370000000000001,
-    "points_rebounds": 24.5,
-    "fp_points_rebounds": 29.42,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 4.920000000000002,
-    "points_rebounds_assists": 28.5,
-    "fp_points_rebounds_assists": 34.19,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 5.689999999999998
+    "Karl-Anthony Towns": {
+      "general": {
+        "team_name": "Timberwolves",
+        "team_market": "Minnesota",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Karl-Anthony_Towns_ab532a66-9314-4d57-ade7-bb54a70c65ad.webp",
+        "player_position": "C-F"
+      },
+      "points": {
+        "points": 17.5,
+        "fp_points": 21.1,
+        "recommendation_pts": "Higher",
+        "diff_pts": 3.6000000000000014
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 8.32,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": 3.5,
+        "fp_assists": 4.77,
+        "recommendation_ast": "Higher",
+        "diff_assists": 1.2699999999999996
+      },
+      "points_assists": {
+        "points_assists": 21.5,
+        "fp_points_assists": 25.87,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 4.370000000000001
+      },
+      "points_rebounds": {
+        "points_rebounds": 24.5,
+        "fp_points_rebounds": 29.42,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 4.920000000000002
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 28.5,
+        "fp_points_rebounds_assists": 34.19,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 5.689999999999998
+      }
+    }
   },
   {
-    "name": "Brook Lopez",
-    "team_name": "Bucks",
-    "points": 17.5,
-    "fp_points": 15.88,
-    "recommendation_pts": "Lower",
-    "diff_pts": 1.6199999999999992,
-    "rebounds": 7,
-    "fp_rebounds": 6.67,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.33000000000000007,
-    "assists": "--",
-    "fp_assists": 1.27,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 19.5,
-    "fp_points_assists": 17.150000000000002,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 2.349999999999998,
-    "points_rebounds": 24.5,
-    "fp_points_rebounds": 22.55,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.9499999999999993,
-    "points_rebounds_assists": 26.5,
-    "fp_points_rebounds_assists": 23.82,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 2.6799999999999997
+    "Brook Lopez": {
+      "general": {
+        "team_name": "Bucks",
+        "team_market": "Milwaukee",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Brook_Lopez_c179fb5c-9845-4e37-aef7-6e00d97548eb.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 17.5,
+        "fp_points": 15.88,
+        "recommendation_pts": "Lower",
+        "diff_pts": 1.6199999999999992
+      },
+      "rebounds": {
+        "rebounds": 7,
+        "fp_rebounds": 6.67,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.33000000000000007
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.27,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 19.5,
+        "fp_points_assists": 17.150000000000002,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 2.349999999999998
+      },
+      "points_rebounds": {
+        "points_rebounds": 24.5,
+        "fp_points_rebounds": 22.55,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.9499999999999993
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 26.5,
+        "fp_points_rebounds_assists": 23.82,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 2.6799999999999997
+      }
+    }
   },
   {
-    "name": "Spencer Dinwiddie",
-    "team_name": "Nets",
-    "points": 18.5,
-    "fp_points": 17.33,
-    "recommendation_pts": "Lower",
-    "diff_pts": 1.1700000000000017,
-    "rebounds": 3.5,
-    "fp_rebounds": 3.42,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.08000000000000007,
-    "assists": "--",
-    "fp_assists": 6.52,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 28.5,
-    "fp_points_assists": 23.849999999999998,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 4.650000000000002,
-    "points_rebounds": 22.5,
-    "fp_points_rebounds": 20.75,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 1.75,
-    "points_rebounds_assists": 31.5,
-    "fp_points_rebounds_assists": 27.269999999999996,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 4.230000000000004
+    "Spencer Dinwiddie": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Spencer_Dinwiddie_8426ab40-888d-4f89-976c-cd9e23717653.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 18.5,
+        "fp_points": 17.33,
+        "recommendation_pts": "Lower",
+        "diff_pts": 1.1700000000000017
+      },
+      "rebounds": {
+        "rebounds": 3.5,
+        "fp_rebounds": 3.42,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.08000000000000007
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 6.52,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 28.5,
+        "fp_points_assists": 23.849999999999998,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 4.650000000000002
+      },
+      "points_rebounds": {
+        "points_rebounds": 22.5,
+        "fp_points_rebounds": 20.75,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 1.75
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 31.5,
+        "fp_points_rebounds_assists": 27.269999999999996,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 4.230000000000004
+      }
+    }
   },
   {
-    "name": "Mike Conley",
-    "team_name": "Timberwolves",
-    "points": 11.5,
-    "fp_points": 12.1,
-    "recommendation_pts": "Higher",
-    "diff_pts": 0.5999999999999996,
-    "rebounds": 2.5,
-    "fp_rebounds": 2.74,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.2400000000000002,
-    "assists": 4.5,
-    "fp_assists": 6.62,
-    "recommendation_ast": "Higher",
-    "diff_assists": 2.12,
-    "points_assists": 16.5,
-    "fp_points_assists": 18.72,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 2.219999999999999,
-    "points_rebounds": 13.5,
-    "fp_points_rebounds": 14.84,
-    "recommendation_pts_reb": "Higher",
-    "diff_pts_reb": 1.3399999999999999,
-    "points_rebounds_assists": 18.5,
-    "fp_points_rebounds_assists": 21.46,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 2.960000000000001
+    "Mike Conley": {
+      "general": {
+        "team_name": "Timberwolves",
+        "team_market": "Minnesota",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Mike_Conley_460b7264-b98f-483e-b841-59a18c2e4d67.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 11.5,
+        "fp_points": 12.1,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.5999999999999996
+      },
+      "rebounds": {
+        "rebounds": 2.5,
+        "fp_rebounds": 2.74,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.2400000000000002
+      },
+      "assists": {
+        "assists": 4.5,
+        "fp_assists": 6.62,
+        "recommendation_ast": "Higher",
+        "diff_assists": 2.12
+      },
+      "points_assists": {
+        "points_assists": 16.5,
+        "fp_points_assists": 18.72,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 2.219999999999999
+      },
+      "points_rebounds": {
+        "points_rebounds": 13.5,
+        "fp_points_rebounds": 14.84,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 1.3399999999999999
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 18.5,
+        "fp_points_rebounds_assists": 21.46,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.960000000000001
+      }
+    }
   },
   {
-    "name": "Dorian Finney-Smith",
-    "team_name": "Nets",
-    "points": "--",
-    "fp_points": 8.35,
-    "recommendation_pts": "--",
-    "diff_pts": "--",
-    "rebounds": 4,
-    "fp_rebounds": 4.79,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.79,
-    "assists": "--",
-    "fp_assists": 1.52,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": "--",
-    "fp_points_assists": 9.87,
-    "recommendation_pts_ast": "--",
-    "diff_pts_ast": "--",
-    "points_rebounds": 11.5,
-    "fp_points_rebounds": 13.14,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.6400000000000006,
-    "points_rebounds_assists": "--",
-    "fp_points_rebounds_assists": 14.66,
-    "recommendation_pts_ast_reb": "--",
-    "diff_pts_ast_reb": "--"
+    "Dorian Finney-Smith": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Dorian_Finney-Smith_426357dc-340b-4d89-8e3b-7d6b4022b460.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": "--",
+        "fp_points": 8.35,
+        "recommendation_pts": "--",
+        "diff_pts": "--"
+      },
+      "rebounds": {
+        "rebounds": 4,
+        "fp_rebounds": 4.79,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.79
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.52,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": "--",
+        "fp_points_assists": 9.87,
+        "recommendation_pts_ast": "--",
+        "diff_pts_ast": "--"
+      },
+      "points_rebounds": {
+        "points_rebounds": 11.5,
+        "fp_points_rebounds": 13.14,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.6400000000000006
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": "--",
+        "fp_points_rebounds_assists": 14.66,
+        "recommendation_pts_ast_reb": "--",
+        "diff_pts_ast_reb": "--"
+      }
+    }
   },
   {
-    "name": "Zach LaVine",
-    "team_name": "Bulls",
-    "points": 26.5,
-    "fp_points": 24.9,
-    "recommendation_pts": "Lower",
-    "diff_pts": 1.6000000000000014,
-    "rebounds": 4,
-    "fp_rebounds": 4.51,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.5099999999999998,
-    "assists": 4,
-    "fp_assists": 4.2,
-    "recommendation_ast": "Higher",
-    "diff_assists": 0.20000000000000018,
-    "points_assists": 30.5,
-    "fp_points_assists": 29.099999999999998,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 1.4000000000000021,
-    "points_rebounds": 30.5,
-    "fp_points_rebounds": 29.409999999999997,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 1.0900000000000034,
-    "points_rebounds_assists": 35.5,
-    "fp_points_rebounds_assists": 33.61,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 1.8900000000000006
+    "Zach LaVine": {
+      "general": {
+        "team_name": "Bulls",
+        "team_market": "Chicago",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Zach_LaVine_db72e294-1c54-454a-96b9-0b4fd2f38112.webp",
+        "player_position": "G-F"
+      },
+      "points": {
+        "points": 26.5,
+        "fp_points": 24.9,
+        "recommendation_pts": "Lower",
+        "diff_pts": 1.6000000000000014
+      },
+      "rebounds": {
+        "rebounds": 4,
+        "fp_rebounds": 4.51,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.5099999999999998
+      },
+      "assists": {
+        "assists": 4,
+        "fp_assists": 4.2,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.20000000000000018
+      },
+      "points_assists": {
+        "points_assists": 30.5,
+        "fp_points_assists": 29.099999999999998,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 1.4000000000000021
+      },
+      "points_rebounds": {
+        "points_rebounds": 30.5,
+        "fp_points_rebounds": 29.409999999999997,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.0900000000000034
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 35.5,
+        "fp_points_rebounds_assists": 33.61,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 1.8900000000000006
+      }
+    }
   },
   {
-    "name": "Keegan Murray",
-    "team_name": "Kings",
-    "points": 12.5,
-    "fp_points": 12.2,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.3000000000000007,
-    "rebounds": 5.5,
-    "fp_rebounds": 4.64,
-    "recommendation_reb": "Lower",
-    "diff_reb": 0.8600000000000003,
-    "assists": "--",
-    "fp_assists": 1.23,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 13.5,
-    "fp_points_assists": 13.43,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 0.07000000000000028,
-    "points_rebounds": 17.5,
-    "fp_points_rebounds": 16.84,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.6600000000000001,
-    "points_rebounds_assists": 19.5,
-    "fp_points_rebounds_assists": 18.07,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 1.4299999999999997
+    "Keegan Murray": {
+      "general": {
+        "team_name": "Kings",
+        "team_market": "Sacramento",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Keegan_Murray_7494fbb4-5ac7-43ee-b91a-8859532f548b.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 12.5,
+        "fp_points": 12.2,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.3000000000000007
+      },
+      "rebounds": {
+        "rebounds": 5.5,
+        "fp_rebounds": 4.64,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.8600000000000003
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.23,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 13.5,
+        "fp_points_assists": 13.43,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 0.07000000000000028
+      },
+      "points_rebounds": {
+        "points_rebounds": 17.5,
+        "fp_points_rebounds": 16.84,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.6600000000000001
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 19.5,
+        "fp_points_rebounds_assists": 18.07,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 1.4299999999999997
+      }
+    }
   },
   {
-    "name": "Kevin Huerter",
-    "team_name": "Kings",
-    "points": 14.5,
-    "fp_points": 15.2,
-    "recommendation_pts": "Higher",
-    "diff_pts": 0.6999999999999993,
-    "rebounds": "--",
-    "fp_rebounds": 3.35,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": "--",
-    "fp_assists": 2.95,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 18.5,
-    "fp_points_assists": 18.15,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 0.3500000000000014,
-    "points_rebounds": 18.5,
-    "fp_points_rebounds": 18.55,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.05000000000000071,
-    "points_rebounds_assists": 21.5,
-    "fp_points_rebounds_assists": 21.5,
-    "recommendation_pts_ast_reb": "Lower",
-    "diff_pts_ast_reb": 0.0
+    "Kevin Huerter": {
+      "general": {
+        "team_name": "Kings",
+        "team_market": "Sacramento",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Huerter_858d255e-9a7b-4c7a-aac4-fc7cf3a5f238.webp",
+        "player_position": "G-F"
+      },
+      "points": {
+        "points": 14.5,
+        "fp_points": 15.2,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.6999999999999993
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 3.35,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 2.95,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 18.5,
+        "fp_points_assists": 18.15,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 0.3500000000000014
+      },
+      "points_rebounds": {
+        "points_rebounds": 18.5,
+        "fp_points_rebounds": 18.55,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.05000000000000071
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 21.5,
+        "fp_points_rebounds_assists": 21.5,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 0.0
+      }
+    }
   },
   {
-    "name": "Reggie Bullock",
-    "team_name": "Mavericks",
-    "points": 7.5,
-    "fp_points": 7.19,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.3099999999999996,
-    "rebounds": "--",
-    "fp_rebounds": 3.63,
-    "recommendation_reb": "--",
-    "diff_reb": "--",
-    "assists": "--",
-    "fp_assists": 1.38,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": "--",
-    "fp_points_assists": 8.57,
-    "recommendation_pts_ast": "--",
-    "diff_pts_ast": "--",
-    "points_rebounds": 10.5,
-    "fp_points_rebounds": 10.82,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.3200000000000003,
-    "points_rebounds_assists": "--",
-    "fp_points_rebounds_assists": 12.2,
-    "recommendation_pts_ast_reb": "--",
-    "diff_pts_ast_reb": "--"
+    "Reggie Bullock": {
+      "general": {
+        "team_name": "Mavericks",
+        "team_market": "Dallas",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Reggie_Bullock_42fa4c2c-6520-4d04-a753-cfe4a5c5e2e1.webp",
+        "player_position": "G-F"
+      },
+      "points": {
+        "points": 7.5,
+        "fp_points": 7.19,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.3099999999999996
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 3.63,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.38,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": "--",
+        "fp_points_assists": 8.57,
+        "recommendation_pts_ast": "--",
+        "diff_pts_ast": "--"
+      },
+      "points_rebounds": {
+        "points_rebounds": 10.5,
+        "fp_points_rebounds": 10.82,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.3200000000000003
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": "--",
+        "fp_points_rebounds_assists": 12.2,
+        "recommendation_pts_ast_reb": "--",
+        "diff_pts_ast_reb": "--"
+      }
+    }
   },
   {
-    "name": "Deandre Ayton",
-    "team_name": "Suns",
-    "points": 15.5,
-    "fp_points": 17.96,
-    "recommendation_pts": "Higher",
-    "diff_pts": 2.460000000000001,
-    "rebounds": 9.5,
-    "fp_rebounds": 9.96,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.46000000000000085,
-    "assists": "--",
-    "fp_assists": 1.72,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 16.5,
-    "fp_points_assists": 19.68,
-    "recommendation_pts_ast": "Higher",
-    "diff_pts_ast": 3.1799999999999997,
-    "points_rebounds": 24.5,
-    "fp_points_rebounds": 27.92,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 3.4200000000000017,
-    "points_rebounds_assists": 26.5,
-    "fp_points_rebounds_assists": 29.64,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 3.1400000000000006
+    "Deandre Ayton": {
+      "general": {
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Deandre_Ayton_7ca4beac-bbd6-454f-b820-4e8442a3e1e5.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 15.5,
+        "fp_points": 17.96,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.460000000000001
+      },
+      "rebounds": {
+        "rebounds": 9.5,
+        "fp_rebounds": 9.96,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.46000000000000085
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.72,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 16.5,
+        "fp_points_assists": 19.68,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 3.1799999999999997
+      },
+      "points_rebounds": {
+        "points_rebounds": 24.5,
+        "fp_points_rebounds": 27.92,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 3.4200000000000017
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 26.5,
+        "fp_points_rebounds_assists": 29.64,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 3.1400000000000006
+      }
+    }
   },
   {
-    "name": "Cameron Johnson",
-    "team_name": "Nets",
-    "points": 15.5,
-    "fp_points": 15.48,
-    "recommendation_pts": "Lower",
-    "diff_pts": 0.019999999999999574,
-    "rebounds": 4,
-    "fp_rebounds": 4.4,
-    "recommendation_reb": "Higher",
-    "diff_reb": 0.40000000000000036,
-    "assists": "--",
-    "fp_assists": 1.86,
-    "recommendation_ast": "--",
-    "diff_assists": "--",
-    "points_assists": 17.5,
-    "fp_points_assists": 17.34,
-    "recommendation_pts_ast": "Lower",
-    "diff_pts_ast": 0.16000000000000014,
-    "points_rebounds": 19.5,
-    "fp_points_rebounds": 19.880000000000003,
-    "recommendation_pts_reb": "Lower",
-    "diff_pts_reb": 0.38000000000000256,
-    "points_rebounds_assists": 21.5,
-    "fp_points_rebounds_assists": 21.740000000000002,
-    "recommendation_pts_ast_reb": "Higher",
-    "diff_pts_ast_reb": 0.240000000000002
+    "Cameron Johnson": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Cameron_Johnson_2fe5b749-7bd4-4dbc-acfb-6d675f541e37.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 15.5,
+        "fp_points": 15.48,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.019999999999999574
+      },
+      "rebounds": {
+        "rebounds": 4,
+        "fp_rebounds": 4.4,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.40000000000000036
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.86,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 17.5,
+        "fp_points_assists": 17.34,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 0.16000000000000014
+      },
+      "points_rebounds": {
+        "points_rebounds": 19.5,
+        "fp_points_rebounds": 19.880000000000003,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.38000000000000256
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 21.5,
+        "fp_points_rebounds_assists": 21.740000000000002,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.240000000000002
+      }
+    }
+  },
+  {
+    "Jabari Smith Jr.": {
+      "general": {
+        "team_name": "Rockets",
+        "team_market": "Houston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jabari_Smith_293be24b-3a94-40b2-a7a4-a1dd788302e9.webp",
+        "player_position": "F"
+      },
+      "points": {
+        "points": 13.5,
+        "fp_points": 12.78,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.7200000000000006
+      },
+      "rebounds": {
+        "rebounds": 7,
+        "fp_rebounds": 7.2,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.20000000000000018
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 1.28,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 15.5,
+        "fp_points_assists": 14.059999999999999,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 1.4400000000000013
+      },
+      "points_rebounds": {
+        "points_rebounds": 21.5,
+        "fp_points_rebounds": 19.98,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 1.5199999999999996
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 22.5,
+        "fp_points_rebounds_assists": 21.259999999999998,
+        "recommendation_pts_ast_reb": "Lower",
+        "diff_pts_ast_reb": 1.240000000000002
+      }
+    }
+  },
+  {
+    "Jalen Green": {
+      "general": {
+        "team_name": "Rockets",
+        "team_market": "Houston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jalen_Green_9a331092-35db-456c-a44a-d5b80a02ebe9.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 21.5,
+        "fp_points": 22.14,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.6400000000000006
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 3.74,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 3.7,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 24.5,
+        "fp_points_assists": 25.84,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.3399999999999999
+      },
+      "points_rebounds": {
+        "points_rebounds": 24.5,
+        "fp_points_rebounds": 25.880000000000003,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 1.3800000000000026
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 27.5,
+        "fp_points_rebounds_assists": 29.58,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.0799999999999983
+      }
+    }
+  },
+  {
+    "Kyrie Irving": {
+      "general": {
+        "team_name": "Mavericks",
+        "team_market": "Dallas",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kyrie_Irving_dd146010-902b-4ad7-b98c-650d0363a2f0.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 24.5,
+        "fp_points": 27.05,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.5500000000000007
+      },
+      "rebounds": {
+        "rebounds": 4.5,
+        "fp_rebounds": 5.07,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.5700000000000003
+      },
+      "assists": {
+        "assists": 5,
+        "fp_assists": 5.52,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.5199999999999996
+      },
+      "points_assists": {
+        "points_assists": 29.5,
+        "fp_points_assists": 32.57,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 3.0700000000000003
+      },
+      "points_rebounds": {
+        "points_rebounds": 28.5,
+        "fp_points_rebounds": 32.120000000000005,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 3.6200000000000045
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 33.5,
+        "fp_points_rebounds_assists": 37.64,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 4.140000000000001
+      }
+    }
+  },
+  {
+    "Nikola Vucevic": {
+      "general": {
+        "team_name": "Bulls",
+        "team_market": "Chicago",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
+        "player_position": "C"
+      },
+      "points": {
+        "points": 15.5,
+        "fp_points": 17.54,
+        "recommendation_pts": "Higher",
+        "diff_pts": 2.039999999999999
+      },
+      "rebounds": {
+        "rebounds": 10.5,
+        "fp_rebounds": 11.01,
+        "recommendation_reb": "Higher",
+        "diff_reb": 0.5099999999999998
+      },
+      "assists": {
+        "assists": "--",
+        "fp_assists": 3.21,
+        "recommendation_ast": "--",
+        "diff_assists": "--"
+      },
+      "points_assists": {
+        "points_assists": 19.5,
+        "fp_points_assists": 20.75,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 1.25
+      },
+      "points_rebounds": {
+        "points_rebounds": 26.5,
+        "fp_points_rebounds": 28.549999999999997,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 2.049999999999997
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 29.5,
+        "fp_points_rebounds_assists": 31.759999999999998,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 2.259999999999998
+      }
+    }
+  },
+  {
+    "De'Aaron Fox": {
+      "general": {
+        "team_name": "Kings",
+        "team_market": "Sacramento",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/De'Aaron_Fox_cfc1e41b-74ab-45ee-8132-aaf9ca7f8163.webp",
+        "player_position": "G"
+      },
+      "points": {
+        "points": 24.5,
+        "fp_points": 25.01,
+        "recommendation_pts": "Higher",
+        "diff_pts": 0.5100000000000016
+      },
+      "rebounds": {
+        "rebounds": "--",
+        "fp_rebounds": 4.19,
+        "recommendation_reb": "--",
+        "diff_reb": "--"
+      },
+      "assists": {
+        "assists": 5.5,
+        "fp_assists": 6.12,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.6200000000000001
+      },
+      "points_assists": {
+        "points_assists": 30.5,
+        "fp_points_assists": 31.130000000000003,
+        "recommendation_pts_ast": "Higher",
+        "diff_pts_ast": 0.6300000000000026
+      },
+      "points_rebounds": {
+        "points_rebounds": 28.5,
+        "fp_points_rebounds": 29.200000000000003,
+        "recommendation_pts_reb": "Higher",
+        "diff_pts_reb": 0.7000000000000028
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 34.5,
+        "fp_points_rebounds_assists": 35.32,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.8200000000000003
+      }
+    }
+  },
+  {
+    "Domantas Sabonis": {
+      "general": {
+        "team_name": "Kings",
+        "team_market": "Sacramento",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Domantas_Sabonis_22038780-8c50-4211-a99e-656d983e5207.webp",
+        "player_position": "F-C"
+      },
+      "points": {
+        "points": 19.5,
+        "fp_points": 19.11,
+        "recommendation_pts": "Lower",
+        "diff_pts": 0.39000000000000057
+      },
+      "rebounds": {
+        "rebounds": 12.5,
+        "fp_rebounds": 12.32,
+        "recommendation_reb": "Lower",
+        "diff_reb": 0.17999999999999972
+      },
+      "assists": {
+        "assists": 7,
+        "fp_assists": 7.24,
+        "recommendation_ast": "Higher",
+        "diff_assists": 0.2400000000000002
+      },
+      "points_assists": {
+        "points_assists": 26.5,
+        "fp_points_assists": 26.35,
+        "recommendation_pts_ast": "Lower",
+        "diff_pts_ast": 0.14999999999999858
+      },
+      "points_rebounds": {
+        "points_rebounds": 31.5,
+        "fp_points_rebounds": 31.43,
+        "recommendation_pts_reb": "Lower",
+        "diff_pts_reb": 0.07000000000000028
+      },
+      "points_rebounds_assists": {
+        "points_rebounds_assists": 38.5,
+        "fp_points_rebounds_assists": 38.67,
+        "recommendation_pts_ast_reb": "Higher",
+        "diff_pts_ast_reb": 0.1700000000000017
+      }
+    }
   }
 ]

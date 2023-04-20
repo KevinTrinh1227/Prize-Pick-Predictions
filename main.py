@@ -80,6 +80,8 @@ for idx, key in enumerate(data):
     name = data[key]['name']
     team_name = data[key]['attributes']['team_name']
     team_city_state = data[key]['attributes']['market']
+    photo_link = data[key]['attributes']['image_url']
+    player_position = data[key]['attributes']['position']
 
     # initialize values to "--" which is N/A
     points = n_a
@@ -130,7 +132,8 @@ for idx, key in enumerate(data):
              assists, fp_assists, recommendation_ast, points_assists,
              points_rebounds, points_rebounds_assists])
 
-        # Calculate absolute differences between actual and fantasy values
+
+        # Calculate absolute differences between actual and line_score values
         diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
         diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
             int, float)) else n_a
@@ -148,44 +151,62 @@ for idx, key in enumerate(data):
 
         # Append current player to the data list
         existing_data.append({
-            "name": name,
-            "team_name": team_name,
-            "points": points,
-            "fp_points": fp_points,
-            "recommendation_pts": recommendation_pts,
-            "diff_pts": diff_pts,
-            "rebounds": rebounds,
-            "fp_rebounds": fp_rebounds,
-            "recommendation_reb": recommendation_reb,
-            "diff_reb": diff_reb,
-            "assists": assists,
-            "fp_assists": fp_assists,
-            "recommendation_ast": recommendation_ast,
-            "diff_assists": diff_assists,
-            "points_assists": points_assists,
-            "fp_points_assists": fp_points + fp_assists,
-            "recommendation_pts_ast": recommendation_pts_ast,
-            "diff_pts_ast": diff_pts_ast,
-            "points_rebounds": points_rebounds,
-            "fp_points_rebounds": fp_points + fp_rebounds,
-            "recommendation_pts_reb": recommendation_pts_reb,
-            "diff_pts_reb": diff_pts_reb,
-            "points_rebounds_assists": points_rebounds_assists,
-            "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
-            "recommendation_pts_ast_reb": recommendation_pts_ast_reb,
-            "diff_pts_ast_reb": diff_pts_ast_reb
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "points": {
+                    "points": points,
+                    "fp_points": fp_points,
+                    "recommendation_pts": recommendation_pts,
+                    "diff_pts": diff_pts
+                },
+                "rebounds": {
+                    "rebounds": rebounds,
+                    "fp_rebounds": fp_rebounds,
+                    "recommendation_reb": recommendation_reb,
+                    "diff_reb": diff_reb
+                },
+                "assists": {
+                    "assists": assists,
+                    "fp_assists": fp_assists,
+                    "recommendation_ast": recommendation_ast,
+                    "diff_assists": diff_assists
+                },
+                "points_assists": {
+                    "points_assists": points_assists,
+                    "fp_points_assists": fp_points + fp_assists,
+                    "recommendation_pts_ast": recommendation_pts_ast,
+                    "diff_pts_ast": diff_pts_ast
+                },
+                "points_rebounds": {
+                    "points_rebounds": points_rebounds,
+                    "fp_points_rebounds": fp_points + fp_rebounds,
+                    "recommendation_pts_reb": recommendation_pts_reb,
+                    "diff_pts_reb": diff_pts_reb
+                },
+                "points_rebounds_assists": {
+                    "points_rebounds_assists": points_rebounds_assists,
+                    "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
+                    "recommendation_pts_ast_reb": recommendation_pts_ast_reb,
+                    "diff_pts_ast_reb": diff_pts_ast_reb
+                }
+            }
         })
 
         # Save data to a JSON file, overwriting any existing data
         with open(recommendations_json, 'w') as f:
             json.dump(existing_data, f, indent=2)
 
-        time.sleep(1)  # to avoid being rate limited
     except Exception as e:
         player_name = name
         print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
 
     players_printed += 1
+    time.sleep(2)  # to avoid being rate limited
     print(
         f"{players_printed}/{num_players} players have been loaded. ({round((players_printed / num_players) * 100)}%)")
 

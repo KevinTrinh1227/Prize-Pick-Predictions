@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Industry+Book');
+
+body {
+  background-color: #000000;
+}
+
+h2 {
+  color: white;
+  font-weight: 600;
+  font-family: 'Industry Book', sans-serif;
+  font-size: 1rem; /* added font-size property */
+}
+
+h3 {
+  color: white;
+  font-family: 'Industry Book', sans-serif;
+  font-size: 15px; /* added font-size property */
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-radius: 25px;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.player-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* changed width property */
+  margin-left: 25%; /* added margin-left property */
+  margin-right: 25%; /* added margin-right property */
+}
+
+
+.left-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-area img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.middle-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  line-height: 0px;
+}
+
+.right-area {
+  display: flex;
+  justify-content: center;
+  background: #242424;
+  align-items: center;
+  text-align: center;
+  font-family: 'IndustryMedium';
+}
+
