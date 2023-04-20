@@ -16,8 +16,9 @@ from find_player import get_player_stats
 from recommendation import predict
 import time
 
-pre_json = "pre_formatted_projections.json"  # where we copied and paste api into
-post_json = "post_formatted_projections.json"  # after it gets cleaned up & formatted
+pre_json = "json files/pre_formatted_projections.json"     # where we copied and paste api into
+post_json = "json files/post_formatted_projections.json"   # after it gets cleaned up & formatted/organized
+recommendations_json = "json files/recommendations.json"   # extracts only useful data to us and our new predictions
 
 # reads the pre_formmatted json file
 with open(pre_json, "r") as file:
@@ -68,11 +69,11 @@ with open(post_json, 'r') as f:
 num_players = len(data)
 players_printed = 0
 
-table = [] # table were printing out
+table = []  # table were printing out
 n_a = "--"
 
-with open('data.json', 'r') as f:
-    existing_data = [] # the json file were saving into
+with open(recommendations_json, 'r') as f:
+    existing_data = []  # the json file were saving into
 
 for idx, key in enumerate(data):
     # the attribute values
@@ -121,12 +122,29 @@ for idx, key in enumerate(data):
         recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
         recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
 
+        # finding the distance values (strength of the recommendation)
+        diff_pts = ()
 
-        table.append([idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb, assists, fp_assists, recommendation_ast, points_assists,
-                      points_rebounds, points_rebounds_assists])
+        table.append(
+            [idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb,
+             assists, fp_assists, recommendation_ast, points_assists,
+             points_rebounds, points_rebounds_assists])
 
-
-
+        # Calculate absolute differences between actual and fantasy values
+        diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
+        diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
+            int, float)) else n_a
+        diff_assists = abs(fp_assists - assists) if isinstance(fp_assists, (int, float)) and isinstance(assists, (
+            int, float)) else n_a
+        diff_pts_ast = abs((fp_points + fp_assists) - (points_assists)) if isinstance(fp_points,
+                                                                                      (int, float)) and isinstance(
+            fp_assists, (int, float)) and isinstance(points_assists, (int, float)) else n_a
+        diff_pts_reb = abs((fp_points + fp_rebounds) - points_rebounds) if isinstance(fp_points,
+                                                                                      (int, float)) and isinstance(
+            fp_rebounds, (int, float)) and isinstance(points_rebounds, (int, float)) else n_a
+        diff_pts_ast_reb = abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists) if isinstance(
+            fp_points, (int, float)) and isinstance(fp_assists, (int, float)) and isinstance(fp_rebounds, (
+            int, float)) and isinstance(points_rebounds_assists, (int, float)) else n_a
 
         # Append current player to the data list
         existing_data.append({
@@ -135,31 +153,31 @@ for idx, key in enumerate(data):
             "points": points,
             "fp_points": fp_points,
             "recommendation_pts": recommendation_pts,
-            "diff_pts": abs(fp_points - points),
+            "diff_pts": diff_pts,
             "rebounds": rebounds,
             "fp_rebounds": fp_rebounds,
             "recommendation_reb": recommendation_reb,
-            "diff_reb": abs(fp_rebounds - rebounds),
+            "diff_reb": diff_reb,
             "assists": assists,
             "fp_assists": fp_assists,
             "recommendation_ast": recommendation_ast,
-            "diff_assists": abs(fp_assists - assists),
+            "diff_assists": diff_assists,
             "points_assists": points_assists,
             "fp_points_assists": fp_points + fp_assists,
             "recommendation_pts_ast": recommendation_pts_ast,
-            "diff_pts_ast": abs((fp_points + fp_assists) - (points_assists)),
+            "diff_pts_ast": diff_pts_ast,
             "points_rebounds": points_rebounds,
             "fp_points_rebounds": fp_points + fp_rebounds,
             "recommendation_pts_reb": recommendation_pts_reb,
-            "diff_pts_reb": abs((fp_points + fp_rebounds) - points_rebounds),
+            "diff_pts_reb": diff_pts_reb,
             "points_rebounds_assists": points_rebounds_assists,
             "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
             "recommendation_pts_ast_reb": recommendation_pts_ast_reb,
-            "diff_pts_ast_reb": abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists)
+            "diff_pts_ast_reb": diff_pts_ast_reb
         })
 
         # Save data to a JSON file, overwriting any existing data
-        with open('data.json', 'w') as f:
+        with open(recommendations_json, 'w') as f:
             json.dump(existing_data, f, indent=2)
 
         time.sleep(1)  # to avoid being rate limited
@@ -168,13 +186,15 @@ for idx, key in enumerate(data):
         print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
 
     players_printed += 1
-    print(f"{players_printed}/{num_players} players have been loaded. ({round((players_printed/num_players) * 100)}%)")
+    print(
+        f"{players_printed}/{num_players} players have been loaded. ({round((players_printed / num_players) * 100)}%)")
 
 # number of players with atleast 1 missing stat
 num_na_stats = sum(1 for row in table if n_a in row)
 
 print(tabulate(table,
-               headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Bet Rec.", "Rebs", "FP_reb", "Bet Rec.", "Ast", "FP-Ast", "Bet Rec.", "Pts+Ast", "Pts+Rebs",
+               headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Bet Rec.", "Rebs", "FP_reb", "Bet Rec.", "Ast",
+                        "FP-Ast", "Bet Rec.", "Pts+Ast", "Pts+Rebs",
                         "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
 
 print(f"\n{num_na_stats} players have at least one missing stat.")
