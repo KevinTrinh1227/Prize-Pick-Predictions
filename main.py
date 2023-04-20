@@ -13,6 +13,7 @@
 import json
 from tabulate import tabulate
 from find_player import get_player_stats
+from recommendation import predict
 import time
 
 pre_json = "pre_formatted_projections.json"  # where we copied and paste api into
@@ -107,29 +108,27 @@ for idx, key in enumerate(data):
         fp_player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists = get_player_stats(
             player_name)
 
-        # making the recommendations
-        try:
-            if points >= fp_points:
-                recommendation_points = "Bet lower"
-            else:
-                recommendation_points = "Bet higher"
-        except Exception as e:
-            recommendation_points = n_a
+        # making the recommendations on points
+        recommendation_pts = predict(points, fp_points, n_a)
+        recommendation_reb = predict(rebounds, fp_rebounds, n_a)
+        recommendation_ast = predict(assists, fp_assists, n_a)
 
-        table.append([idx + 1, name, team_name, points, fp_points, recommendation_points, rebounds, fp_rebounds, assists, points_assists,
+
+        table.append([idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb, assists, fp_assists, recommendation_ast, points_assists,
                       points_rebounds, points_rebounds_assists])
         time.sleep(1)  # to avoid being rate limited
     except Exception as e:
         player_name = name
-        print(f"Failed to find {player_name}. Exception: {e}. Now skipping. \n\n")
+        print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
 
     players_printed += 1
+    print(f"{players_printed}/{num_players} players have been loaded. ({round((players_printed/num_players) * 100)}%)")
 
 # number of players with atleast 1 missing stat
 num_na_stats = sum(1 for row in table if n_a in row)
 
 print(tabulate(table,
-               headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Recommendation", "Rebs", "FP_reb", "Ast", "Pts+Ast", "Pts+Rebs",
+               headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Bet Rec.", "Rebs", "FP_reb", "Bet Rec.", "Ast", "FP-Ast", "Bet Rec.", "Pts+Ast", "Pts+Rebs",
                         "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
 
 print(f"\n{num_na_stats} players have at least one missing stat.")
