@@ -68,8 +68,11 @@ with open(post_json, 'r') as f:
 num_players = len(data)
 players_printed = 0
 
-table = []
+table = [] # table were printing out
 n_a = "--"
+
+with open('data.json', 'r') as f:
+    existing_data = [] # the json file were saving into
 
 for idx, key in enumerate(data):
     # the attribute values
@@ -113,9 +116,47 @@ for idx, key in enumerate(data):
         recommendation_reb = predict(rebounds, fp_rebounds, n_a)
         recommendation_ast = predict(assists, fp_assists, n_a)
 
+        # findind the combined stats
+        recommendation_pts_ast = predict(points_assists, fp_points + fp_assists, n_a)
+        recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
+        recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
+
 
         table.append([idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb, assists, fp_assists, recommendation_ast, points_assists,
                       points_rebounds, points_rebounds_assists])
+
+
+        # Append current player to the data list
+        existing_data.append({
+            "name": name,
+            "team_name": team_name,
+            "points": points,
+            "fp_points": fp_points,
+            "recommendation_pts": recommendation_pts,
+            "diff_pts": abs(fp_points - points),
+            "rebounds": rebounds,
+            "fp_rebounds": fp_rebounds,
+            "recommendation_reb": recommendation_reb,
+            "diff_reb": abs(fp_rebounds - rebounds),
+            "assists": assists,
+            "fp_assists": fp_assists,
+            "recommendation_ast": recommendation_ast,
+            "diff_assists": abs(fp_assists - assists),
+            "points_assists": points_assists,
+            "fp_points_assists": fp_points + fp_assists,
+            "recommendation_pts_ast": recommendation_pts_ast,
+            "points_rebounds": points_rebounds,
+            "fp_points_rebounds": fp_points + fp_rebounds,
+            "recommendation_pts_reb": recommendation_pts_reb,
+            "points_rebounds_assists": points_rebounds_assists,
+            "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
+            "recommendation_pts_ast_reb": recommendation_pts_ast_reb
+        })
+
+        # Save data to a JSON file, overwriting any existing data
+        with open('data.json', 'w') as f:
+            json.dump(existing_data, f, indent=2)
+
         time.sleep(1)  # to avoid being rate limited
     except Exception as e:
         player_name = name
