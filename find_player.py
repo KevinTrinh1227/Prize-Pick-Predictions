@@ -21,9 +21,9 @@ def get_player_stats(player_name):
 
     # Get turnovers, blocks, steals, free throws made, points+rebounds, points+assists, points+rebounds+assists per game,
     # defaulting to "--" if not available
-    fp_turnovers = player_stats.get('turnover', "--")
-    fp_blocks = player_stats.get('blk', "--")
-    fp_steals = player_stats.get('stl', "--")
+    #fp_turnovers = player_stats.get('turnover', "--")
+    #fp_blocks = player_stats.get('blk', "--")
+    #fp_steals = player_stats.get('stl', "--")
     fp_ftm = player_stats.get('ftm', "--")
     fp_points = player_stats.get('pts', "--")
     fp_rebounds = player_stats.get('reb', "--")
@@ -36,4 +36,4 @@ def get_player_stats(player_name):
     fp_points != "--" and fp_rebounds != "--" and fp_assists != "--") else "--"
 
     # Return player stats, ID, team name, points, rebounds, assists, turnovers, blocks, steals, and free throws made
-    return player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_turnovers, fp_blocks, fp_steals, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists
+    return player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists
