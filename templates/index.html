@@ -5,6 +5,15 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+<img src="/static/images/ppp.png" alt="Image description" class="logo">
+<div class="buttons">
+    <a href="{{ url_for('index', data_source='points') }}">Points</a>
+    <a href="{{ url_for('index', data_source='assists') }}">Assists</a>
+    <a href="{{ url_for('index', data_source='rebounds') }}">Rebounds</a>
+    <a href="{{ url_for('index', data_source='pts_asts') }}">Pts + Asts</a>
+    <a href="{{ url_for('index', data_source='pts_rebs') }}">Pts + Rebs</a>
+    <a href="{{ url_for('index', data_source='pts_rebs_asts') }}">Pts + Rebs + Asts</a>
+</div>
 <div>
     {% for player in data %}
         {% for name, info in player.items() %}
@@ -14,8 +23,10 @@
                 </div>
                 <div class="player-info">
                     <h2>{{ name }}</h2>
-                    <p>Team: {{ info['general']['team_market'] }} - {{ info['general']['team_name'] }}</p>
-                    <p>Position: {{ info['general']['player_position'] }}</p>
+                    <p>[NBA] {{ info['general']['team_market'] }} {{ info['general']['team_name'] }} - {{ info['general']['player_position'] }}</p>
+                    <p>Strike Value: {{ info['stats']['strike_value'] }}</p>
+                    <p>Actual Value: {{ info['stats']['actual_value'] }}</p>
+                    <p>Value Difference: {{ info['stats']['difference'] }}</p>
                 </div>
                 <div class="player-points">
                     <p>Bet {{ info['stats']['bet_recommendation'] }}</p>
@@ -25,6 +36,10 @@
             </div>
         {% endfor %}
     {% endfor %}
+</div>
+<div class="footer">
+    <img src="/static/images/ppp.png" alt="Image description" id="footer-logo">
+    <p>Project built by: <strong><a href="https://kevintrinh.dev" id="footer-a" target="_blank">Kevin Huy Trinh</a></strong>. &copy;</p>
 </div>
 </body>
 </html>

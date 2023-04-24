@@ -4,6 +4,36 @@ body {
   background-color: #000000;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.logo {
+  display: block; /* Ensures that the image is a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  padding: 2.5rem;
+  width: 50%;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color: #6250f8;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttons a:hover {
+  background-color: #555555;
+}
+
+
 h2 {
   color: white;
   font-weight: 600;
@@ -15,10 +45,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2rem;
-    width: 40%; /* changed width property */
-    margin-left: 30%; /* added margin-left property */
-    margin-right: 30%; /* added margin-right property */
+    padding-bottom: 4rem;
+    width: 50%; /* changed width property */
+    margin-left: 25%; /* added margin-left property */
+    margin-right: 25%; /* added margin-right property */
 }
 
 .player-image img {
@@ -28,6 +58,7 @@ h2 {
 .player-info {
     display: flex;
     flex-direction: column;
+    line-height: 0px;
     padding-left: 1rem;
     margin-right: auto;
 }
@@ -54,3 +85,24 @@ h2 {
     font-weight: 600;
     font-family: 'IndustryDemi';
 }
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: medium;
+    color: #fff;
+    font-family: 'Industry Book', sans-serif;
+}
+
+.footer a {
+    color: #fff;
+}
+
+#footer-logo {
+    width: 30rem;
+}
+
+.footer strong a {
+    text-decoration: none;
+}
+
