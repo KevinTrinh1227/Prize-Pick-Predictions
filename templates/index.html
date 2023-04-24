@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NBA Player List</title>
+    <title>Player Images</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-	<h1>NBA Player List</h1>
-	<div>
-		{% for player in players %}
-			<div class="player">
-				<img src="{{ player['image'] }}" class="player-image">
-				<div class="player-name">{{ player['name'] }}</div>
-			</div>
-		{% endfor %}
-	</div>
+<div>
+    {% for player in data %}
+        {% for name, info in player.items() %}
+            <div class="player-container">
+                <div class="player-image">
+                    <img src="{{ info['general']['picture_link'] }}" alt="{{ name }}" width="100" height="100">
+                </div>
+                <div class="player-info">
+                    <h2>{{ name }}</h2>
+                    <p>Team: {{ info['general']['team_market'] }} - {{ info['general']['team_name'] }}</p>
+                    <p>Position: {{ info['general']['player_position'] }}</p>
+                </div>
+                <div class="player-points">
+                    <p>Bet {{ info['points']['bet_recommendation'] }}</p>
+                    <p class="strike-value">{{ info['points']['strike_value'] }}</p>
+                    <p>{{ info['points']['type'] }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
 </body>
 </html>

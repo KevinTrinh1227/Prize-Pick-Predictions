@@ -11,56 +11,45 @@ h2 {
   font-size: 1rem; /* added font-size property */
 }
 
-h3 {
+.player-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 40%; /* changed width property */
+    margin-left: 30%; /* added margin-left property */
+    margin-right: 30%; /* added margin-right property */
+}
+
+.player-image img {
+    border-radius: 25px;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-right: auto;
+}
+
+.player-info p {
   color: white;
   font-family: 'Industry Book', sans-serif;
   font-size: 15px; /* added font-size property */
 }
 
-div {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  border-radius: 25px;
-  margin: 20px;
-  margin-bottom: 20px;
+.player-points {
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    background: #242424;
+    color: white;
+    font-family: 'Industry Book', sans-serif;
+    font-size: 15px; /* added font-size property */
 }
 
-.player-container {
-  padding: 20px;
-  margin-bottom: 20px;
-  justify-content: center;
-  align-items: center;
-  width: 50%; /* changed width property */
-  margin-left: 25%; /* added margin-left property */
-  margin-right: 25%; /* added margin-right property */
+.strike-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'IndustryDemi';
 }
-
-
-.left-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-area img {
-  max-width: 100%;
-  border-radius: 25px;
-}
-
-.middle-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  line-height: 0px;
-}
-
-.right-area {
-  display: flex;
-  justify-content: center;
-  background: #242424;
-  align-items: center;
-  text-align: center;
-  font-family: 'IndustryMedium';
-}
-
