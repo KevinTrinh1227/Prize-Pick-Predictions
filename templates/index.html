@@ -18,9 +18,9 @@
                     <p>Position: {{ info['general']['player_position'] }}</p>
                 </div>
                 <div class="player-points">
-                    <p>Bet {{ info['points']['bet_recommendation'] }}</p>
-                    <p class="strike-value">{{ info['points']['strike_value'] }}</p>
-                    <p>{{ info['points']['type'] }}</p>
+                    <p>Bet {{ info['stats']['bet_recommendation'] }}</p>
+                    <p class="strike-value">{{ info['stats']['strike_value'] }}</p>
+                    <p>{{ info['stats']['type'] }}</p>
                 </div>
             </div>
         {% endfor %}

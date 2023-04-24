@@ -40,7 +40,8 @@ h2 {
 
 .player-points {
     text-align: center;
-    padding: 10px;
+    text-transform: uppercase;
+    padding: 15px;
     border-radius: 25px;
     background: #242424;
     color: white;

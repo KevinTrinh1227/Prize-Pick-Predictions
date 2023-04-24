@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-with open('json files/points.json') as f:
+with open('json files/points_assists.json') as f:
     data = json.load(f)
 
 

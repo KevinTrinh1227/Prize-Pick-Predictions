@@ -157,7 +157,7 @@ for idx, key in enumerate(data):
             int, float)) else n_a
         diff_assists = abs(fp_assists - assists) if isinstance(fp_assists, (int, float)) and isinstance(assists, (
             int, float)) else n_a
-        diff_pts_ast = abs((fp_points + fp_assists) - (points_assists)) if isinstance(fp_points,
+        diff_pts_ast = abs((fp_points + fp_assists) - points_assists) if isinstance(fp_points,
                                                                                       (int, float)) and isinstance(
             fp_assists, (int, float)) and isinstance(points_assists, (int, float)) else n_a
         diff_pts_reb = abs((fp_points + fp_rebounds) - points_rebounds) if isinstance(fp_points,
@@ -171,122 +171,129 @@ for idx, key in enumerate(data):
 
         # =================================================
         # Here we append the values and split them into
-        # their own json files for the flask app.py
+        # their own json files for the flask app.py;
+        # if they are missing a value we do NOT append.
         # =================================================
 
         # Appending points json
-        points_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "points": {
-                    "type": "points",
-                    "strike_value": points,
-                    "actual_value": fp_points,
-                    "bet_recommendation": recommendation_pts,
-                    "difference": diff_pts
+        if recommendation_pts != n_a:
+            points_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "points",
+                        "strike_value": points,
+                        "actual_value": fp_points,
+                        "bet_recommendation": recommendation_pts,
+                        "difference": diff_pts
+                    }
                 }
-            }
-        })
+            })
 
         # Appending assists json
-        assists_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "stat_info": {
-                    "type": "assists",
-                    "strike_value": assists,
-                    "actual_value": fp_assists,
-                    "bet_recommendation": recommendation_ast,
-                    "difference": diff_assists
+        if recommendation_ast != n_a:
+            assists_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "assists",
+                        "strike_value": assists,
+                        "actual_value": fp_assists,
+                        "bet_recommendation": recommendation_ast,
+                        "difference": diff_assists
+                    }
                 }
-            }
-        })
+            })
 
         # Appending assists json
-        rebounds_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "rebounds": {
-                    "type": "rebounds",
-                    "strike_value": rebounds,
-                    "actual_value": fp_rebounds,
-                    "bet_recommendation": recommendation_reb,
-                    "difference": diff_reb
+        if recommendation_reb != n_a:
+            rebounds_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "rebounds",
+                        "strike_value": rebounds,
+                        "actual_value": fp_rebounds,
+                        "bet_recommendation": recommendation_reb,
+                        "difference": diff_reb
+                    }
                 }
-            }
-        })
+            })
 
         # Appending points + assists json
-        points_assists_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "points_assists": {
-                    "type": "points + assists",
-                    "strike_value": points_assists,
-                    "actual_value": fp_points + fp_assists,
-                    "bet_recommendation": recommendation_pts_ast,
-                    "difference": diff_pts_ast
+        if recommendation_pts_ast != n_a:
+            points_assists_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "pts+ast",
+                        "strike_value": points_assists,
+                        "actual_value": fp_points + fp_assists,
+                        "bet_recommendation": recommendation_pts_ast,
+                        "difference": diff_pts_ast
+                    }
                 }
-            }
-        })
+            })
 
         # Appending points + rebounds json
-        points_rebounds_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "points_rebounds": {
-                    "type": "points + rebounds",
-                    "strike_value": points_rebounds,
-                    "actual_value": fp_points + fp_rebounds,
-                    "bet_recommendation": recommendation_pts_reb,
-                    "difference": diff_pts_reb
+        if recommendation_pts_reb != n_a:
+            points_rebounds_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "pts+rebs",
+                        "strike_value": points_rebounds,
+                        "actual_value": fp_points + fp_rebounds,
+                        "bet_recommendation": recommendation_pts_reb,
+                        "difference": diff_pts_reb
+                    }
                 }
-            }
-        })
+            })
 
         # Appending points + assists + rebounds json
-        points_assists_rebounds_data.append({
-            player_name: {
-                "general": {
-                    "team_name": team_name,
-                    "team_market": team_city_state,
-                    "picture_link": photo_link,
-                    "player_position": player_position
-                },
-                "points_rebounds_assists": {
-                    "type": "points + assists + rebounds",
-                    "strike_value": points_rebounds_assists,
-                    "actual_value": fp_points + fp_assists + fp_rebounds,
-                    "bet_recommendation": recommendation_pts_ast_reb,
-                    "difference": diff_pts_ast_reb
+        if recommendation_pts_ast_reb != n_a:
+            points_assists_rebounds_data.append({
+                player_name: {
+                    "general": {
+                        "team_name": team_name,
+                        "team_market": team_city_state,
+                        "picture_link": photo_link,
+                        "player_position": player_position
+                    },
+                    "stats": {
+                        "type": "pts+rebs+asts",
+                        "strike_value": points_rebounds_assists,
+                        "actual_value": fp_points + fp_assists + fp_rebounds,
+                        "bet_recommendation": recommendation_pts_ast_reb,
+                        "difference": diff_pts_ast_reb
+                    }
                 }
-            }
-        })
+            })
 
         # =================================================
         # Writing the data into the json file with an indent
