@@ -16,9 +16,14 @@ from find_player import get_player_stats
 from recommendation import predict
 import time
 
-pre_json = "json files/pre_formatted_projections.json"     # where we copied and paste api into
-post_json = "json files/post_formatted_projections.json"   # after it gets cleaned up & formatted/organized
-recommendations_json = "json files/recommendations.json"   # extracts only useful data to us and our new predictions
+pre_json = "json files/pre_formatted_projections.json"          # where we copied and paste api into
+post_json = "json files/post_formatted_projections.json"        # after it gets cleaned up & formatted/organized
+points_json = "json files/points.json"                          # player points recommendations json
+assists_json = "json files/assists.json"                        # player assists recommendations json
+rebounds_json = "json files/rebounds.json"                      # player rebounds recommendations json
+points_assists_json = "json files/points_assists.json"
+points_rebounds_json = "json files/points_rebounds.json"
+points_assists_rebounds_json = "json files/points_assists_rebounds.json"
 
 # reads the pre_formmatted json file
 with open(pre_json, "r") as file:
@@ -72,8 +77,21 @@ players_printed = 0
 table = []  # table were printing out
 n_a = "--"
 
-with open(recommendations_json, 'r') as f:
-    existing_data = []  # the json file were saving into
+# this is where each stat type gets saved into its own json file
+with open(points_json, 'r') as f_points:
+    points_data = []
+with open(assists_json, 'r') as f_assists:
+    assists_data = []
+with open(rebounds_json, 'r') as f_rebounds:
+    rebounds_data = []
+with open(points_assists_json, 'r') as f_points_assists:
+    points_assists_data = []
+with open(points_rebounds_json, 'r') as f_points_rebounds:
+    points_rebounds_data = []
+with open(points_assists_rebounds_json, 'r') as f_points_assists_rebounds:
+    points_assists_rebounds_data = []
+
+
 
 for idx, key in enumerate(data):
     # the attribute values
@@ -124,16 +142,16 @@ for idx, key in enumerate(data):
         recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
         recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
 
-        # finding the distance values (strength of the recommendation)
-        diff_pts = ()
-
         table.append(
             [idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb,
              assists, fp_assists, recommendation_ast, points_assists,
              points_rebounds, points_rebounds_assists])
 
 
-        # Calculate absolute differences between actual and line_score values
+        # =================================================
+        # Calculating the absolute difference values
+        # between the actual and line_scores for the player
+        # =================================================
         diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
         diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
             int, float)) else n_a
@@ -149,8 +167,15 @@ for idx, key in enumerate(data):
             fp_points, (int, float)) and isinstance(fp_assists, (int, float)) and isinstance(fp_rebounds, (
             int, float)) and isinstance(points_rebounds_assists, (int, float)) else n_a
 
-        # Append current player to the data list
-        existing_data.append({
+
+
+        # =================================================
+        # Here we append the values and split them into
+        # their own json files for the flask app.py
+        # =================================================
+
+        # Appending points json
+        points_data.append({
             player_name: {
                 "general": {
                     "team_name": team_name,
@@ -159,48 +184,140 @@ for idx, key in enumerate(data):
                     "player_position": player_position
                 },
                 "points": {
-                    "points": points,
-                    "fp_points": fp_points,
-                    "recommendation_pts": recommendation_pts,
-                    "diff_pts": diff_pts
-                },
-                "rebounds": {
-                    "rebounds": rebounds,
-                    "fp_rebounds": fp_rebounds,
-                    "recommendation_reb": recommendation_reb,
-                    "diff_reb": diff_reb
-                },
-                "assists": {
-                    "assists": assists,
-                    "fp_assists": fp_assists,
-                    "recommendation_ast": recommendation_ast,
-                    "diff_assists": diff_assists
-                },
-                "points_assists": {
-                    "points_assists": points_assists,
-                    "fp_points_assists": fp_points + fp_assists,
-                    "recommendation_pts_ast": recommendation_pts_ast,
-                    "diff_pts_ast": diff_pts_ast
-                },
-                "points_rebounds": {
-                    "points_rebounds": points_rebounds,
-                    "fp_points_rebounds": fp_points + fp_rebounds,
-                    "recommendation_pts_reb": recommendation_pts_reb,
-                    "diff_pts_reb": diff_pts_reb
-                },
-                "points_rebounds_assists": {
-                    "points_rebounds_assists": points_rebounds_assists,
-                    "fp_points_rebounds_assists": fp_points + fp_assists + fp_rebounds,
-                    "recommendation_pts_ast_reb": recommendation_pts_ast_reb,
-                    "diff_pts_ast_reb": diff_pts_ast_reb
+                    "type": "points",
+                    "strike_value": points,
+                    "actual_value": fp_points,
+                    "bet_recommendation": recommendation_pts,
+                    "difference": diff_pts
                 }
             }
         })
 
-        # Save data to a JSON file, overwriting any existing data
-        with open(recommendations_json, 'w') as f:
-            json.dump(existing_data, f, indent=2)
+        # Appending assists json
+        assists_data.append({
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "stat_info": {
+                    "type": "assists",
+                    "strike_value": assists,
+                    "actual_value": fp_assists,
+                    "bet_recommendation": recommendation_ast,
+                    "difference": diff_assists
+                }
+            }
+        })
 
+        # Appending assists json
+        rebounds_data.append({
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "rebounds": {
+                    "type": "rebounds",
+                    "strike_value": rebounds,
+                    "actual_value": fp_rebounds,
+                    "bet_recommendation": recommendation_reb,
+                    "difference": diff_reb
+                }
+            }
+        })
+
+        # Appending points + assists json
+        points_assists_data.append({
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "points_assists": {
+                    "type": "points + assists",
+                    "strike_value": points_assists,
+                    "actual_value": fp_points + fp_assists,
+                    "bet_recommendation": recommendation_pts_ast,
+                    "difference": diff_pts_ast
+                }
+            }
+        })
+
+        # Appending points + rebounds json
+        points_rebounds_data.append({
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "points_rebounds": {
+                    "type": "points + rebounds",
+                    "strike_value": points_rebounds,
+                    "actual_value": fp_points + fp_rebounds,
+                    "bet_recommendation": recommendation_pts_reb,
+                    "difference": diff_pts_reb
+                }
+            }
+        })
+
+        # Appending points + assists + rebounds json
+        points_assists_rebounds_data.append({
+            player_name: {
+                "general": {
+                    "team_name": team_name,
+                    "team_market": team_city_state,
+                    "picture_link": photo_link,
+                    "player_position": player_position
+                },
+                "points_rebounds_assists": {
+                    "type": "points + assists + rebounds",
+                    "strike_value": points_rebounds_assists,
+                    "actual_value": fp_points + fp_assists + fp_rebounds,
+                    "bet_recommendation": recommendation_pts_ast_reb,
+                    "difference": diff_pts_ast_reb
+                }
+            }
+        })
+
+        # =================================================
+        # Writing the data into the json file with an indent
+        # of 2 for each player of that stat type
+        # =================================================
+
+        with open(points_json, 'w') as f_points:
+            json.dump(points_data, f_points, indent=2)
+
+        with open(assists_json, 'w') as f_assists:
+            json.dump(assists_data, f_assists, indent=2)
+
+        with open(rebounds_json, 'w') as f_rebounds:
+            json.dump(rebounds_data, f_rebounds, indent=2)
+
+        with open(points_assists_json, 'w') as f_points_assists:
+            json.dump(points_assists_data, f_points_assists, indent=2)
+
+        with open(points_rebounds_json, 'w') as f_points_rebounds:
+            json.dump(points_rebounds_data, f_points_rebounds, indent=2)
+
+        with open(points_assists_rebounds_json, 'w') as f_points_assists_rebounds:
+            json.dump(points_assists_rebounds_data, f_points_assists_rebounds, indent=2)
+
+
+
+
+    # =================================================
+    # runs if we failed to get the player's actual season
+    # average on the ball don't lie api. (so we skip player)
+    # =================================================
     except Exception as e:
         player_name = name
         print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
