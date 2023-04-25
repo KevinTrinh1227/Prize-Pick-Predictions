@@ -46,7 +46,7 @@ for item in data['included']:
             'opposing_team_abv': None,  # initial value of nothing
             'strike_values': []
         }
-# opposing_team = projection['attributes']['description']
+
 # Loop through projection data and match player IDs to add stat_type and line_score
 for projection in data['data']:
     if projection['type'] == 'projection':
@@ -149,10 +149,11 @@ for idx, key in enumerate(data):
 
 
 
-        """
-        * Calculating the absolute difference values
-        * between the actual and line_scores for the player
-        """
+        """ =============================================
+        * Calculating the absolute value of the differences
+        * between the predicted score and line scores for the player
+        * so longer distance between the two means more likely to hit
+        ============================================= """
         diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
         diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
             int, float)) else n_a
@@ -170,11 +171,11 @@ for idx, key in enumerate(data):
 
 
 
-        """
+        """ =============================================
         * Here we append the values and split them into
         * their own json files for the flask app.py;
         * if they are missing a value we do NOT append.
-        """
+        ============================================= """
         # Appending points json
         if recommendation_pts != n_a:
             points_data.append({
@@ -329,11 +330,11 @@ for idx, key in enumerate(data):
         print(f"[❌] Failed data loaded for: {player_name}. Exception: {e}. Skipping.")
 
     players_printed += 1
-    time.sleep(2)  # to avoid being rate limited
-    width = 30  # set desired width for player name column
+    time.sleep(2)                           # to avoid being rate limited (60 req per min)
     start_str = f"[✅] Successfully loaded data for: {player_name}"
     players_percentage = round((players_printed / num_players) * 100)
     print(f"{start_str:<60} {players_printed:0>2}/{num_players:<5} ({players_percentage:0>2}%)")
+
 
 # number of players with at least 1 missing stat type
 num_na_stats = sum(1 for row in table if n_a in row)

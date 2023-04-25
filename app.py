@@ -3,14 +3,19 @@ import json
 
 app = Flask(__name__)
 
-# Load the default JSON file
+# points.json is default when loading up
 with open('json files/points.json') as f:
     data = json.load(f)
 
 # Route for the home page
 @app.route('/')
 def index():
-    # Check if a data source parameter was passed in the URL
+
+    """ =============================================
+    * Check if a data source parameter was passed in the URL
+    * This allows the user to switch between json files
+    * to view the recommendations for different stat types
+    ============================================= """
     data_source = request.args.get('data_source', 'points')
     if data_source == 'points':
         with open('json files/points.json') as f:
