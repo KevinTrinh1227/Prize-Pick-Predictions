@@ -41,19 +41,22 @@ for item in data['included']:
         player_name = item['attributes']['name']
         results[player_id] = {
             'name': player_name,
+            'opposing_team': None,  # initial value of nothing
             'strike_values': []
         }
-
+# opposing_team = projection['attributes']['description']
 # Loop through projection data and match player IDs to add stat_type and line_score
 for projection in data['data']:
     if projection['type'] == 'projection':
         player_id = projection['relationships']['new_player']['data']['id']
         stat_type = projection['attributes']['stat_type']
         line_score = projection['attributes']['line_score']
+        opposing_team = projection['attributes']['description']
         results[player_id]['strike_values'].append({
             'stat_type': stat_type,
             'line_score': line_score
         })
+        results[player_id]['opposing_team'] = opposing_team
         # Add player attributes to results dictionary
         for player in data['included']:
             if player['type'] == 'new_player' and player['id'] == player_id:
