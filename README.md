@@ -18,13 +18,13 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project.
     ```
 
 ### 🛠 set-up
-1. Use link below or [click here](https://api.prizepicks.com/projections?league_id=7)
+1. Use link below or [click here](https://api.prizepicks.com/projections?league_id=7) then copy everything to clipboard
 
    ```sh
    https://api.prizepicks.com/projections?league_id=7)
    ```
 
-2. Copy & paste everything into the json file below (because prize picks does not allow public api usage)
+2. Paste everything into the json file below (because prize picks no longer supports public api)
    ```sh
    json files/pre_formatted.json
    ```
@@ -45,12 +45,12 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project.
    ```
 ### 🚀 Execute the app in terminal
 
-1. Run the main file
+1. Run the main file and wait untill 100% of players has been processed
 
    ```sh
    python main.py
    ```
-2. Deploy the Flask app
+2. Deploy the Flask app and view recommendations
 
    ```sh
    python app.py
