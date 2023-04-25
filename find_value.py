@@ -1,8 +1,11 @@
 import requests
 import json
 
+""" =============================================
+* compares the betting value (line_score) to
+* the program's prediction value
+============================================= """
 def predict(line_score, avg_value, n_a):
-
     try:
         if line_score >= avg_value:
             prediction = "Lower"
@@ -12,14 +15,20 @@ def predict(line_score, avg_value, n_a):
         prediction = n_a
 
     return prediction
+
+
+""" =============================================
+* compares the betting value (line_score) to
+* the program's prediction value
+============================================= """
 def get_player_stats(player_name):
+
     # API endpoint for player search
     player_search_url = "https://www.balldontlie.io/api/v1/players?search=" + player_name
 
     response = requests.get(player_search_url)
     player_data = json.loads(response.text)
     fp_player_id = player_data['data'][0]['id']
-    #team_id = player_data['data'][0]['team']['id']
     fp_team_name = player_data['data'][0]['team']['full_name']
 
     # API endpoint for player stats
@@ -29,11 +38,6 @@ def get_player_stats(player_name):
     response = requests.get(player_stats_url)
     player_stats = json.loads(response.text)['data'][0]
 
-    # Get turnovers, blocks, steals, free throws made, points+rebounds, points+assists, points+rebounds+assists per game,
-    # defaulting to "--" if not available
-    #fp_turnovers = player_stats.get('turnover', "--")
-    #fp_blocks = player_stats.get('blk', "--")
-    #fp_steals = player_stats.get('stl', "--")
     fp_ftm = player_stats.get('ftm', "--")
     fp_points = player_stats.get('pts', "--")
     fp_rebounds = player_stats.get('reb', "--")
@@ -45,6 +49,6 @@ def get_player_stats(player_name):
     fp_points_rebounds_assists = fp_points + fp_rebounds + fp_assists if (
     fp_points != "--" and fp_rebounds != "--" and fp_assists != "--") else "--"
 
-    # Return player stats, ID, team name, points, rebounds, assists, turnovers, blocks, steals, and free throws made
+    # Return player stats that we need
     return player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists
 

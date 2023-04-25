@@ -5,12 +5,12 @@
     Python Version: 3.11.1
     Description: Linear regression python program that makes
         recommendations on betting in favor/against a player's prize
-        pick line_score value using numerous machine learning algorithms. 
+        pick line_score value using numerous machine learning algorithms.
+
+    api link --> https://api.prizepicks.com/projections?league_id=7
 """
 
-# api link --> https://api.prizepicks.com/projections?league_id=7
-
-from find_player import *
+from find_value import *
 import time
 
 pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
