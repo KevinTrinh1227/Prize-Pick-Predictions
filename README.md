@@ -43,15 +43,24 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. 
    ```sh
    pip install tabulate
    ```
-### 🚀 Execute the app in terminal
+### 🚀 Host the app locally
 
 1. Run the main file and wait untill 100% of players has been processed
 
    ```sh
    python main.py
    ```
-2. Deploy the Flask app and view recommendations
+2. Deploy the Flask app and get the link
 
    ```sh
    python app.py
    ```
+3. Open the `http://127.0.0.1:5000` link on a web browser
+
+   ```sh
+   ~\Prize-Pick-Predications>app.py
+    * Serving Flask app 'app'
+    * Debug mode: off
+    * Running on http://127.0.0.1:5000
+   ```
+   
