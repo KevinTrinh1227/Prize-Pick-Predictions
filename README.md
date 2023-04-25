@@ -5,7 +5,7 @@ This Python project is a Flask application that utilizes linear regression, a po
 # At a Glance
 ![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234209657-1bd8dcce-7cbc-40da-808c-8f60f34fb551.gif)
 
-Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project.
+Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. Still under development. 
 
 ## Getting Started
 
