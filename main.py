@@ -10,36 +10,31 @@
 
 # api link --> https://api.prizepicks.com/projections?league_id=7
 
-import json
-from tabulate import tabulate
-from find_player import get_player_stats
-from recommendation import predict
+from find_player import *
 import time
 
-pre_json = "json files/pre_formatted_projections.json"          # where we copied and paste api into
-post_json = "json files/post_formatted_projections.json"        # after it gets cleaned up & formatted/organized
-points_json = "json files/points.json"                          # player points recommendations json
-assists_json = "json files/assists.json"                        # player assists recommendations json
-rebounds_json = "json files/rebounds.json"                      # player rebounds recommendations json
-points_assists_json = "json files/points_assists.json"
-points_rebounds_json = "json files/points_rebounds.json"
-points_assists_rebounds_json = "json files/points_assists_rebounds.json"
+pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
+post_json = "json files/post_formatted_projections.json"                    # organized json file
+points_json = "json files/points.json"                                      # player points recommendations json
+assists_json = "json files/assists.json"                                    # player assists recommendations json
+rebounds_json = "json files/rebounds.json"                                  # player rebounds recommendations json
+points_assists_json = "json files/points_assists.json"                      # player pts+asts recommendations json
+points_rebounds_json = "json files/points_rebounds.json"                    # player pts+rebs recommendations json
+points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
-# reads the pre_formmatted json file
+
+# reads the pre_json json file
 with open(pre_json, "r") as file:
     data = json.load(file)
-    # Format the JSON with indentation
-    json_str = json.dumps(data, indent=4)
+    json_str = json.dumps(data, indent=2)
 
-# pre_formmatted json --> post_formatted json
+# formats the messy json file
 json_dict = json.loads(json_str)
 with open(pre_json, "w") as file:
-    json.dump(json_dict, file, indent=4)
-
-# Create dictionary to store results
-results = {}
+    json.dump(json_dict, file, indent=2)
 
 # Loop through included data to get player names and IDs
+results = {}    # Create dictionary to store results
 for item in data['included']:
     if item['type'] == 'new_player':
         player_id = item['id']
@@ -75,7 +70,7 @@ num_players = len(data)
 players_printed = 0
 
 table = []  # table were printing out
-n_a = "--"
+n_a = "--"  # default value if the player has a missing stat value
 
 # this is where each stat type gets saved into its own json file
 with open(points_json, 'r') as f_points:
@@ -137,7 +132,7 @@ for idx, key in enumerate(data):
         recommendation_reb = predict(rebounds, fp_rebounds, n_a)
         recommendation_ast = predict(assists, fp_assists, n_a)
 
-        # findind the combined stats
+        # find the combined stats
         recommendation_pts_ast = predict(points_assists, fp_points + fp_assists, n_a)
         recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
         recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
@@ -148,10 +143,11 @@ for idx, key in enumerate(data):
              points_rebounds, points_rebounds_assists])
 
 
-        # =================================================
-        # Calculating the absolute difference values
-        # between the actual and line_scores for the player
-        # =================================================
+
+        """
+        * Calculating the absolute difference values
+        * between the actual and line_scores for the player
+        """
         diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
         diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
             int, float)) else n_a
@@ -169,12 +165,11 @@ for idx, key in enumerate(data):
 
 
 
-        # =================================================
-        # Here we append the values and split them into
-        # their own json files for the flask app.py;
-        # if they are missing a value we do NOT append.
-        # =================================================
-
+        """
+        * Here we append the values and split them into
+        * their own json files for the flask app.py;
+        * if they are missing a value we do NOT append.
+        """
         # Appending points json
         if recommendation_pts != n_a:
             points_data.append({
@@ -295,11 +290,12 @@ for idx, key in enumerate(data):
                 }
             })
 
-        # =================================================
-        # Writing the data into the json file with an indent
-        # of 2 for each player of that stat type
-        # =================================================
 
+
+        """ =============================================
+        * Writing the data into the json file with an indent
+        * of 2 for each stat type for every player
+        ============================================= """
         with open(points_json, 'w') as f_points:
             json.dump(points_data, f_points, indent=2)
 
@@ -319,13 +315,11 @@ for idx, key in enumerate(data):
             json.dump(points_assists_rebounds_data, f_points_assists_rebounds, indent=2)
 
 
-
-
-    # =================================================
-    # runs if we failed to get the player's actual season
-    # average on the ball don't lie api. (so we skip player)
-    # =================================================
     except Exception as e:
+        """ =============================================
+        * runs if we failed to get the player's actual season
+        * average on the ball don't lie api. (so we skip player)
+        ============================================= """
         player_name = name
         print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
 
@@ -334,14 +328,10 @@ for idx, key in enumerate(data):
     print(
         f"{players_printed}/{num_players} players have been loaded. ({round((players_printed / num_players) * 100)}%)")
 
-# number of players with atleast 1 missing stat
+
+
+# number of players with at least 1 missing stat type
 num_na_stats = sum(1 for row in table if n_a in row)
-
-print(tabulate(table,
-               headers=['##', 'Name', 'Team Name', 'Pts', "FP-Pts", "Bet Rec.", "Rebs", "FP_reb", "Bet Rec.", "Ast",
-                        "FP-Ast", "Bet Rec.", "Pts+Ast", "Pts+Rebs",
-                        "Pts+Rebs+Ast"], tablefmt='orgtbl') + "\n")
-
 print(f"\n{num_na_stats} players have at least one missing stat.")
 print(f"A total of {num_players} player objects in json file.")
 print(f"{players_printed}/{num_players} were printed out in table format.\n\n")

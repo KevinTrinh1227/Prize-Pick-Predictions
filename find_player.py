@@ -1,7 +1,17 @@
 import requests
 import json
 
+def predict(line_score, avg_value, n_a):
 
+    try:
+        if line_score >= avg_value:
+            prediction = "Lower"
+        else:
+            prediction = "Higher"
+    except Exception as e:
+        prediction = n_a
+
+    return prediction
 def get_player_stats(player_name):
     # API endpoint for player search
     player_search_url = "https://www.balldontlie.io/api/v1/players?search=" + player_name
@@ -37,3 +47,4 @@ def get_player_stats(player_name):
 
     # Return player stats, ID, team name, points, rebounds, assists, turnovers, blocks, steals, and free throws made
     return player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists
+
