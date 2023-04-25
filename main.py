@@ -3,9 +3,11 @@
     Author: Kevin Huy Trinh
     Date created: March 2022
     Python Version: 3.11.1
-    Description: Linear regression python program that makes
-        recommendations on betting in favor/against a player's prize
-        pick line_score value using numerous machine learning algorithms.
+    Description: Python program that makes recommendations on
+        betting in favor/against a player's prize pick line_score
+        value using a linear regression machine learning algorithm
+        that takes into account the opposing team's elo, and the
+        desired player's current seasonal score in diff stat types.
 
     api link --> https://api.prizepicks.com/projections?league_id=7
 """
@@ -41,7 +43,7 @@ for item in data['included']:
         player_name = item['attributes']['name']
         results[player_id] = {
             'name': player_name,
-            'opposing_team': None,  # initial value of nothing
+            'opposing_team_abv': None,  # initial value of nothing
             'strike_values': []
         }
 # opposing_team = projection['attributes']['description']
@@ -56,7 +58,7 @@ for projection in data['data']:
             'stat_type': stat_type,
             'line_score': line_score
         })
-        results[player_id]['opposing_team'] = opposing_team
+        results[player_id]['opposing_team_abv'] = opposing_team
         # Add player attributes to results dictionary
         for player in data['included']:
             if player['type'] == 'new_player' and player['id'] == player_id:
@@ -324,14 +326,14 @@ for idx, key in enumerate(data):
         * average on the ball don't lie api. (so we skip player)
         ============================================= """
         player_name = name
-        print(f"Failed to find {player_name}. Exception: {e}. Now skipping.")
+        print(f"[❌] Failed data loaded for: {player_name}. Exception: {e}. Skipping.")
 
     players_printed += 1
     time.sleep(2)  # to avoid being rate limited
-    print(
-        f"{players_printed}/{num_players} players have been loaded. ({round((players_printed / num_players) * 100)}%)")
-
-
+    width = 30  # set desired width for player name column
+    start_str = f"[✅] Successfully loaded data for: {player_name}"
+    players_percentage = round((players_printed / num_players) * 100)
+    print(f"{start_str:<60} {players_printed:0>2}/{num_players:<5} ({players_percentage:0>2}%)")
 
 # number of players with at least 1 missing stat type
 num_na_stats = sum(1 for row in table if n_a in row)

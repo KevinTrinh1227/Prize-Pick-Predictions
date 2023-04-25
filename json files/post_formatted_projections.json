@@ -1,7 +1,7 @@
 {
   "25107": {
     "name": "Jrue Holiday",
-    "opposing_team": "IND",
+    "opposing_team_abv": "IND",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -41,7 +41,7 @@
   },
   "10726": {
     "name": "Nicolas Claxton",
-    "opposing_team": "HOU",
+    "opposing_team_abv": "HOU",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -85,7 +85,7 @@
   },
   "63247": {
     "name": "Zach Collins",
-    "opposing_team": "UTA",
+    "opposing_team_abv": "UTA",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -125,7 +125,7 @@
   },
   "1563": {
     "name": "Harrison Barnes",
-    "opposing_team": "POR",
+    "opposing_team_abv": "POR",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -165,7 +165,7 @@
   },
   "54140": {
     "name": "Chris Paul",
-    "opposing_team": "MIN",
+    "opposing_team_abv": "MIN",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -209,7 +209,7 @@
   },
   "58496": {
     "name": "Devin Booker",
-    "opposing_team": "MIN",
+    "opposing_team_abv": "MIN",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -253,7 +253,7 @@
   },
   "87384": {
     "name": "Rudy Gobert",
-    "opposing_team": "PHX",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs",
@@ -297,7 +297,7 @@
   },
   "57720": {
     "name": "Giannis Antetokounmpo",
-    "opposing_team": "IND",
+    "opposing_team_abv": "IND",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -349,7 +349,7 @@
   },
   "10737": {
     "name": "Kevin Porter Jr.",
-    "opposing_team": "BKN",
+    "opposing_team_abv": "BKN",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -393,7 +393,7 @@
   },
   "124403": {
     "name": "Patrick Beverley",
-    "opposing_team": "LAL",
+    "opposing_team_abv": "LAL",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -425,7 +425,7 @@
   },
   "55716": {
     "name": "Alperen Sengun",
-    "opposing_team": "BKN",
+    "opposing_team_abv": "BKN",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -473,7 +473,7 @@
   },
   "53977": {
     "name": "Grayson Allen",
-    "opposing_team": "IND",
+    "opposing_team_abv": "IND",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs",
@@ -501,7 +501,7 @@
   },
   "96508": {
     "name": "Mikal Bridges",
-    "opposing_team": "HOU",
+    "opposing_team_abv": "HOU",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -541,7 +541,7 @@
   },
   "58830": {
     "name": "Luka Doncic",
-    "opposing_team": "PHI",
+    "opposing_team_abv": "PHI",
     "strike_values": [
       {
         "stat_type": "Assists",
@@ -593,7 +593,7 @@
   },
   "1382": {
     "name": "Anthony Davis",
-    "opposing_team": "CHI",
+    "opposing_team_abv": "CHI",
     "strike_values": [
       {
         "stat_type": "Rebs+Asts",
@@ -633,7 +633,7 @@
   },
   "54957": {
     "name": "DeMar DeRozan",
-    "opposing_team": "LAL",
+    "opposing_team_abv": "LAL",
     "strike_values": [
       {
         "stat_type": "Rebs+Asts",
@@ -685,7 +685,7 @@
   },
   "59501": {
     "name": "Tre Jones",
-    "opposing_team": "UTA",
+    "opposing_team_abv": "UTA",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs",
@@ -737,7 +737,7 @@
   },
   "25419": {
     "name": "Anthony Edwards",
-    "opposing_team": "PHX",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -777,7 +777,7 @@
   },
   "1660": {
     "name": "Karl-Anthony Towns",
-    "opposing_team": "PHX",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -821,7 +821,7 @@
   },
   "1683": {
     "name": "Brook Lopez",
-    "opposing_team": "IND",
+    "opposing_team_abv": "IND",
     "strike_values": [
       {
         "stat_type": "3-PT Made",
@@ -865,7 +865,7 @@
   },
   "54081": {
     "name": "KJ Martin Jr.",
-    "opposing_team": "BKN",
+    "opposing_team_abv": "BKN",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -901,7 +901,7 @@
   },
   "1957": {
     "name": "Spencer Dinwiddie",
-    "opposing_team": "HOU",
+    "opposing_team_abv": "HOU",
     "strike_values": [
       {
         "stat_type": "Rebs+Asts",
@@ -941,7 +941,7 @@
   },
   "96481": {
     "name": "Mike Conley",
-    "opposing_team": "PHX",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -985,7 +985,7 @@
   },
   "96321": {
     "name": "Dorian Finney-Smith",
-    "opposing_team": "HOU",
+    "opposing_team_abv": "HOU",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -1009,7 +1009,7 @@
   },
   "1544": {
     "name": "Zach LaVine",
-    "opposing_team": "LAL",
+    "opposing_team_abv": "LAL",
     "strike_values": [
       {
         "stat_type": "Rebounds",
@@ -1057,7 +1057,7 @@
   },
   "79897": {
     "name": "Keegan Murray",
-    "opposing_team": "POR",
+    "opposing_team_abv": "POR",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -1101,7 +1101,7 @@
   },
   "87615": {
     "name": "Kevin Huerter",
-    "opposing_team": "POR",
+    "opposing_team_abv": "POR",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -1137,7 +1137,7 @@
   },
   "55600": {
     "name": "Reggie Bullock",
-    "opposing_team": "PHI",
+    "opposing_team_abv": "PHI",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs",
@@ -1161,7 +1161,7 @@
   },
   "53837": {
     "name": "Deandre Ayton",
-    "opposing_team": "MIN",
+    "opposing_team_abv": "MIN",
     "strike_values": [
       {
         "stat_type": "Rebs+Asts",
@@ -1201,7 +1201,7 @@
   },
   "96514": {
     "name": "Cameron Johnson",
-    "opposing_team": "HOU",
+    "opposing_team_abv": "HOU",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -1245,7 +1245,7 @@
   },
   "79867": {
     "name": "Jabari Smith Jr.",
-    "opposing_team": "BKN",
+    "opposing_team_abv": "BKN",
     "strike_values": [
       {
         "stat_type": "Points",
@@ -1285,7 +1285,7 @@
   },
   "54064": {
     "name": "Jalen Green",
-    "opposing_team": "BKN",
+    "opposing_team_abv": "BKN",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -1317,7 +1317,7 @@
   },
   "96236": {
     "name": "Kyrie Irving",
-    "opposing_team": "PHI",
+    "opposing_team_abv": "PHI",
     "strike_values": [
       {
         "stat_type": "Blks+Stls",
@@ -1369,7 +1369,7 @@
   },
   "37560": {
     "name": "Nikola Vucevic",
-    "opposing_team": "LAL",
+    "opposing_team_abv": "LAL",
     "strike_values": [
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -1409,7 +1409,7 @@
   },
   "1386": {
     "name": "De'Aaron Fox",
-    "opposing_team": "POR",
+    "opposing_team_abv": "POR",
     "strike_values": [
       {
         "stat_type": "Pts+Asts",
@@ -1457,7 +1457,7 @@
   },
   "59923": {
     "name": "Domantas Sabonis",
-    "opposing_team": "POR",
+    "opposing_team_abv": "POR",
     "strike_values": [
       {
         "stat_type": "Rebounds",
