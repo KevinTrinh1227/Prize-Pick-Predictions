@@ -1,11 +1,11 @@
 ![ppplogo](/static/images/ppp.png)
 #
-STMU Yelp is an Andriod Application that showcases popular and trending locations for college students in the San Antonio area. This application focuses on providing well-known and underground local areas in food, entertainment, study locations, etc. Made for students by students. This project is continously being worked on.
+This Python project is a Flask application that utilizes linear regression, a powerful machine learning algorithm, to provide recommendations for sports betting. With a focus on accuracy and data-driven insights, the app delivers relevant and timely information through multiple APIs, ensuring users have access to up-to-date data and statistics. Designed to offer valuable insights and recommendations, this app caters to both experienced and novice sports bettors, providing an edge in the competitive world of sports betting.
 
 # At a Glance
+![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234209657-1bd8dcce-7cbc-40da-808c-8f60f34fb551.gif)
 
-
-Collaboratively built & designed by the 2022 - 2023 <strong>[Infinite Loops](https://www.instagram.com/stmu_infiniteloops/) App Team</strong>.
+Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project.
 
 ## Getting Started
 
@@ -18,13 +18,16 @@ Collaboratively built & designed by the 2022 - 2023 <strong>[Infinite Loops](htt
     ```
 
 ### 🛠 set-up
-1. Copy Prize Pick's NBA [API](https://api.prizepicks.com/projections?league_id=7)
+1. Use link below or [click here](https://api.prizepicks.com/projections?league_id=7)
 
    ```sh
    https://api.prizepicks.com/projections?league_id=7)
    ```
 
-2. Copy and paste everything into `json files/pre_formatted.json`
+2. Copy & paste everything into the json file below (because prize picks does not allow public api usage)
+   ```sh
+   json files/pre_formatted.json
+   ```
 
 3. Install dependencies
 
