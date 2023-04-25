@@ -14,7 +14,7 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project.
 2) Clone the repository using the command below
 
     ```sh
-    git clone https://github.com/KevinTrinh1227/Hycord-Bot.git
+    git clone https://github.com/KevinTrinh1227/Prize-Pick-Predications.git
     ```
 
 ### 🛠 set-up
