@@ -41,5 +41,12 @@
     <img src="/static/images/ppp.png" alt="Image description" id="footer-logo">
     <p>Project built by: <strong><a href="https://kevintrinh.dev" id="footer-a" target="_blank">Kevin Huy Trinh</a></strong>. &copy;</p>
 </div>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+var images = document.getElementsByTagName("img");
+    for (var i = 0; i < images.length; i++) {
+        images[i].setAttribute("draggable", "false");
+    }
+</script>
 </body>
 </html>
