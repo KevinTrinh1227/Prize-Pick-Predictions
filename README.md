@@ -3,7 +3,7 @@
 This Python project is a Flask application that utilizes linear regression, a powerful machine learning algorithm, to provide recommendations for sports betting. With a focus on accuracy and data-driven insights, the app delivers relevant and timely information through multiple APIs, ensuring users have access to up-to-date data and statistics. Designed to offer valuable insights and recommendations, this app caters to both experienced and novice sports bettors, providing an edge in the competitive world of sports betting.
 
 # At a Glance
-![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234209657-1bd8dcce-7cbc-40da-808c-8f60f34fb551.gif)
+![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234551198-3f3d0d0a-fd37-486f-836c-31a0f97fc26e.gif)
 
 Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. Still under development. 
 
