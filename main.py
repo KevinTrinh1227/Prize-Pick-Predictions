@@ -3,6 +3,7 @@
     Author: Kevin Huy Trinh
     Date created: March 2022
     Python Version: 3.11.1
+    Dependencies: Requirement.txt
     Description: Python program that makes recommendations on
         betting in favor/against a player's prize pick line_score
         value using a linear regression machine learning algorithm
@@ -12,8 +13,11 @@
     api link --> https://api.prizepicks.com/projections?league_id=7
 """
 
-from find_value import *
 import time
+from utils.json_parser import *
+from utils.bet_recommendation import *
+from utils.current_player_stats import *
+# from utils.team_finder import *
 
 pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
 post_json = "json files/post_formatted_projections.json"                    # organized json file
@@ -25,59 +29,18 @@ points_rebounds_json = "json files/points_rebounds.json"                    # pl
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
 
-# reads the pre_json json file
-with open(pre_json, "r") as file:
-    data = json.load(file)
-    json_str = json.dumps(data, indent=2)
+""" =============================================
+* Here we call parse/clean our json file and extract
+* only relevant information that we need using the
+* parse_json_file() and assigning the data var to it
+============================================= """
+data = parse_json_file(pre_json, post_json)
+num_players = len(data)                         # number of players we collected from parsing
+players_printed = 0                             # total # of players we were able to collect
+table = []                                      # table were printing out
+n_a = "--"                                      # default value if a stat is NULL
 
-# formats the messy json file
-json_dict = json.loads(json_str)
-with open(pre_json, "w") as file:
-    json.dump(json_dict, file, indent=2)
-
-# Loop through included data to get player names and IDs
-results = {}    # Create dictionary to store results
-for item in data['included']:
-    if item['type'] == 'new_player':
-        player_id = item['id']
-        player_name = item['attributes']['name']
-        results[player_id] = {
-            'name': player_name,
-            'opposing_team_abv': None,  # initial value of nothing
-            'strike_values': []
-        }
-
-# Loop through projection data and match player IDs to add stat_type and line_score
-for projection in data['data']:
-    if projection['type'] == 'projection':
-        player_id = projection['relationships']['new_player']['data']['id']
-        stat_type = projection['attributes']['stat_type']
-        line_score = projection['attributes']['line_score']
-        opposing_team = projection['attributes']['description']
-        results[player_id]['strike_values'].append({
-            'stat_type': stat_type,
-            'line_score': line_score
-        })
-        results[player_id]['opposing_team_abv'] = opposing_team
-        # Add player attributes to results dictionary
-        for player in data['included']:
-            if player['type'] == 'new_player' and player['id'] == player_id:
-                results[player_id]['attributes'] = player['attributes']
-
-# Write results to JSON file
-with open(post_json, 'w') as f:
-    json.dump(results, f, indent=2)
-with open(post_json, 'r') as f:
-    data = json.load(f)
-
-# lengths and member counts
-num_players = len(data)
-players_printed = 0
-
-table = []  # table were printing out
-n_a = "--"  # default value if the player has a missing stat value
-
-# this is where each stat type gets saved into its own json file
+# Each stat type is going to be separated into its own json file
 with open(points_json, 'r') as f_points:
     points_data = []
 with open(assists_json, 'r') as f_assists:
@@ -91,8 +54,10 @@ with open(points_rebounds_json, 'r') as f_points_rebounds:
 with open(points_assists_rebounds_json, 'r') as f_points_assists_rebounds:
     points_assists_rebounds_data = []
 
-
-
+""" =============================================
+* Looping through each player inside our new
+* parsed and cleaned up json file
+============================================= """
 for idx, key in enumerate(data):
     # the attribute values
     name = data[key]['name']
