@@ -10,9 +10,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 28.5,
-        "actual_value": 31.69,
+        "actual_value": 31.71,
         "bet_recommendation": "Higher",
-        "difference": 3.1900000000000013
+        "difference": 3.210000000000001
       }
     }
   },
@@ -78,9 +78,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 25.5,
-        "actual_value": 27.03,
+        "actual_value": 27.01,
         "bet_recommendation": "Higher",
-        "difference": 1.5300000000000011
+        "difference": 1.5100000000000016
       }
     }
   },
@@ -129,9 +129,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 50.5,
-        "actual_value": 48.59,
+        "actual_value": 48.580000000000005,
         "bet_recommendation": "Lower",
-        "difference": 1.9099999999999966
+        "difference": 1.9199999999999946
       }
     }
   },
@@ -163,9 +163,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 25.5,
-        "actual_value": 27.72,
+        "actual_value": 27.709999999999997,
         "bet_recommendation": "Higher",
-        "difference": 2.219999999999999
+        "difference": 2.2099999999999973
       }
     }
   },
@@ -350,9 +350,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 35.5,
-        "actual_value": 33.61,
+        "actual_value": 33.589999999999996,
         "bet_recommendation": "Lower",
-        "difference": 1.8900000000000006
+        "difference": 1.9100000000000037
       }
     }
   },
@@ -520,9 +520,9 @@
       "stats": {
         "type": "pts+rebs+asts",
         "strike_value": 38.5,
-        "actual_value": 38.67,
+        "actual_value": 38.68,
         "bet_recommendation": "Higher",
-        "difference": 0.1700000000000017
+        "difference": 0.17999999999999972
       }
     }
   }

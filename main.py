@@ -94,174 +94,196 @@ for idx, key in enumerate(data):
 
     try:
         player_name = name
-        fp_player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists = get_player_stats(
+        num_attempts = 1
+
+        min_attempts, max_attempts = 1, 5+1     # 5 attempts to get online player data
+        for i in range(min_attempts, max_attempts):
+            num_attempts = i
+            try:
+                fp_player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists = get_player_stats(
             player_name)
 
-        # making the recommendations on points
-        recommendation_pts = predict(points, fp_points, n_a)
-        recommendation_reb = predict(rebounds, fp_rebounds, n_a)
-        recommendation_ast = predict(assists, fp_assists, n_a)
+                # making the recommendations on points
+                recommendation_pts = predict(points, fp_points, n_a)
+                recommendation_reb = predict(rebounds, fp_rebounds, n_a)
+                recommendation_ast = predict(assists, fp_assists, n_a)
 
-        # find the combined stats
-        recommendation_pts_ast = predict(points_assists, fp_points + fp_assists, n_a)
-        recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
-        recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
+                # find the combined stats
+                recommendation_pts_ast = predict(points_assists, fp_points + fp_assists, n_a)
+                recommendation_pts_reb = predict(points_rebounds, fp_points + fp_assists, n_a)
+                recommendation_pts_ast_reb = predict(points_rebounds_assists, fp_points + fp_assists + fp_rebounds, n_a)
 
-        table.append(
-            [idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds, recommendation_reb,
-             assists, fp_assists, recommendation_ast, points_assists,
-             points_rebounds, points_rebounds_assists])
+                table.append(
+                    [idx + 1, name, team_name, points, fp_points, recommendation_pts, rebounds, fp_rebounds,
+                     recommendation_reb,
+                     assists, fp_assists, recommendation_ast, points_assists,
+                     points_rebounds, points_rebounds_assists])
 
+                """ =============================================
+                * Calculating the absolute value of the differences
+                * between the predicted score and line scores for the player
+                * so longer distance between the two means more likely to hit
+                ============================================= """
+                diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (
+                int, float)) else n_a
+                diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds,
+                                                                                                               (
+                                                                                                                   int,
+                                                                                                                   float)) else n_a
+                diff_assists = abs(fp_assists - assists) if isinstance(fp_assists, (int, float)) and isinstance(assists,
+                                                                                                                (
+                                                                                                                    int,
+                                                                                                                    float)) else n_a
+                diff_pts_ast = abs((fp_points + fp_assists) - points_assists) if isinstance(fp_points,
+                                                                                            (
+                                                                                            int, float)) and isinstance(
+                    fp_assists, (int, float)) and isinstance(points_assists, (int, float)) else n_a
+                diff_pts_reb = abs((fp_points + fp_rebounds) - points_rebounds) if isinstance(fp_points,
+                                                                                              (int,
+                                                                                               float)) and isinstance(
+                    fp_rebounds, (int, float)) and isinstance(points_rebounds, (int, float)) else n_a
+                diff_pts_ast_reb = abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists) if isinstance(
+                    fp_points, (int, float)) and isinstance(fp_assists, (int, float)) and isinstance(fp_rebounds, (
+                    int, float)) and isinstance(points_rebounds_assists, (int, float)) else n_a
 
+                """ =============================================
+                * Here we append the values and split them into
+                * their own json files for the flask app.py;
+                * if they are missing a value we do NOT append.
+                ============================================= """
+                # Appending points json
+                if recommendation_pts != n_a:
+                    points_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "points",
+                                "strike_value": points,
+                                "actual_value": fp_points,
+                                "bet_recommendation": recommendation_pts,
+                                "difference": diff_pts
+                            }
+                        }
+                    })
 
-        """ =============================================
-        * Calculating the absolute value of the differences
-        * between the predicted score and line scores for the player
-        * so longer distance between the two means more likely to hit
-        ============================================= """
-        diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (int, float)) else n_a
-        diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds, (
-            int, float)) else n_a
-        diff_assists = abs(fp_assists - assists) if isinstance(fp_assists, (int, float)) and isinstance(assists, (
-            int, float)) else n_a
-        diff_pts_ast = abs((fp_points + fp_assists) - points_assists) if isinstance(fp_points,
-                                                                                      (int, float)) and isinstance(
-            fp_assists, (int, float)) and isinstance(points_assists, (int, float)) else n_a
-        diff_pts_reb = abs((fp_points + fp_rebounds) - points_rebounds) if isinstance(fp_points,
-                                                                                      (int, float)) and isinstance(
-            fp_rebounds, (int, float)) and isinstance(points_rebounds, (int, float)) else n_a
-        diff_pts_ast_reb = abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists) if isinstance(
-            fp_points, (int, float)) and isinstance(fp_assists, (int, float)) and isinstance(fp_rebounds, (
-            int, float)) and isinstance(points_rebounds_assists, (int, float)) else n_a
+                # Appending assists json
+                if recommendation_ast != n_a:
+                    assists_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "assists",
+                                "strike_value": assists,
+                                "actual_value": fp_assists,
+                                "bet_recommendation": recommendation_ast,
+                                "difference": diff_assists
+                            }
+                        }
+                    })
 
+                # Appending assists json
+                if recommendation_reb != n_a:
+                    rebounds_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "rebounds",
+                                "strike_value": rebounds,
+                                "actual_value": fp_rebounds,
+                                "bet_recommendation": recommendation_reb,
+                                "difference": diff_reb
+                            }
+                        }
+                    })
 
+                # Appending points + assists json
+                if recommendation_pts_ast != n_a:
+                    points_assists_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "pts+ast",
+                                "strike_value": points_assists,
+                                "actual_value": fp_points + fp_assists,
+                                "bet_recommendation": recommendation_pts_ast,
+                                "difference": diff_pts_ast
+                            }
+                        }
+                    })
 
-        """ =============================================
-        * Here we append the values and split them into
-        * their own json files for the flask app.py;
-        * if they are missing a value we do NOT append.
-        ============================================= """
-        # Appending points json
-        if recommendation_pts != n_a:
-            points_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "points",
-                        "strike_value": points,
-                        "actual_value": fp_points,
-                        "bet_recommendation": recommendation_pts,
-                        "difference": diff_pts
-                    }
-                }
-            })
+                # Appending points + rebounds json
+                if recommendation_pts_reb != n_a:
+                    points_rebounds_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "pts+rebs",
+                                "strike_value": points_rebounds,
+                                "actual_value": fp_points + fp_rebounds,
+                                "bet_recommendation": recommendation_pts_reb,
+                                "difference": diff_pts_reb
+                            }
+                        }
+                    })
 
-        # Appending assists json
-        if recommendation_ast != n_a:
-            assists_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "assists",
-                        "strike_value": assists,
-                        "actual_value": fp_assists,
-                        "bet_recommendation": recommendation_ast,
-                        "difference": diff_assists
-                    }
-                }
-            })
+                # Appending points + assists + rebounds json
+                if recommendation_pts_ast_reb != n_a:
+                    points_assists_rebounds_data.append({
+                        player_name: {
+                            "general": {
+                                "team_name": team_name,
+                                "team_market": team_city_state,
+                                "picture_link": photo_link,
+                                "player_position": player_position
+                            },
+                            "stats": {
+                                "type": "pts+rebs+asts",
+                                "strike_value": points_rebounds_assists,
+                                "actual_value": fp_points + fp_assists + fp_rebounds,
+                                "bet_recommendation": recommendation_pts_ast_reb,
+                                "difference": diff_pts_ast_reb
+                            }
+                        }
+                    })
 
-        # Appending assists json
-        if recommendation_reb != n_a:
-            rebounds_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "rebounds",
-                        "strike_value": rebounds,
-                        "actual_value": fp_rebounds,
-                        "bet_recommendation": recommendation_reb,
-                        "difference": diff_reb
-                    }
-                }
-            })
-
-        # Appending points + assists json
-        if recommendation_pts_ast != n_a:
-            points_assists_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "pts+ast",
-                        "strike_value": points_assists,
-                        "actual_value": fp_points + fp_assists,
-                        "bet_recommendation": recommendation_pts_ast,
-                        "difference": diff_pts_ast
-                    }
-                }
-            })
-
-        # Appending points + rebounds json
-        if recommendation_pts_reb != n_a:
-            points_rebounds_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "pts+rebs",
-                        "strike_value": points_rebounds,
-                        "actual_value": fp_points + fp_rebounds,
-                        "bet_recommendation": recommendation_pts_reb,
-                        "difference": diff_pts_reb
-                    }
-                }
-            })
-
-        # Appending points + assists + rebounds json
-        if recommendation_pts_ast_reb != n_a:
-            points_assists_rebounds_data.append({
-                player_name: {
-                    "general": {
-                        "team_name": team_name,
-                        "team_market": team_city_state,
-                        "picture_link": photo_link,
-                        "player_position": player_position
-                    },
-                    "stats": {
-                        "type": "pts+rebs+asts",
-                        "strike_value": points_rebounds_assists,
-                        "actual_value": fp_points + fp_assists + fp_rebounds,
-                        "bet_recommendation": recommendation_pts_ast_reb,
-                        "difference": diff_pts_ast_reb
-                    }
-                }
-            })
-
-
+                break
+            except:
+                if i < max_attempts - 1:
+                    load_status = "FAILED"
+                    start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
+                    print(
+                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[Trying again in: {i} seconds]")
+                    time.sleep(i)
+                else:
+                    load_status = "FAILED"
+                    start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
+                    print(
+                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[This is the final attempt]")
 
         """ =============================================
         * Writing the data into the json file with an indent
@@ -285,6 +307,11 @@ for idx, key in enumerate(data):
         with open(points_assists_rebounds_json, 'w') as f_points_assists_rebounds:
             json.dump(points_assists_rebounds_data, f_points_assists_rebounds, indent=2)
 
+        players_printed += 1
+        load_status = "Successful"
+        start_str = f"[🟢] Load Status: {load_status:<15} Player name: {player_name:<30}"
+        players_percentage = round((players_printed / num_players) * 100)
+        print(f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {players_printed:0>2}/{num_players:<5} ({players_percentage:0>2}%)")
 
     except Exception as e:
         """ =============================================
@@ -292,13 +319,9 @@ for idx, key in enumerate(data):
         * average on the ball don't lie api. (so we skip player)
         ============================================= """
         player_name = name
-        print(f"[❌] Failed data loaded for: {player_name}. Exception: {e}. Skipping.")
+        print(f"[🔴] Failed data loaded for: {player_name}. Exception: {e}. Skipping.")
 
-    players_printed += 1
-    time.sleep(2)                           # to avoid being rate limited (60 req per min)
-    start_str = f"[✅] Successfully loaded data for: {player_name}"
-    players_percentage = round((players_printed / num_players) * 100)
-    print(f"{start_str:<60} {players_printed:0>2}/{num_players:<5} ({players_percentage:0>2}%)")
+    time.sleep(1.25)                           # help avoid being rate limited (60 req per min)
 
 
 # number of players with at least 1 missing stat type

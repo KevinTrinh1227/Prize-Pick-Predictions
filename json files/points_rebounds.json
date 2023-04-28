@@ -129,9 +129,9 @@
       "stats": {
         "type": "pts+rebs",
         "strike_value": 43.5,
-        "actual_value": 42.89,
+        "actual_value": 42.88,
         "bet_recommendation": "Lower",
-        "difference": 0.6099999999999994
+        "difference": 0.6199999999999974
       }
     }
   },
@@ -401,9 +401,9 @@
       "stats": {
         "type": "pts+rebs",
         "strike_value": 30.5,
-        "actual_value": 29.409999999999997,
+        "actual_value": 29.39,
         "bet_recommendation": "Lower",
-        "difference": 1.0900000000000034
+        "difference": 1.1099999999999994
       }
     }
   },

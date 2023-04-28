@@ -112,9 +112,9 @@
       "stats": {
         "type": "rebounds",
         "strike_value": 12.5,
-        "actual_value": 11.79,
+        "actual_value": 11.78,
         "bet_recommendation": "Lower",
-        "difference": 0.7100000000000009
+        "difference": 0.7200000000000006
       }
     }
   },
@@ -316,9 +316,9 @@
       "stats": {
         "type": "rebounds",
         "strike_value": 4,
-        "actual_value": 4.51,
+        "actual_value": 4.49,
         "bet_recommendation": "Higher",
-        "difference": 0.5099999999999998
+        "difference": 0.4900000000000002
       }
     }
   },

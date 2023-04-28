@@ -10,9 +10,9 @@
       "stats": {
         "type": "assists",
         "strike_value": 7.5,
-        "actual_value": 7.37,
+        "actual_value": 7.39,
         "bet_recommendation": "Lower",
-        "difference": 0.1299999999999999
+        "difference": 0.11000000000000032
       }
     }
   },
@@ -44,9 +44,9 @@
       "stats": {
         "type": "assists",
         "strike_value": 9,
-        "actual_value": 8.9,
+        "actual_value": 8.88,
         "bet_recommendation": "Lower",
-        "difference": 0.09999999999999964
+        "difference": 0.11999999999999922
       }
     }
   },
@@ -265,9 +265,9 @@
       "stats": {
         "type": "assists",
         "strike_value": 7,
-        "actual_value": 7.24,
+        "actual_value": 7.25,
         "bet_recommendation": "Higher",
-        "difference": 0.2400000000000002
+        "difference": 0.25
       }
     }
   }
