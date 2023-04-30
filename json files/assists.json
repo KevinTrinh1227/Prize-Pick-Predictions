@@ -236,39 +236,5 @@
         "difference": 0.5199999999999996
       }
     }
-  },
-  {
-    "De'Aaron Fox": {
-      "general": {
-        "team_name": "Kings",
-        "team_market": "Sacramento",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/De'Aaron_Fox_cfc1e41b-74ab-45ee-8132-aaf9ca7f8163.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 5.5,
-        "actual_value": 6.12,
-        "bet_recommendation": "Higher",
-        "difference": 0.6200000000000001
-      }
-    }
-  },
-  {
-    "Domantas Sabonis": {
-      "general": {
-        "team_name": "Kings",
-        "team_market": "Sacramento",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Domantas_Sabonis_22038780-8c50-4211-a99e-656d983e5207.webp",
-        "player_position": "F-C"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 7,
-        "actual_value": 7.25,
-        "bet_recommendation": "Higher",
-        "difference": 0.25
-      }
-    }
   }
 ]

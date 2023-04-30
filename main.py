@@ -96,7 +96,7 @@ for idx, key in enumerate(data):
         player_name = name
         num_attempts = 1
 
-        min_attempts, max_attempts = 1, 5+1     # 5 attempts to get online player data
+        min_attempts, max_attempts = 1, 2+1     # 5 attempts to get online player data
         for i in range(min_attempts, max_attempts):
             num_attempts = i
             try:
@@ -277,13 +277,13 @@ for idx, key in enumerate(data):
                     load_status = "FAILED"
                     start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
                     print(
-                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[Trying again in: {i} seconds]")
+                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[In: {i} sec(s)]")
                     time.sleep(i)
                 else:
                     load_status = "FAILED"
                     start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
                     print(
-                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[This is the final attempt]")
+                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[Final attempt]")
 
         """ =============================================
         * Writing the data into the json file with an indent

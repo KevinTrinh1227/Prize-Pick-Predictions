@@ -474,56 +474,5 @@
         "difference": 4.140000000000001
       }
     }
-  },
-  {
-    "Nikola Vucevic": {
-      "general": {
-        "team_name": "Bulls",
-        "team_market": "Chicago",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
-        "player_position": "C"
-      },
-      "stats": {
-        "type": "pts+rebs+asts",
-        "strike_value": 29.5,
-        "actual_value": 31.759999999999998,
-        "bet_recommendation": "Higher",
-        "difference": 2.259999999999998
-      }
-    }
-  },
-  {
-    "De'Aaron Fox": {
-      "general": {
-        "team_name": "Kings",
-        "team_market": "Sacramento",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/De'Aaron_Fox_cfc1e41b-74ab-45ee-8132-aaf9ca7f8163.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "pts+rebs+asts",
-        "strike_value": 34.5,
-        "actual_value": 35.32,
-        "bet_recommendation": "Higher",
-        "difference": 0.8200000000000003
-      }
-    }
-  },
-  {
-    "Domantas Sabonis": {
-      "general": {
-        "team_name": "Kings",
-        "team_market": "Sacramento",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Domantas_Sabonis_22038780-8c50-4211-a99e-656d983e5207.webp",
-        "player_position": "F-C"
-      },
-      "stats": {
-        "type": "pts+rebs+asts",
-        "strike_value": 38.5,
-        "actual_value": 38.68,
-        "bet_recommendation": "Higher",
-        "difference": 0.17999999999999972
-      }
-    }
   }
 ]
