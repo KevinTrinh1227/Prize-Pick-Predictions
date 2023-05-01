@@ -177,7 +177,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "points",
                                 "strike_value": points,
-                                "actual_value": fp_points,
+                                "predicted_value": fp_points,
                                 "bet_recommendation": recommendation_pts,
                                 "difference": diff_pts
                             }
@@ -197,7 +197,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "assists",
                                 "strike_value": assists,
-                                "actual_value": fp_assists,
+                                "predicted_value": fp_assists,
                                 "bet_recommendation": recommendation_ast,
                                 "difference": diff_assists
                             }
@@ -217,7 +217,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "rebounds",
                                 "strike_value": rebounds,
-                                "actual_value": fp_rebounds,
+                                "predicted_value": fp_rebounds,
                                 "bet_recommendation": recommendation_reb,
                                 "difference": diff_reb
                             }
@@ -237,7 +237,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "pts+ast",
                                 "strike_value": points_assists,
-                                "actual_value": fp_points + fp_assists,
+                                "predicted_value": fp_points + fp_assists,
                                 "bet_recommendation": recommendation_pts_ast,
                                 "difference": diff_pts_ast
                             }
@@ -257,7 +257,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "pts+rebs",
                                 "strike_value": points_rebounds,
-                                "actual_value": fp_points + fp_rebounds,
+                                "predicted_value": fp_points + fp_rebounds,
                                 "bet_recommendation": recommendation_pts_reb,
                                 "difference": diff_pts_reb
                             }
@@ -277,7 +277,7 @@ for idx, key in enumerate(data):
                             "stats": {
                                 "type": "pts+rebs+asts",
                                 "strike_value": points_rebounds_assists,
-                                "actual_value": fp_points + fp_assists + fp_rebounds,
+                                "predicted_value": fp_points + fp_assists + fp_rebounds,
                                 "bet_recommendation": recommendation_pts_ast_reb,
                                 "difference": diff_pts_ast_reb
                             }

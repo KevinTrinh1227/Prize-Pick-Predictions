@@ -1,3 +1,9 @@
+""" =============================================
+* This module takes in two json files, and
+* cleans/extracts only relevant information
+* and formats it into the other json file
+============================================= """
+
 import json
 def parse_json_file(pre_json, post_json):
     # reads the pre_json json file
