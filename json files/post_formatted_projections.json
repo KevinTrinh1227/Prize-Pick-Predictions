@@ -1,143 +1,107 @@
 {
-  "25107": {
-    "name": "Jrue Holiday",
-    "opposing_team_abv": "IND",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 28.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 16.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 7.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 20.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 24.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Jrue_Holiday_65700e81-3aa0-49a9-8a94-004f2cfb64e5.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Milwaukee",
-      "name": "Jrue Holiday",
-      "position": "G",
-      "team": "MIL",
-      "team_name": "Bucks"
-    }
-  },
-  "10726": {
-    "name": "Nicolas Claxton",
-    "opposing_team_abv": "HOU",
+  "1536": {
+    "name": "Marcus Smart",
+    "opposing_team_abv": "PHI",
     "strike_values": [
       {
         "stat_type": "Points",
         "line_score": 11.5
       },
       {
-        "stat_type": "Rebounds",
-        "line_score": 9.5
+        "stat_type": "Rebs+Asts",
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 16.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 23.5
+        "line_score": 19.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 5
       },
       {
         "stat_type": "Pts+Rebs",
+        "line_score": 14.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 26.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 0.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Marcus_Smart_af460d21-b1d8-46bb-a228-61ac4fb9ccf9.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Marcus Smart",
+      "position": "G",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "96518": {
+    "name": "D'Angelo Russell",
+    "opposing_team_abv": "GSW",
+    "strike_values": [
+      {
+        "stat_type": "Assists",
+        "line_score": 6
+      },
+      {
+        "stat_type": "Pts+Asts",
         "line_score": 21.5
       },
       {
         "stat_type": "Rebs+Asts",
-        "line_score": 11.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 3.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Nicolas_Claxton_288519dc-eae8-4daf-afa4-c86322b7460e.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Brooklyn",
-      "name": "Nicolas Claxton",
-      "position": "C",
-      "team": "BKN",
-      "team_name": "Nets"
-    }
-  },
-  "63247": {
-    "name": "Zach Collins",
-    "opposing_team_abv": "UTA",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 8
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 20.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 28.5
+        "line_score": 9
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 24.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 11.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Zach_Collins_b5310b38-a378-464f-b344-928adee0ed00.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "San Antonio",
-      "name": "Zach Collins",
-      "position": "F-C",
-      "team": "SAS",
-      "team_name": "Spurs"
-    }
-  },
-  "1563": {
-    "name": "Harrison Barnes",
-    "opposing_team_abv": "POR",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 5
+        "line_score": 18.5
       },
       {
         "stat_type": "Points",
         "line_score": 15.5
       },
       {
-        "stat_type": "Pts+Asts",
-        "line_score": 16.5
+        "stat_type": "3-PT Made",
+        "line_score": 2.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 24.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/D'Angelo_Russell_dbf09e15-1cd8-434e-acda-9527735ef4d6.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Los Angeles",
+      "name": "D'Angelo Russell",
+      "position": "G",
+      "team": "LAL",
+      "team_name": "Lakers"
+    }
+  },
+  "55934": {
+    "name": "Austin Reaves",
+    "opposing_team_abv": "GSW",
+    "strike_values": [
+      {
+        "stat_type": "Rebounds",
+        "line_score": 4
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 4
       },
       {
         "stat_type": "Pts+Rebs",
@@ -148,52 +112,172 @@
         "line_score": 1.5
       },
       {
+        "stat_type": "Rebs+Asts",
+        "line_score": 8.5
+      },
+      {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 22.5
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 20.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 16.5
       }
     ],
     "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Harrison_Barnes_ce8d0944-b277-499e-9701-02a5f1828615.webp",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Austin_Reaves_c4981f56-93a2-47b1-8d31-4e8635f45e1d.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Sacramento",
-      "name": "Harrison Barnes",
+      "market": "Los Angeles",
+      "name": "Austin Reaves",
+      "position": "G",
+      "team": "LAL",
+      "team_name": "Lakers"
+    }
+  },
+  "25439": {
+    "name": "Tyrese Maxey",
+    "opposing_team_abv": "BOS",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 27.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 35.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 4
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "Turnovers",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 28.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 7.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Tyrese_Maxey_75fc46eb-71d8-4d1a-984f-3747ccd7a4c9.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Philadelphia",
+      "name": "Tyrese Maxey",
+      "position": "G",
+      "team": "PHI",
+      "team_name": "76ers"
+    }
+  },
+  "54658": {
+    "name": "Andrew Wiggins",
+    "opposing_team_abv": "LAL",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 26.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 20.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 6
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Andrew_Wiggins_77c425f0-0fce-4fab-bd1e-c915c8fb5bc7.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Golden State",
+      "name": "Andrew Wiggins",
       "position": "F",
-      "team": "SAC",
-      "team_name": "Kings"
+      "team": "GSW",
+      "team_name": "Warriors"
     }
   },
   "54140": {
     "name": "Chris Paul",
-    "opposing_team_abv": "MIN",
+    "opposing_team_abv": "DEN",
     "strike_values": [
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 12.5
+      },
       {
         "stat_type": "Pts+Asts",
         "line_score": 21.5
       },
       {
-        "stat_type": "Assists",
-        "line_score": 9
+        "stat_type": "Turnovers",
+        "line_score": 1.5
       },
       {
-        "stat_type": "Rebs+Asts",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 16.5
+        "stat_type": "Steals",
+        "line_score": 1.5
       },
       {
         "stat_type": "Points",
-        "line_score": 12.5
+        "line_score": 13.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 18.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 35.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 26.5
       },
       {
         "stat_type": "Rebounds",
-        "line_score": 4.5
+        "line_score": 4
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 8
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 0.5
       }
     ],
     "attributes": {
@@ -207,37 +291,389 @@
       "team_name": "Suns"
     }
   },
-  "58496": {
-    "name": "Devin Booker",
-    "opposing_team_abv": "MIN",
+  "87421": {
+    "name": "Bruce Brown",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 37.5
+        "stat_type": "Rebounds",
+        "line_score": 4
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 15.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 11.5
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 0.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 0.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Bruce_Brown_fc058e75-1015-4bbe-8fab-925d5f6d83fb.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Bruce Brown",
+      "position": "G-F",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "59970": {
+    "name": "James Harden",
+    "opposing_team_abv": "BOS",
+    "strike_values": [
+      {
+        "stat_type": "Turnovers",
+        "line_score": 3.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 45.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 15.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 29.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 22.5
       },
       {
         "stat_type": "Rebounds",
-        "line_score": 5
+        "line_score": 6.5
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 38.5
       },
       {
         "stat_type": "Assists",
-        "line_score": 5
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 4.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/James_Harden_a52b2c84-9c3d-4d6e-8a3b-10e75d11c2bc.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Philadelphia",
+      "name": "James Harden",
+      "position": "G",
+      "team": "PHI",
+      "team_name": "76ers"
+    }
+  },
+  "60021": {
+    "name": "Derrick White",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 26.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 21.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 7.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 4
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 13.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 1.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Derrick_White_9bcd5cff-4a1c-4454-89b6-a5899b0c6bcc.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Derrick White",
+      "position": "G",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "1266": {
+    "name": "Jayson Tatum",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Assists",
+        "line_score": 4.5
+      },
+      {
+        "stat_type": "Blocked Shots",
+        "line_score": 0.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 28.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 33.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 13.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 42.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 9
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 48.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 38.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 6.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Jayson Tatum",
+      "position": "F-G",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "96335": {
+    "name": "Kevin Durant",
+    "opposing_team_abv": "DEN",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 36.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 41.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 8
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 4.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 48.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 12.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 33.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 28.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 6.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Phoenix",
+      "name": "Kevin Durant",
+      "position": "F",
+      "team": "PHX",
+      "team_name": "Suns"
+    }
+  },
+  "57423": {
+    "name": "LeBron James\t",
+    "opposing_team_abv": "GSW",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 42.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 26.5
       },
       {
         "stat_type": "Pts+Asts",
         "line_score": 32.5
       },
       {
+        "stat_type": "Rebs+Asts",
+        "line_score": 15.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 9.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 5.5
+      },
+      {
         "stat_type": "Pts+Rebs",
-        "line_score": 32.5
+        "line_score": 36.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/LeBron_James_0afbe608-940a-4d5d-a1f7-468718c67d91.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Los Angeles",
+      "name": "LeBron James\t",
+      "position": "F",
+      "team": "LAL",
+      "team_name": "Lakers"
+    }
+  },
+  "58731": {
+    "name": "Klay Thompson",
+    "opposing_team_abv": "LAL",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 22.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 28.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 4
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 26.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Klay_Thompson__4e152a06-673e-4701-b115-aa7e2cd00d2d.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Golden State",
+      "name": "Klay Thompson",
+      "position": "G",
+      "team": "GSW",
+      "team_name": "Warriors"
+    }
+  },
+  "58496": {
+    "name": "Devin Booker",
+    "opposing_team_abv": "DEN",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 41.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 5
+      },
+      {
+        "stat_type": "Steals",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 6
       },
       {
         "stat_type": "Points",
-        "line_score": 27.5
+        "line_score": 29.5
       },
       {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
+        "stat_type": "Fantasy Score",
+        "line_score": 49.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 34.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 36.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 11.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 6.5
       }
     ],
     "attributes": {
@@ -251,373 +687,61 @@
       "team_name": "Suns"
     }
   },
-  "87384": {
-    "name": "Rudy Gobert",
+  "87402": {
+    "name": "Kentavious Caldwell-Pope",
     "opposing_team_abv": "PHX",
     "strike_values": [
       {
-        "stat_type": "Pts+Rebs",
-        "line_score": 23.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 11
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 1.5
-      },
-      {
         "stat_type": "Pts+Asts",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 12.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Rudy_Gobert_37fbc3a5-0d10-4e22-803b-baa2ea0cdb12.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Minnesota",
-      "name": "Rudy Gobert",
-      "position": "C",
-      "team": "MIN",
-      "team_name": "Timberwolves"
-    }
-  },
-  "57720": {
-    "name": "Giannis Antetokounmpo",
-    "opposing_team_abv": "IND",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 43.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 38.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 6.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 31.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 50.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Giannis_Antetokounmpo_6c60282d-165a-4cba-8e5a-4f2d9d4c5905.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Milwaukee",
-      "name": "Giannis Antetokounmpo",
-      "position": "F",
-      "team": "MIL",
-      "team_name": "Bucks"
-    }
-  },
-  "10737": {
-    "name": "Kevin Porter Jr.",
-    "opposing_team_abv": "BKN",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 5.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 22.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 10.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 16.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Kevin_Porter_ca5ad700-2ed9-453a-9abe-08eb8edb601c.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Houston",
-      "name": "Kevin Porter Jr.",
-      "position": "G-F",
-      "team": "HOU",
-      "team_name": "Rockets"
-    }
-  },
-  "124403": {
-    "name": "Patrick Beverley",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 6.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 7.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
         "line_score": 11.5
       },
       {
-        "stat_type": "Rebounds",
-        "line_score": 4.5
+        "stat_type": "Points",
+        "line_score": 9.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 1.5
       }
     ],
     "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Patrick_Beverley_912e7aa3-dd03-4a98-9980-0442e108f287.webp",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Chicago",
-      "name": "Patrick Beverley",
+      "market": "Denver",
+      "name": "Kentavious Caldwell-Pope",
       "position": "G",
-      "team": "CHI",
-      "team_name": "Bulls"
-    }
-  },
-  "55716": {
-    "name": "Alperen Sengun",
-    "opposing_team_abv": "BKN",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 17.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 11.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 22.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 8
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 13.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Alperen_Sengun_47ff78e7-5607-48d6-9c1a-bddb075dbe70.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Houston",
-      "name": "Alperen Sengun",
-      "position": "C",
-      "team": "HOU",
-      "team_name": "Rockets"
-    }
-  },
-  "53977": {
-    "name": "Grayson Allen",
-    "opposing_team_abv": "IND",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 10.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Grayson_Allen_ffa9a64f-d624-4033-bd23-59dcfd805175.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Milwaukee",
-      "name": "Grayson Allen",
-      "position": "G",
-      "team": "MIL",
-      "team_name": "Bucks"
-    }
-  },
-  "96508": {
-    "name": "Mikal Bridges",
-    "opposing_team_abv": "HOU",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 33.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 30.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 28.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 26.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Brooklyn",
-      "name": "Mikal Bridges",
-      "position": "F",
-      "team": "BKN",
-      "team_name": "Nets"
-    }
-  },
-  "58830": {
-    "name": "Luka Doncic",
-    "opposing_team_abv": "PHI",
-    "strike_values": [
-      {
-        "stat_type": "Assists",
-        "line_score": 7.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 8
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 38.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 38.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 30.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 16.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 46.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Luka_Doncic_d2ee92e9-3e72-45eb-b156-2dc5adc1e6f7.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Dallas",
-      "name": "Luka Doncic",
-      "position": "F-G",
-      "team": "DAL",
-      "team_name": "Mavericks"
+      "team": "DEN",
+      "team_name": "Nuggets"
     }
   },
   "1382": {
     "name": "Anthony Davis",
-    "opposing_team_abv": "CHI",
+    "opposing_team_abv": "GSW",
     "strike_values": [
       {
-        "stat_type": "Rebs+Asts",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 11.5
+        "stat_type": "Pts+Rebs",
+        "line_score": 39.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 39.5
+        "line_score": 41.5
       },
       {
         "stat_type": "Pts+Asts",
         "line_score": 27.5
       },
       {
-        "stat_type": "Pts+Rebs",
-        "line_score": 37.5
+        "stat_type": "Rebounds",
+        "line_score": 14
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 25.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 16.5
       }
     ],
     "attributes": {
@@ -631,538 +755,66 @@
       "team_name": "Lakers"
     }
   },
-  "54957": {
-    "name": "DeMar DeRozan",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 10.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 22.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 0.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 33.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/DeMar_DeRozan__5e86a9c3-b4d0-4fe1-a551-acd83e5d60eb.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Chicago",
-      "name": "DeMar DeRozan",
-      "position": "G-F",
-      "team": "CHI",
-      "team_name": "Bulls"
-    }
-  },
-  "59501": {
-    "name": "Tre Jones",
-    "opposing_team_abv": "UTA",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 16.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 6
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 9.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 22.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Tre_Jones_2d4ce4bc-b03a-40bc-b22c-dab27591a429.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "San Antonio",
-      "name": "Tre Jones",
-      "position": "G",
-      "team": "SAS",
-      "team_name": "Spurs"
-    }
-  },
-  "25419": {
-    "name": "Anthony Edwards",
+  "1290": {
+    "name": "Jamal Murray",
     "opposing_team_abv": "PHX",
     "strike_values": [
       {
-        "stat_type": "Points",
-        "line_score": 22.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 30.5
-      },
-      {
         "stat_type": "Assists",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 26.5
+        "line_score": 6.5
       },
       {
         "stat_type": "Rebs+Asts",
-        "line_score": 8.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Anthony_Edwards_d0c7135a-1aea-40cb-ba20-df656de71749.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Minnesota",
-      "name": "Anthony Edwards",
-      "position": "G",
-      "team": "MIN",
-      "team_name": "Timberwolves"
-    }
-  },
-  "1660": {
-    "name": "Karl-Anthony Towns",
-    "opposing_team_abv": "PHX",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 28.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
+        "line_score": 11.5
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 24.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 17.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Karl-Anthony_Towns_ab532a66-9314-4d57-ade7-bb54a70c65ad.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Minnesota",
-      "name": "Karl-Anthony Towns",
-      "position": "C-F",
-      "team": "MIN",
-      "team_name": "Timberwolves"
-    }
-  },
-  "1683": {
-    "name": "Brook Lopez",
-    "opposing_team_abv": "IND",
-    "strike_values": [
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 7
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 8.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 24.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 19.5
+        "line_score": 29.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 26.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 17.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Brook_Lopez_c179fb5c-9845-4e37-aef7-6e00d97548eb.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Milwaukee",
-      "name": "Brook Lopez",
-      "position": "C",
-      "team": "MIL",
-      "team_name": "Bucks"
-    }
-  },
-  "54081": {
-    "name": "KJ Martin Jr.",
-    "opposing_team_abv": "BKN",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 21.5
+        "line_score": 36.5
       },
       {
         "stat_type": "Rebounds",
-        "line_score": 5.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/placeholder.png",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Houston",
-      "name": "KJ Martin Jr.",
-      "position": "F",
-      "team": "HOU",
-      "team_name": "Rockets"
-    }
-  },
-  "1957": {
-    "name": "Spencer Dinwiddie",
-    "opposing_team_abv": "HOU",
-    "strike_values": [
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 28.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 22.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 18.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 31.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Spencer_Dinwiddie_8426ab40-888d-4f89-976c-cd9e23717653.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Brooklyn",
-      "name": "Spencer Dinwiddie",
-      "position": "G",
-      "team": "BKN",
-      "team_name": "Nets"
-    }
-  },
-  "96481": {
-    "name": "Mike Conley",
-    "opposing_team_abv": "PHX",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 16.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 7.5
-      },
-      {
-        "stat_type": "Assists",
         "line_score": 4.5
       },
       {
-        "stat_type": "Points",
-        "line_score": 11.5
+        "stat_type": "Fantasy Score",
+        "line_score": 43.5
       },
       {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 18.5
+        "stat_type": "Points",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 2.5
       }
     ],
     "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Mike_Conley_460b7264-b98f-483e-b841-59a18c2e4d67.webp",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Jamal_Murray_685576ef-ea6c-4ccf-affd-18916baf4e60.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Minnesota",
-      "name": "Mike Conley",
+      "market": "Denver",
+      "name": "Jamal Murray",
       "position": "G",
-      "team": "MIN",
-      "team_name": "Timberwolves"
-    }
-  },
-  "96321": {
-    "name": "Dorian Finney-Smith",
-    "opposing_team_abv": "HOU",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 4
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 11.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Dorian_Finney-Smith_426357dc-340b-4d89-8e3b-7d6b4022b460.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Brooklyn",
-      "name": "Dorian Finney-Smith",
-      "position": "F",
-      "team": "BKN",
-      "team_name": "Nets"
-    }
-  },
-  "1544": {
-    "name": "Zach LaVine",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Rebounds",
-        "line_score": 4
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 30.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 35.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 30.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 8.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 4
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 26.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Zach_LaVine_db72e294-1c54-454a-96b9-0b4fd2f38112.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Chicago",
-      "name": "Zach LaVine",
-      "position": "G-F",
-      "team": "CHI",
-      "team_name": "Bulls"
-    }
-  },
-  "79897": {
-    "name": "Keegan Murray",
-    "opposing_team_abv": "POR",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 17.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 5.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 0.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Keegan_Murray_7494fbb4-5ac7-43ee-b91a-8859532f548b.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Sacramento",
-      "name": "Keegan Murray",
-      "position": "F",
-      "team": "SAC",
-      "team_name": "Kings"
-    }
-  },
-  "87615": {
-    "name": "Kevin Huerter",
-    "opposing_team_abv": "POR",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 18.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 18.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Kevin_Huerter_858d255e-9a7b-4c7a-aac4-fc7cf3a5f238.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Sacramento",
-      "name": "Kevin Huerter",
-      "position": "G-F",
-      "team": "SAC",
-      "team_name": "Kings"
-    }
-  },
-  "55600": {
-    "name": "Reggie Bullock",
-    "opposing_team_abv": "PHI",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 10.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 7.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Reggie_Bullock_42fa4c2c-6520-4d04-a753-cfe4a5c5e2e1.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Dallas",
-      "name": "Reggie Bullock",
-      "position": "G-F",
-      "team": "DAL",
-      "team_name": "Mavericks"
+      "team": "DEN",
+      "team_name": "Nuggets"
     }
   },
   "53837": {
     "name": "Deandre Ayton",
-    "opposing_team_abv": "MIN",
+    "opposing_team_abv": "DEN",
     "strike_values": [
+      {
+        "stat_type": "Steals",
+        "line_score": 0.5
+      },
       {
         "stat_type": "Rebs+Asts",
         "line_score": 10.5
@@ -1173,7 +825,15 @@
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 24.5
+        "line_score": 25.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 31
+      },
+      {
+        "stat_type": "Blocked Shots",
+        "line_score": 0.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
@@ -1186,6 +846,10 @@
       {
         "stat_type": "Points",
         "line_score": 15.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 1.5
       }
     ],
     "attributes": {
@@ -1199,237 +863,105 @@
       "team_name": "Suns"
     }
   },
-  "96514": {
-    "name": "Cameron Johnson",
-    "opposing_team_abv": "HOU",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 17.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 4
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Cameron_Johnson_2fe5b749-7bd4-4dbc-acfb-6d675f541e37.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Brooklyn",
-      "name": "Cameron Johnson",
-      "position": "F",
-      "team": "BKN",
-      "team_name": "Nets"
-    }
-  },
-  "79867": {
-    "name": "Jabari Smith Jr.",
-    "opposing_team_abv": "BKN",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 8.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 7
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 22.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Jabari_Smith_293be24b-3a94-40b2-a7a4-a1dd788302e9.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Houston",
-      "name": "Jabari Smith Jr.",
-      "position": "F",
-      "team": "HOU",
-      "team_name": "Rockets"
-    }
-  },
-  "54064": {
-    "name": "Jalen Green",
-    "opposing_team_abv": "BKN",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 24.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 24.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 21.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Green_9a331092-35db-456c-a44a-d5b80a02ebe9.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Houston",
-      "name": "Jalen Green",
-      "position": "G",
-      "team": "HOU",
-      "team_name": "Rockets"
-    }
-  },
-  "96236": {
-    "name": "Kyrie Irving",
+  "1535": {
+    "name": "Jaylen Brown",
     "opposing_team_abv": "PHI",
     "strike_values": [
       {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
+        "stat_type": "Fantasy Score",
+        "line_score": 37.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
         "line_score": 33.5
       },
       {
-        "stat_type": "Pts+Asts",
-        "line_score": 29.5
-      },
-      {
         "stat_type": "Rebounds",
-        "line_score": 4.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 9.5
-      },
-      {
-        "stat_type": "Assists",
-        "line_score": 5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 28.5
+        "line_score": 6
       },
       {
         "stat_type": "Points",
         "line_score": 24.5
       },
       {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Kyrie_Irving_dd146010-902b-4ad7-b98c-650d0363a2f0.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Dallas",
-      "name": "Kyrie Irving",
-      "position": "G",
-      "team": "DAL",
-      "team_name": "Mavericks"
-    }
-  },
-  "37560": {
-    "name": "Nikola Vucevic",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 29.5
+        "stat_type": "Pts+Asts",
+        "line_score": 28.5
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 26.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 10.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 15.5
-      }
-    ],
-    "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Chicago",
-      "name": "Nikola Vucevic",
-      "position": "C",
-      "team": "CHI",
-      "team_name": "Bulls"
-    }
-  },
-  "1386": {
-    "name": "De'Aaron Fox",
-    "opposing_team_abv": "POR",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
         "line_score": 30.5
       },
       {
+        "stat_type": "Free Throws Made",
+        "line_score": 3
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Jaylen_Brown_ffc5579c-783f-4d62-80ab-3c3dcb05a27d.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Jaylen Brown",
+      "position": "G-F",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "87323": {
+    "name": "Malcolm Brogdon",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Rebounds",
+        "line_score": 3.5
+      },
+      {
+        "stat_type": "Steals",
+        "line_score": 0.5
+      },
+      {
         "stat_type": "Points",
-        "line_score": 24.5
+        "line_score": 12.5
       },
       {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
+        "stat_type": "Pts+Asts",
+        "line_score": 16.5
       },
       {
-        "stat_type": "3-PT Made",
-        "line_score": 1.5
+        "stat_type": "Pts+Rebs",
+        "line_score": 16.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 34.5
+        "line_score": 19.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 23.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 2
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Malcolm_Brogdon_f7134fc8-b298-41fd-933d-d0c4a5d8f6ac.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Malcolm Brogdon",
+      "position": "G",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "54718": {
+    "name": "Robert Williams III",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 8
       },
       {
         "stat_type": "Rebs+Asts",
@@ -1437,70 +969,318 @@
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 28.5
+        "line_score": 15.5
       },
       {
-        "stat_type": "Assists",
-        "line_score": 5.5
+        "stat_type": "Rebounds",
+        "line_score": 8
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 0.5
       }
     ],
     "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/De'Aaron_Fox_cfc1e41b-74ab-45ee-8132-aaf9ca7f8163.webp",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Robert_Williams_III_c20dfb58-5622-405e-90b1-92b79ee97461.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Sacramento",
-      "name": "De'Aaron Fox",
-      "position": "G",
-      "team": "SAC",
-      "team_name": "Kings"
+      "market": "Boston",
+      "name": "Robert Williams III",
+      "position": "C-F",
+      "team": "BOS",
+      "team_name": "Celtics"
     }
   },
-  "59923": {
-    "name": "Domantas Sabonis",
-    "opposing_team_abv": "POR",
+  "1291": {
+    "name": "Nikola Jokic",
+    "opposing_team_abv": "PHX",
     "strike_values": [
       {
         "stat_type": "Rebounds",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 38.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 31.5
+        "line_score": 13.5
       },
       {
         "stat_type": "Rebs+Asts",
-        "line_score": 19.5
+        "line_score": 22.5
       },
       {
-        "stat_type": "Points",
-        "line_score": 19.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 26.5
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 47.5
       },
       {
         "stat_type": "Assists",
-        "line_score": 7
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 33.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 39
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 25.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 56.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 5
       }
     ],
     "attributes": {
-      "image_url": "https://static.prizepicks.com/images/players/nba/Domantas_Sabonis_22038780-8c50-4211-a99e-656d983e5207.webp",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Sacramento",
-      "name": "Domantas Sabonis",
-      "position": "F-C",
-      "team": "SAC",
-      "team_name": "Kings"
+      "market": "Denver",
+      "name": "Nikola Jokic",
+      "position": "C",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "2023": {
+    "name": "Michael Porter Jr.",
+    "opposing_team_abv": "PHX",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 16
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 2.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 5.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 22.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 21.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 25.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Michael_Porter_Jr._3a7d6510-00e9-4265-81df-864a1f547269.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Michael Porter Jr.",
+      "position": "F",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "1620": {
+    "name": "Tobias Harris",
+    "opposing_team_abv": "BOS",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 26.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 32
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 7
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 16.5
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 9.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 19.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 1.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Tobias_Harris_82f09975-6a8d-42e4-b42c-a52b9349ed50.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Philadelphia",
+      "name": "Tobias Harris",
+      "position": "F",
+      "team": "PHI",
+      "team_name": "76ers"
+    }
+  },
+  "55410": {
+    "name": "Al Horford",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Steals",
+        "line_score": 0.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 15
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 11.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 9.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 6
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 25.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Al_Horford_cf3a87ec-c2f7-42e8-9698-6f8b2ba916a9.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Boston",
+      "name": "Al Horford",
+      "position": "C-F",
+      "team": "BOS",
+      "team_name": "Celtics"
+    }
+  },
+  "37691": {
+    "name": "Aaron Gordon",
+    "opposing_team_abv": "PHX",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Fantasy Score",
+        "line_score": 28.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 15
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 21.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 23.5
+      },
+      {
+        "stat_type": "Blocked Shots",
+        "line_score": 0.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 6.5
+      },
+      {
+        "stat_type": "Free Throws Made",
+        "line_score": 2.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Aaron Gordon",
+      "position": "F",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "57210": {
+    "name": "Stephen Curry",
+    "opposing_team_abv": "LAL",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 37.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 43.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 6
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 5.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 11.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 38.5
+      }
+    ],
+    "attributes": {
+      "image_url": "https://static.prizepicks.com/images/players/nba/Stephen_Curry_8ec91366-faea-4196-bbfd-b8fab7434795.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Golden State",
+      "name": "Stephen Curry",
+      "position": "G",
+      "team": "GSW",
+      "team_name": "Warriors"
     }
   }
 }

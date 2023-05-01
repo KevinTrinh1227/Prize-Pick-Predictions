@@ -1,6 +1,4 @@
 import json
-
-
 def parse_json_file(pre_json, post_json):
     # reads the pre_json json file
     with open(pre_json, "r") as file:

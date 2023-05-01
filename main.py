@@ -17,6 +17,7 @@ import time
 from utils.json_parser import *
 from utils.bet_recommendation import *
 from utils.current_player_stats import *
+import requests
 # from utils.team_finder import *
 
 pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
@@ -28,6 +29,18 @@ points_assists_json = "json files/points_assists.json"                      # pl
 points_rebounds_json = "json files/points_rebounds.json"                    # player pts+rebs recommendations json
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
+url = 'https://api.prizepicks.com/projections?league_id=7'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+
+    with open(pre_json, 'w') as f:
+        json.dump(data, f)
+        print('Data saved to projections.json')
+else:
+    print('Error:', response.status_code)
 
 """ =============================================
 * Here we call parse/clean our json file and extract
