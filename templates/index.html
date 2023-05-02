@@ -29,7 +29,7 @@
                     <p>Value Difference: {{ info['stats']['difference'] }}</p>
                 </div>
                 <div class="player-points">
-                    {% if info['stats']['actual_value'] > info['stats']['strike_value'] %}
+                    {% if info['stats']['predicted_value'] > info['stats']['strike_value'] %}
                         <p style="color: #0bae6f;">Bet {{ info['stats']['bet_recommendation'] }} &#129045;</p>
                     {% else %}
                         <p style="color: #FD5040;">Bet {{ info['stats']['bet_recommendation'] }} &#129047;</p>

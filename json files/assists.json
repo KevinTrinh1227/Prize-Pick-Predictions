@@ -1,86 +1,69 @@
 [
   {
-    "James Harden": {
+    "Jalen Brunson": {
       "general": {
-        "team_name": "76ers",
-        "team_market": "Philadelphia",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/James_Harden_a52b2c84-9c3d-4d6e-8a3b-10e75d11c2bc.webp",
+        "team_name": "Knicks",
+        "team_market": "New York",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jalen_Brunson_8d3edba8-9004-4199-9328-cc2208e8b0d3.webp",
         "player_position": "G"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 8.5,
-        "predicted_value": 10.66,
+        "strike_value": 6,
+        "predicted_value": 6.19,
         "bet_recommendation": "Higher",
-        "difference": 2.16
+        "difference": 0.1900000000000004
       }
     }
   },
   {
-    "Nikola Jokic": {
+    "Draymond Green": {
       "general": {
-        "team_name": "Nuggets",
-        "team_market": "Denver",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
-        "player_position": "C"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 8.5,
-        "predicted_value": 9.83,
-        "bet_recommendation": "Higher",
-        "difference": 1.33
-      }
-    }
-  },
-  {
-    "Marcus Smart": {
-      "general": {
-        "team_name": "Celtics",
-        "team_market": "Boston",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Marcus_Smart_af460d21-b1d8-46bb-a228-61ac4fb9ccf9.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 5,
-        "predicted_value": 6.26,
-        "bet_recommendation": "Higher",
-        "difference": 1.2599999999999998
-      }
-    }
-  },
-  {
-    "Kevin Durant": {
-      "general": {
-        "team_name": "Suns",
-        "team_market": "Phoenix",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
+        "team_name": "Warriors",
+        "team_market": "Golden State",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Draymond_Green_5e5099d1-4a58-43f2-8d03-f2ae5dd49337.webp",
         "player_position": "F"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 4.5,
-        "predicted_value": 5.0,
-        "bet_recommendation": "Higher",
-        "difference": 0.5
+        "strike_value": 7,
+        "predicted_value": 6.85,
+        "bet_recommendation": "Lower",
+        "difference": 0.15000000000000036
       }
     }
   },
   {
-    "Jamal Murray": {
+    "D'Angelo Russell": {
       "general": {
-        "team_name": "Nuggets",
-        "team_market": "Denver",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jamal_Murray_685576ef-ea6c-4ccf-affd-18916baf4e60.webp",
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/D'Angelo_Russell_dbf09e15-1cd8-434e-acda-9527735ef4d6.webp",
         "player_position": "G"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 6.5,
-        "predicted_value": 6.15,
+        "strike_value": 5.5,
+        "predicted_value": 6.18,
+        "bet_recommendation": "Higher",
+        "difference": 0.6799999999999997
+      }
+    }
+  },
+  {
+    "Gabe Vincent": {
+      "general": {
+        "team_name": "Heat",
+        "team_market": "Miami",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Gabe_Vincent_1d4905d6-a6b4-4b45-8a90-91ed03440d0f.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 2.44,
         "bet_recommendation": "Lower",
-        "difference": 0.34999999999999964
+        "difference": 2.06
       }
     }
   },
@@ -102,87 +85,19 @@
     }
   },
   {
-    "Jayson Tatum": {
+    "Bam Adebayo": {
       "general": {
-        "team_name": "Celtics",
-        "team_market": "Boston",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
-        "player_position": "F-G"
+        "team_name": "Heat",
+        "team_market": "Miami",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Bam_Adebayo_11c303dc-540c-4090-8e0c-76c2fb2c125a.webp",
+        "player_position": "C-F"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 4.5,
-        "predicted_value": 4.62,
-        "bet_recommendation": "Higher",
-        "difference": 0.1200000000000001
-      }
-    }
-  },
-  {
-    "Chris Paul": {
-      "general": {
-        "team_name": "Suns",
-        "team_market": "Phoenix",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Chris_Paul_942c53e3-7268-44e3-b0a9-fdff55a72c03.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 8,
-        "predicted_value": 8.88,
-        "bet_recommendation": "Higher",
-        "difference": 0.8800000000000008
-      }
-    }
-  },
-  {
-    "Devin Booker": {
-      "general": {
-        "team_name": "Suns",
-        "team_market": "Phoenix",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Devin_Booker_31baa84f-c759-4f92-8e1f-a92305ade3d6.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 6.5,
-        "predicted_value": 5.53,
+        "strike_value": 3.5,
+        "predicted_value": 3.22,
         "bet_recommendation": "Lower",
-        "difference": 0.9699999999999998
-      }
-    }
-  },
-  {
-    "D'Angelo Russell": {
-      "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/D'Angelo_Russell_dbf09e15-1cd8-434e-acda-9527735ef4d6.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 6,
-        "predicted_value": 6.18,
-        "bet_recommendation": "Higher",
-        "difference": 0.17999999999999972
-      }
-    }
-  },
-  {
-    "Austin Reaves": {
-      "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Austin_Reaves_c4981f56-93a2-47b1-8d31-4e8635f45e1d.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 4,
-        "predicted_value": 3.35,
-        "bet_recommendation": "Lower",
-        "difference": 0.6499999999999999
+        "difference": 0.2799999999999998
       }
     }
   }
