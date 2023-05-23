@@ -1,18 +1,35 @@
 [
   {
-    "Jalen Brunson": {
+    "D'Angelo Russell": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jalen_Brunson_8d3edba8-9004-4199-9328-cc2208e8b0d3.webp",
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/D'Angelo_Russell_dbf09e15-1cd8-434e-acda-9527735ef4d6.webp",
         "player_position": "G"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 6,
-        "predicted_value": 6.19,
+        "strike_value": 5.5,
+        "predicted_value": 6.18,
         "bet_recommendation": "Higher",
-        "difference": 0.1900000000000004
+        "difference": 0.6799999999999997
+      }
+    }
+  },
+  {
+    "Austin Reaves": {
+      "general": {
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Austin_Reaves_c4981f56-93a2-47b1-8d31-4e8635f45e1d.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4,
+        "predicted_value": 3.35,
+        "bet_recommendation": "Lower",
+        "difference": 0.6499999999999999
       }
     }
   },
@@ -34,36 +51,19 @@
     }
   },
   {
-    "D'Angelo Russell": {
+    "Marcus Smart": {
       "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/D'Angelo_Russell_dbf09e15-1cd8-434e-acda-9527735ef4d6.webp",
+        "team_name": "Celtics",
+        "team_market": "Boston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Marcus_Smart_af460d21-b1d8-46bb-a228-61ac4fb9ccf9.webp",
         "player_position": "G"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 5.5,
-        "predicted_value": 6.18,
+        "strike_value": 5,
+        "predicted_value": 6.26,
         "bet_recommendation": "Higher",
-        "difference": 0.6799999999999997
-      }
-    }
-  },
-  {
-    "Gabe Vincent": {
-      "general": {
-        "team_name": "Heat",
-        "team_market": "Miami",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Gabe_Vincent_1d4905d6-a6b4-4b45-8a90-91ed03440d0f.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "assists",
-        "strike_value": 4.5,
-        "predicted_value": 2.44,
-        "bet_recommendation": "Lower",
-        "difference": 2.06
+        "difference": 1.2599999999999998
       }
     }
   },
@@ -81,6 +81,57 @@
         "predicted_value": 6.29,
         "bet_recommendation": "Higher",
         "difference": 0.29000000000000004
+      }
+    }
+  },
+  {
+    "Gabe Vincent": {
+      "general": {
+        "team_name": "Heat",
+        "team_market": "Miami",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Gabe_Vincent_1d4905d6-a6b4-4b45-8a90-91ed03440d0f.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4,
+        "predicted_value": 2.44,
+        "bet_recommendation": "Lower",
+        "difference": 1.56
+      }
+    }
+  },
+  {
+    "Jalen Brunson": {
+      "general": {
+        "team_name": "Knicks",
+        "team_market": "New York",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jalen_Brunson_8d3edba8-9004-4199-9328-cc2208e8b0d3.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 6,
+        "predicted_value": 6.19,
+        "bet_recommendation": "Higher",
+        "difference": 0.1900000000000004
+      }
+    }
+  },
+  {
+    "Jayson Tatum": {
+      "general": {
+        "team_name": "Celtics",
+        "team_market": "Boston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
+        "player_position": "F-G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 4.62,
+        "bet_recommendation": "Higher",
+        "difference": 0.1200000000000001
       }
     }
   },
