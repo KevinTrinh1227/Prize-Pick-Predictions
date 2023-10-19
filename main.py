@@ -29,18 +29,25 @@ points_assists_json = "json files/points_assists.json"                      # pl
 points_rebounds_json = "json files/points_rebounds.json"                    # player pts+rebs recommendations json
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
+""" =============================================
+Note: The request below does not work as Oct 19, 2023
+Therefore we must copy and paste it ourselves into the json
+=================================================
+
 url = 'https://api.prizepicks.com/projections?league_id=7'
-
 response = requests.get(url)
-
 if response.status_code == 200:
+    # Parse the JSON data from the response
     data = response.json()
 
-    with open(pre_json, 'w') as f:
-        json.dump(data, f)
-        print('Data saved to projections.json')
+    with open(pre_json, "w") as json_file:
+        json.dump(data, json_file, indent=4)
+    
+    print(f"Data has been successfully saved to {pre_json}")
 else:
-    print('Error:', response.status_code)
+    print(f"Faile API Fetching. Status code: {response.status_code}")
+    
+============================================= """
 
 """ =============================================
 * Here we call parse/clean our json file and extract
@@ -290,13 +297,13 @@ for idx, key in enumerate(data):
                     load_status = "FAILED"
                     start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
                     print(
-                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[In: {i} sec(s)]")
+                        f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({n_a:0>2}/{n_a} | {n_a}%) \t[In: {i} sec(s)]")
                     time.sleep(i)
                 else:
                     load_status = "FAILED"
                     start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
                     print(
-                        f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {n_a:0>2}/{n_a:<5} ({n_a}%) \t[Final attempt]")
+                        f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({n_a:0>2}/{n_a} | {n_a}%) \t[Final attempt]")
 
         """ =============================================
         * Writing the data into the json file with an indent
@@ -324,7 +331,7 @@ for idx, key in enumerate(data):
         load_status = "Successful"
         start_str = f"[🟢] Load Status: {load_status:<15} Player name: {player_name:<30}"
         players_percentage = round((players_printed / num_players) * 100)
-        print(f"{start_str:<60} Attempts taken: {num_attempts}/{(max_attempts - 1):<5} {players_printed:0>2}/{num_players:<5} ({players_percentage:0>2}%)")
+        print(f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({players_printed:0>2}/{num_players} | {players_percentage:0>2}%)")
 
     except Exception as e:
         """ =============================================
@@ -342,3 +349,54 @@ num_na_stats = sum(1 for row in table if n_a in row)
 print(f"\n{num_na_stats} players have at least one missing stat.")
 print(f"A total of {num_players} player objects in json file.")
 print(f"{players_printed}/{num_players} were printed out in table format.\n\n")
+
+
+
+
+
+""" =============================================
+* Flask application python file that displays
+* the json files from the "./json files/*.json"
+============================================= """
+
+from flask import Flask, render_template, request
+import json
+
+app = Flask(__name__)
+
+# points.json is default when loading up
+with open('json files/points.json') as f:
+    data = json.load(f)
+
+# Route for the home page
+@app.route('/')
+def index():
+
+    """ =============================================
+    * Check if a data source parameter was passed in the URL
+    * This allows the user to switch between json files
+    * to view the recommendations for different stat types
+    ============================================= """
+    data_source = request.args.get('data_source', 'points')
+    if data_source == 'points':
+        with open('json files/points.json') as f:
+            data = json.load(f)
+    elif data_source == 'rebounds':
+        with open('json files/rebounds.json') as f:
+            data = json.load(f)
+    elif data_source == 'assists':
+        with open('json files/assists.json') as f:
+            data = json.load(f)
+    elif data_source == 'pts_asts':
+        with open('json files/points_assists.json') as f:
+            data = json.load(f)
+    elif data_source == 'pts_rebs':
+        with open('json files/points_rebounds.json') as f:
+            data = json.load(f)
+    elif data_source == 'pts_rebs_asts':
+        with open('json files/points_assists_rebounds.json') as f:
+            data = json.load(f)
+    return render_template('index.html', data=data)
+
+if __name__ == '__main__':
+    app.run()

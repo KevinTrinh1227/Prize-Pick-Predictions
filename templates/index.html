@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Player Images</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-<img src="/static/images/ppp.png" alt="Image description" class="logo">
-<div class="buttons">
-    <a href="{{ url_for('index', data_source='points') }}">Points</a>
-    <a href="{{ url_for('index', data_source='assists') }}">Assists</a>
-    <a href="{{ url_for('index', data_source='rebounds') }}">Rebounds</a>
-    <a href="{{ url_for('index', data_source='pts_asts') }}">Pts + Asts</a>
-    <a href="{{ url_for('index', data_source='pts_rebs') }}">Pts + Rebs</a>
-    <a href="{{ url_for('index', data_source='pts_rebs_asts') }}">Pts + Rebs + Asts</a>
-</div>
-<div>
-    {% for player in data %}
-        {% for name, info in player.items() %}
-            <div class="player-container">
-                <div class="player-image">
-                    <img src="{{ info['general']['picture_link'] }}" alt="{{ name }}" width="100" height="100">
-                </div>
-                <div class="player-info">
-                    <h2>{{ name }}</h2>
-                    <p>[NBA] {{ info['general']['team_market'] }} {{ info['general']['team_name'] }} - {{ info['general']['player_position'] }}</p>
-                    <p>Strike Value: {{ info['stats']['strike_value'] }}</p>
-                    <p>Predicted Value: {{ info['stats']['predicted_value'] }}</p>
-                    <p>Value Difference: {{ info['stats']['difference'] }}</p>
-                </div>
-                <div class="player-points">
-                    {% if info['stats']['predicted_value'] > info['stats']['strike_value'] %}
-                        <p style="color: #0bae6f;">Bet {{ info['stats']['bet_recommendation'] }} &#129045;</p>
-                    {% else %}
-                        <p style="color: #FD5040;">Bet {{ info['stats']['bet_recommendation'] }} &#129047;</p>
-                    {% endif %}
-                    <p class="strike-value">{{ info['stats']['strike_value'] }}</p>
-                    <p>{{ info['stats']['type'] }}</p>
-                </div>
-            </div>
-        {% endfor %}
-    {% endfor %}
-</div>
-<div class="footer">
-    <img src="/static/images/ppp.png" alt="Image description" id="footer-logo">
-    <p>Project built by: <strong><a href="https://kevintrinh.dev" id="footer-a" target="_blank">Kevin Huy Trinh</a></strong>. &copy;</p>
-</div>
-<script src="static/webjs/antiimage.js"></script>
-</body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <img src="/static/images/ppp.png" alt="Image description" class="logo" />
+    <div class="buttons">
+      <a href="{{ url_for('index', data_source='points') }}">Points</a>
+      <a href="{{ url_for('index', data_source='assists') }}">Assists</a>
+      <a href="{{ url_for('index', data_source='rebounds') }}">Rebounds</a>
+      <a href="{{ url_for('index', data_source='pts_asts') }}">Pts + Asts</a>
+      <a href="{{ url_for('index', data_source='pts_rebs') }}">Pts + Rebs</a>
+      <a href="{{ url_for('index', data_source='pts_rebs_asts') }}"
+        >Pts + Rebs + Asts</a
+      >
+    </div>
+    <div>
+      {% for player in data %} {% for name, info in player.items() %}
+      <div class="player-container">
+        <div class="player-image">
+          <img
+            src="{{ info['general']['picture_link'] }}"
+            alt="{{ name }}"
+            width="100"
+            height="100"
+          />
+        </div>
+        <div class="player-info">
+          <h2>{{ name }}</h2>
+          <p>
+            [NBA] {{ info['general']['team_market'] }} {{
+            info['general']['team_name'] }} - {{
+            info['general']['player_position'] }}
+          </p>
+          <p>Strike Value: {{ info['stats']['strike_value'] }}</p>
+          <p>Predicted Value: {{ info['stats']['predicted_value'] }}</p>
+          <p>Value Difference: {{ info['stats']['difference'] }}</p>
+        </div>
+        <div class="player-points">
+          {% if info['stats']['predicted_value'] > info['stats']['strike_value']
+          %}
+          <p style="color: #0bae6f">
+            &#8593 Bet {{ info['stats']['bet_recommendation'] }} &#8593;
+          </p>
+          {% else %}
+          <p style="color: #fd5040">
+            &#8595 Bet {{ info['stats']['bet_recommendation'] }} &#8595;
+          </p>
+          {% endif %}
+          <p class="strike-value">{{ info['stats']['strike_value'] }}</p>
+          <p>{{ info['stats']['type'] }}</p>
+        </div>
+      </div>
+      {% endfor %} {% endfor %}
+    </div>
+    <div class="footer">
+      <img
+        src="/static/images/ppp.png"
+        alt="Image description"
+        id="footer-logo"
+      />
+      <p>
+        Project built by:
+        <strong
+          ><a href="https://kevintrinh.dev" id="footer-a" target="_blank"
+            >Kevin Huy Trinh</a
+          ></strong
+        >. &copy;
+      </p>
+    </div>
+    <script src="static/webjs/antiimage.js"></script>
+  </body>
 </html>

@@ -1,141 +1,5 @@
 [
   {
-    "Klay Thompson": {
-      "general": {
-        "team_name": "Warriors",
-        "team_market": "Golden State",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Klay_Thompson__4e152a06-673e-4701-b115-aa7e2cd00d2d.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 4,
-        "predicted_value": 4.14,
-        "bet_recommendation": "Higher",
-        "difference": 0.13999999999999968
-      }
-    }
-  },
-  {
-    "Austin Reaves": {
-      "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Austin_Reaves_c4981f56-93a2-47b1-8d31-4e8635f45e1d.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 4,
-        "predicted_value": 3.06,
-        "bet_recommendation": "Lower",
-        "difference": 0.94
-      }
-    }
-  },
-  {
-    "Al Horford": {
-      "general": {
-        "team_name": "Celtics",
-        "team_market": "Boston",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Al_Horford_cf3a87ec-c2f7-42e8-9698-6f8b2ba916a9.webp",
-        "player_position": "C-F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 6,
-        "predicted_value": 6.19,
-        "bet_recommendation": "Higher",
-        "difference": 0.1900000000000004
-      }
-    }
-  },
-  {
-    "Kevon Looney": {
-      "general": {
-        "team_name": "Warriors",
-        "team_market": "Golden State",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevon_Looney_ebb50069-6fdf-4c07-9a21-a63d5c814536.webp",
-        "player_position": "C-F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 12.5,
-        "predicted_value": 9.27,
-        "bet_recommendation": "Lower",
-        "difference": 3.2300000000000004
-      }
-    }
-  },
-  {
-    "Draymond Green": {
-      "general": {
-        "team_name": "Warriors",
-        "team_market": "Golden State",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Draymond_Green_5e5099d1-4a58-43f2-8d03-f2ae5dd49337.webp",
-        "player_position": "F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 6.5,
-        "predicted_value": 7.19,
-        "bet_recommendation": "Higher",
-        "difference": 0.6900000000000004
-      }
-    }
-  },
-  {
-    "Jaylen Brown": {
-      "general": {
-        "team_name": "Celtics",
-        "team_market": "Boston",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jaylen_Brown_ffc5579c-783f-4d62-80ab-3c3dcb05a27d.webp",
-        "player_position": "G-F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 6,
-        "predicted_value": 6.85,
-        "bet_recommendation": "Higher",
-        "difference": 0.8499999999999996
-      }
-    }
-  },
-  {
-    "Kevin Love": {
-      "general": {
-        "team_name": "Heat",
-        "team_market": "Miami",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Love__7d615ccd-db96-42a3-9a6c-7f18ea25634e.webp",
-        "player_position": "F-C"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 6,
-        "predicted_value": 6.3,
-        "bet_recommendation": "Higher",
-        "difference": 0.2999999999999998
-      }
-    }
-  },
-  {
-    "Josh Hart": {
-      "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Josh_Hart_d6fbf8f8-bb4a-43f7-95f6-498a5e042138.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 8,
-        "predicted_value": 7.8,
-        "bet_recommendation": "Lower",
-        "difference": 0.20000000000000018
-      }
-    }
-  },
-  {
     "Stephen Curry": {
       "general": {
         "team_name": "Warriors",
@@ -153,53 +17,36 @@
     }
   },
   {
-    "Max Strus": {
+    "Aaron Gordon": {
       "general": {
-        "team_name": "Heat",
-        "team_market": "Miami",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Max_Strus_f6aff1dc-15b9-4c89-a2fb-746f4cf78890.webp",
-        "player_position": "G-F"
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
+        "player_position": "F"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 3,
-        "predicted_value": 3.28,
+        "strike_value": 6,
+        "predicted_value": 6.56,
         "bet_recommendation": "Higher",
-        "difference": 0.2799999999999998
+        "difference": 0.5599999999999996
       }
     }
   },
   {
-    "Anthony Davis": {
+    "Kentavious Caldwell-Pope": {
       "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Anthony_Davis_ea8826b8-1f76-4eab-b61e-ffcb176880f3.webp",
-        "player_position": "F-C"
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
+        "player_position": "G"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 13.5,
-        "predicted_value": 12.58,
-        "bet_recommendation": "Lower",
-        "difference": 0.9199999999999999
-      }
-    }
-  },
-  {
-    "Mitchell Robinson": {
-      "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Mitchell_Robinson_97e25d19-7c5c-49f9-91c0-5cd9b9cebdcb.webp",
-        "player_position": "C-F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 11,
-        "predicted_value": 9.41,
-        "bet_recommendation": "Lower",
-        "difference": 1.5899999999999999
+        "strike_value": 2.5,
+        "predicted_value": 2.74,
+        "bet_recommendation": "Higher",
+        "difference": 0.2400000000000002
       }
     }
   },
@@ -213,129 +60,146 @@
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 6,
+        "strike_value": 5.5,
         "predicted_value": 5.03,
         "bet_recommendation": "Lower",
-        "difference": 0.9699999999999998
+        "difference": 0.46999999999999975
       }
     }
   },
   {
-    "Jalen Brunson": {
+    "Bradley Beal": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jalen_Brunson_8d3edba8-9004-4199-9328-cc2208e8b0d3.webp",
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Bradley_Beal_ff461754-ad20-4eeb-af02-2b46cc980b24.webp",
         "player_position": "G"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 4,
-        "predicted_value": 3.54,
-        "bet_recommendation": "Lower",
-        "difference": 0.45999999999999996
-      }
-    }
-  },
-  {
-    "Caleb Martin": {
-      "general": {
-        "team_name": "Heat",
-        "team_market": "Miami",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Caleb_Martin_566685c7-ff63-439a-8888-5278904835fa.webp",
-        "player_position": "F"
-      },
-      "stats": {
-        "type": "rebounds",
         "strike_value": 4.5,
-        "predicted_value": 4.85,
-        "bet_recommendation": "Higher",
-        "difference": 0.34999999999999964
+        "predicted_value": 3.92,
+        "bet_recommendation": "Lower",
+        "difference": 0.5800000000000001
       }
     }
   },
   {
-    "Jayson Tatum": {
+    "Jusuf Nurkic": {
       "general": {
-        "team_name": "Celtics",
-        "team_market": "Boston",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
-        "player_position": "F-G"
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jusuf_Nurkic_a8b48aa9-cf98-4a87-8bba-e88eead8cdaa.webp",
+        "player_position": "C"
       },
       "stats": {
         "type": "rebounds",
         "strike_value": 9.5,
-        "predicted_value": 8.77,
+        "predicted_value": 9.06,
         "bet_recommendation": "Lower",
-        "difference": 0.7300000000000004
+        "difference": 0.4399999999999995
       }
     }
   },
   {
-    "Bam Adebayo": {
+    "LeBron James": {
       "general": {
-        "team_name": "Heat",
-        "team_market": "Miami",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Bam_Adebayo_11c303dc-540c-4090-8e0c-76c2fb2c125a.webp",
-        "player_position": "C-F"
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/LeBron_James_0afbe608-940a-4d5d-a1f7-468718c67d91.webp",
+        "player_position": "F"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 8,
-        "predicted_value": 9.27,
+        "strike_value": 7.5,
+        "predicted_value": 8.34,
         "bet_recommendation": "Higher",
-        "difference": 1.2699999999999996
+        "difference": 0.8399999999999999
       }
     }
   },
   {
-    "RJ Barrett": {
+    "Anthony Davis": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/R.J._Barrett_42c5f009-dfd2-4a94-a750-0943791e138e.webp",
-        "player_position": "F-G"
+        "team_name": "Lakers",
+        "team_market": "Los Angeles",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Anthony_Davis_ea8826b8-1f76-4eab-b61e-ffcb176880f3.webp",
+        "player_position": "F-C"
+      },
+      "stats": {
+        "type": "rebounds",
+        "strike_value": 11.5,
+        "predicted_value": 12.58,
+        "bet_recommendation": "Higher",
+        "difference": 1.08
+      }
+    }
+  },
+  {
+    "Michael Porter Jr.": {
+      "general": {
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Michael_Porter_Jr._3a7d6510-00e9-4265-81df-864a1f547269.webp",
+        "player_position": "F"
       },
       "stats": {
         "type": "rebounds",
         "strike_value": 5.5,
-        "predicted_value": 5.04,
+        "predicted_value": 5.5,
         "bet_recommendation": "Lower",
-        "difference": 0.45999999999999996
+        "difference": 0.0
       }
     }
   },
   {
-    "Rui Hachimura": {
+    "Kevin Durant": {
       "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Rui_Hachimura_5bfc9a4c-deb7-4f37-a784-5d99ada863cb.webp",
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
         "player_position": "F"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 4,
-        "predicted_value": 4.45,
-        "bet_recommendation": "Higher",
-        "difference": 0.4500000000000002
+        "strike_value": 7.5,
+        "predicted_value": 6.66,
+        "bet_recommendation": "Lower",
+        "difference": 0.8399999999999999
       }
     }
   },
   {
-    "Jarred Vanderbilt": {
+    "Nikola Jokic": {
       "general": {
-        "team_name": "Lakers",
-        "team_market": "Los Angeles",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Jarred_Vanderbilt_0b79911f-cd24-46d1-9b05-49fe937aa75e.webp",
-        "player_position": "F"
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
+        "player_position": "C"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 5,
-        "predicted_value": 7.41,
+        "strike_value": 11.5,
+        "predicted_value": 11.84,
         "bet_recommendation": "Higher",
-        "difference": 2.41
+        "difference": 0.33999999999999986
+      }
+    }
+  },
+  {
+    "Devin Booker": {
+      "general": {
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Devin_Booker_31baa84f-c759-4f92-8e1f-a92305ade3d6.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "rebounds",
+        "strike_value": 4.5,
+        "predicted_value": 4.53,
+        "bet_recommendation": "Higher",
+        "difference": 0.03000000000000025
       }
     }
   }
