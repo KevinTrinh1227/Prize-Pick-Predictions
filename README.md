@@ -32,16 +32,7 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. 
 3. Install dependencies
 
    ```sh
-   pip install scikit-learn
-   ```
-   ```sh
-   pip install flask
-   ```
-   ```sh
-   pip install requests
-   ```
-   ```sh
-   pip install tabulate
+   pip install -r requirements.txt
    ```
 ### 🚀 Host the app locally
 
@@ -50,7 +41,7 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. 
    ```sh
    python main.py
    ```
-2. Deploy the Flask app and get the http link
+2. Deploy the Flask app and get the HTTP link
 
    ```sh
    python app.py
