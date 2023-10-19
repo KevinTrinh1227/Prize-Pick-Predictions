@@ -21,7 +21,7 @@ Advanced Topics: Programming for Data Science <strong>CS 4375</strong> Project. 
 1. Use link below or [click here](https://api.prizepicks.com/projections?league_id=7) then copy everything to clipboard
 
    ```sh
-   https://api.prizepicks.com/projections?league_id=7)
+   https://api.prizepicks.com/projections?league_id=7
    ```
 
 2. Paste everything into the json file below (since prize picks no longer supports public api)
