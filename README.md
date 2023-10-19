@@ -3,6 +3,9 @@
 <p align="center">
     A Flask application that displays current NBA player score predictions. Please read below.
 </p>
+<div align="center">
+  <img src="https://img.shields.io/badge/maintenance-experimental-blue.svg" alt="Maintained status" />
+</div>
 
 ![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234551198-3f3d0d0a-fd37-486f-836c-31a0f97fc26e.gif)
 
