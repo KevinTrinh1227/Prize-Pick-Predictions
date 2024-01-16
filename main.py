@@ -138,33 +138,37 @@ for idx, key in enumerate(data):
                      recommendation_reb,
                      assists, fp_assists, recommendation_ast, points_assists,
                      points_rebounds, points_rebounds_assists])
+                
 
-                """ =============================================
+                """
+                =============================================
                 * Calculating the absolute value of the differences
                 * between the predicted score and line scores for the player
                 * so longer distance between the two means more likely to hit
-                ============================================= """
-                diff_pts = abs(fp_points - points) if isinstance(fp_points, (int, float)) and isinstance(points, (
+                =============================================
+                """
+                diff_pts = round(abs(fp_points - points), 5) if isinstance(fp_points, (int, float)) and isinstance(points, (
                 int, float)) else n_a
-                diff_reb = abs(fp_rebounds - rebounds) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds,
-                                                                                                               (
-                                                                                                                   int,
-                                                                                                                   float)) else n_a
-                diff_assists = abs(fp_assists - assists) if isinstance(fp_assists, (int, float)) and isinstance(assists,
-                                                                                                                (
-                                                                                                                    int,
-                                                                                                                    float)) else n_a
-                diff_pts_ast = abs((fp_points + fp_assists) - points_assists) if isinstance(fp_points,
-                                                                                            (
-                                                                                            int, float)) and isinstance(
+                diff_reb = round(abs(fp_rebounds - rebounds), 5) if isinstance(fp_rebounds, (int, float)) and isinstance(rebounds,
+                                                                                                            (
+                                                                                                                int,
+                                                                                                                float)) else n_a
+                diff_assists = round(abs(fp_assists - assists), 5) if isinstance(fp_assists, (int, float)) and isinstance(assists,
+                                                                                                                    (
+                                                                                                                        int,
+                                                                                                                        float)) else n_a
+                diff_pts_ast = round(abs((fp_points + fp_assists) - points_assists), 5) if isinstance(fp_points,
+                                                                                                        (
+                                                                                                        int, float)) and isinstance(
                     fp_assists, (int, float)) and isinstance(points_assists, (int, float)) else n_a
-                diff_pts_reb = abs((fp_points + fp_rebounds) - points_rebounds) if isinstance(fp_points,
-                                                                                              (int,
-                                                                                               float)) and isinstance(
+                diff_pts_reb = round(abs((fp_points + fp_rebounds) - points_rebounds), 5) if isinstance(fp_points,
+                                                                                                        (int,
+                                                                                                        float)) and isinstance(
                     fp_rebounds, (int, float)) and isinstance(points_rebounds, (int, float)) else n_a
-                diff_pts_ast_reb = abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists) if isinstance(
+                diff_pts_ast_reb = round(abs((fp_points + fp_assists + fp_rebounds) - points_rebounds_assists), 5) if isinstance(
                     fp_points, (int, float)) and isinstance(fp_assists, (int, float)) and isinstance(fp_rebounds, (
                     int, float)) and isinstance(points_rebounds_assists, (int, float)) else n_a
+
 
                 """ =============================================
                 * Here we append the values and split them into
