@@ -1,18 +1,18 @@
 [
   {
-    "Donte DiVincenzo": {
+    "Joel Embiid": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
-        "player_position": "G"
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+        "player_position": "C-F"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 2.5,
-        "predicted_value": 3.5,
-        "bet_recommendation": "Higher",
-        "difference": 1.0
+        "strike_value": 5.5,
+        "predicted_value": 4.15,
+        "bet_recommendation": "Lower",
+        "difference": 1.35
       }
     }
   },
@@ -30,6 +30,23 @@
         "predicted_value": 2.8,
         "bet_recommendation": "Lower",
         "difference": 2.7
+      }
+    }
+  },
+  {
+    "Donte DiVincenzo": {
+      "general": {
+        "team_name": "Knicks",
+        "team_market": "New York",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 2.5,
+        "predicted_value": 3.5,
+        "bet_recommendation": "Higher",
+        "difference": 1.0
       }
     }
   }

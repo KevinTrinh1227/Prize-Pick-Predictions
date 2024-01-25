@@ -1,39 +1,5 @@
 [
   {
-    "Aaron Gordon": {
-      "general": {
-        "team_name": "Nuggets",
-        "team_market": "Denver",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
-        "player_position": "F"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 5.5,
-        "predicted_value": 6.56,
-        "bet_recommendation": "Higher",
-        "difference": 1.06
-      }
-    }
-  },
-  {
-    "Kentavious Caldwell-Pope": {
-      "general": {
-        "team_name": "Nuggets",
-        "team_market": "Denver",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
-        "player_position": "G"
-      },
-      "stats": {
-        "type": "rebounds",
-        "strike_value": 2.5,
-        "predicted_value": 2.74,
-        "bet_recommendation": "Higher",
-        "difference": 0.24
-      }
-    }
-  },
-  {
     "Jamal Murray": {
       "general": {
         "team_name": "Nuggets",
@@ -51,6 +17,23 @@
     }
   },
   {
+    "Nikola Vucevic": {
+      "general": {
+        "team_name": "Bulls",
+        "team_market": "Chicago",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
+        "player_position": "C"
+      },
+      "stats": {
+        "type": "rebounds",
+        "strike_value": 12.5,
+        "predicted_value": 11.01,
+        "bet_recommendation": "Lower",
+        "difference": 1.49
+      }
+    }
+  },
+  {
     "OG Anunoby": {
       "general": {
         "team_name": "Knicks",
@@ -64,6 +47,40 @@
         "predicted_value": 4.94,
         "bet_recommendation": "Higher",
         "difference": 0.44
+      }
+    }
+  },
+  {
+    "Aaron Gordon": {
+      "general": {
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "rebounds",
+        "strike_value": 5.5,
+        "predicted_value": 6.56,
+        "bet_recommendation": "Higher",
+        "difference": 1.06
+      }
+    }
+  },
+  {
+    "Julius Randle": {
+      "general": {
+        "team_name": "Knicks",
+        "team_market": "New York",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Julius_Randle_24c85a15-686e-4161-934b-40948188fa36.webp",
+        "player_position": "F-C"
+      },
+      "stats": {
+        "type": "rebounds",
+        "strike_value": 8.5,
+        "predicted_value": 9.96,
+        "bet_recommendation": "Higher",
+        "difference": 1.46
       }
     }
   },
@@ -102,36 +119,36 @@
     }
   },
   {
-    "Nikola Vucevic": {
+    "Kentavious Caldwell-Pope": {
       "general": {
-        "team_name": "Bulls",
-        "team_market": "Chicago",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
-        "player_position": "C"
+        "team_name": "Nuggets",
+        "team_market": "Denver",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
+        "player_position": "G"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 12.5,
-        "predicted_value": 11.01,
-        "bet_recommendation": "Lower",
-        "difference": 1.49
+        "strike_value": 2.5,
+        "predicted_value": 2.74,
+        "bet_recommendation": "Higher",
+        "difference": 0.24
       }
     }
   },
   {
-    "Julius Randle": {
+    "Myles Turner": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Julius_Randle_24c85a15-686e-4161-934b-40948188fa36.webp",
-        "player_position": "F-C"
+        "team_name": "Pacers",
+        "team_market": "Indiana",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Myles_Turner_323f9ef8-ecdd-41a7-859e-dd3db48ba913.webp",
+        "player_position": "C-F"
       },
       "stats": {
         "type": "rebounds",
-        "strike_value": 8.5,
-        "predicted_value": 9.96,
+        "strike_value": 6.5,
+        "predicted_value": 7.52,
         "bet_recommendation": "Higher",
-        "difference": 1.46
+        "difference": 1.02
       }
     }
   }

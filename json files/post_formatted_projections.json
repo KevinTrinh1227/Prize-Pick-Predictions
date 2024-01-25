@@ -1,256 +1,32 @@
 {
-  "1732": {
-    "name": "Joel Embiid",
-    "opposing_team_abv": "IND",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 36.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Joel Embiid",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Philadelphia",
-      "name": "Joel Embiid",
-      "position": "C-F",
-      "team": "PHI",
-      "team_name": "76ers"
-    }
-  },
-  "37691": {
-    "name": "Aaron Gordon",
-    "opposing_team_abv": "NYK",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Blocked Shots",
-        "line_score": 0.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 5.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 18.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 21.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 13.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Aaron Gordon",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Denver",
-      "name": "Aaron Gordon",
-      "position": "F",
-      "team": "DEN",
-      "team_name": "Nuggets"
-    }
-  },
-  "87402": {
-    "name": "Kentavious Caldwell-Pope",
-    "opposing_team_abv": "NYK",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Steals",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 11.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 9.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Kentavious Caldwell-Pope",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Denver",
-      "name": "Kentavious Caldwell-Pope",
-      "position": "G",
-      "team": "DEN",
-      "team_name": "Nuggets"
-    }
-  },
-  "1604": {
-    "name": "Myles Turner",
+  "185263": {
+    "name": "Pascal Siakam",
     "opposing_team_abv": "PHI",
     "strike_values": [
       {
-        "stat_type": "Points",
-        "line_score": 16.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Myles Turner",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Myles_Turner_323f9ef8-ecdd-41a7-859e-dd3db48ba913.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Indiana",
-      "name": "Myles Turner",
-      "position": "C-F",
-      "team": "IND",
-      "team_name": "Pacers"
-    }
-  },
-  "174284": {
-    "name": "Donte DiVincenzo",
-    "opposing_team_abv": "DEN",
-    "strike_values": [
-      {
-        "stat_type": "Assists",
-        "line_score": 2.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 12.5
-      },
-      {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 18.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Donte DiVincenzo",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "New York",
-      "name": "Donte DiVincenzo",
-      "position": "G",
-      "team": "NYK",
-      "team_name": "Knicks"
-    }
-  },
-  "10731": {
-    "name": "Coby White",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 10.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 32.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
+        "line_score": 31.5
       },
       {
         "stat_type": "Pts+Rebs",
         "line_score": 26.5
       },
       {
-        "stat_type": "Assists",
-        "line_score": 5.5
-      },
-      {
         "stat_type": "Points",
-        "line_score": 21.5
+        "line_score": 20.5
       }
     ],
     "attributes": {
       "combo": false,
-      "display_name": "Coby White",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Coby_White_a1e46e84-bd9e-454d-9117-a8fa1aab0ce4.webp",
+      "display_name": "Pascal Siakam",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Pascal_Siakam_3df1db1d-6596-489e-8e26-80f60fd9b1f4.webp",
       "league": "NBA",
       "league_id": 7,
-      "market": "Chicago",
-      "name": "Coby White",
-      "position": "G",
-      "team": "CHI",
-      "team_name": "Bulls"
-    }
-  },
-  "25422": {
-    "name": "Patrick Williams",
-    "opposing_team_abv": "LAL",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 12.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 15.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 16.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 10.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Patrick Williams",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Patrick_Williams_67f6467e-0acc-48ce-9872-a63225ef295c.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Chicago",
-      "name": "Patrick Williams",
+      "market": "Indiana",
+      "name": "Pascal Siakam",
       "position": "F",
-      "team": "CHI",
-      "team_name": "Bulls"
+      "team": "IND",
+      "team_name": "Pacers"
     }
   },
   "1290": {
@@ -258,28 +34,28 @@
     "opposing_team_abv": "NYK",
     "strike_values": [
       {
-        "stat_type": "Pts+Asts",
-        "line_score": 31.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 35.5
-      },
-      {
         "stat_type": "Points",
         "line_score": 24.5
-      },
-      {
-        "stat_type": "3-PT Made",
-        "line_score": 2.5
       },
       {
         "stat_type": "Pts+Rebs",
         "line_score": 28.5
       },
       {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 35.5
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 2.5
+      },
+      {
         "stat_type": "Rebounds",
         "line_score": 3.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 31.5
       }
     ],
     "attributes": {
@@ -295,10 +71,106 @@
       "team_name": "Nuggets"
     }
   },
+  "57556": {
+    "name": "LeBron James",
+    "opposing_team_abv": "CHI",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 25.5
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 33.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 33.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 40.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 14.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "LeBron James",
+      "image_url": "https://static.prizepicks.com/images/players/nba/LeBron_James_0afbe608-940a-4d5d-a1f7-468718c67d91.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Los Angeles",
+      "name": "LeBron James",
+      "position": "F",
+      "team": "LAL",
+      "team_name": "Lakers"
+    }
+  },
+  "37560": {
+    "name": "Nikola Vucevic",
+    "opposing_team_abv": "LAL",
+    "strike_values": [
+      {
+        "stat_type": "Rebounds",
+        "line_score": 12.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 16.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 34.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 22.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 18.5
+      },
+      {
+        "stat_type": "Turnovers",
+        "line_score": 1.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Nikola Vucevic",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Chicago",
+      "name": "Nikola Vucevic",
+      "position": "C",
+      "team": "CHI",
+      "team_name": "Bulls"
+    }
+  },
   "1620": {
     "name": "Tobias Harris",
     "opposing_team_abv": "IND",
     "strike_values": [
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 25.5
+      },
       {
         "stat_type": "Points",
         "line_score": 16.5
@@ -317,18 +189,94 @@
       "team_name": "76ers"
     }
   },
-  "183158": {
-    "name": "OG Anunoby",
-    "opposing_team_abv": "DEN",
+  "25422": {
+    "name": "Patrick Williams",
+    "opposing_team_abv": "LAL",
     "strike_values": [
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 16.5
+      },
+      {
+        "stat_type": "Turnovers",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 12.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 10.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 15.5
+      },
+      {
+        "stat_type": "3-PT Made",
+        "line_score": 1.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Patrick Williams",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Patrick_Williams_67f6467e-0acc-48ce-9872-a63225ef295c.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Chicago",
+      "name": "Patrick Williams",
+      "position": "F",
+      "team": "CHI",
+      "team_name": "Bulls"
+    }
+  },
+  "2023": {
+    "name": "Michael Porter Jr.",
+    "opposing_team_abv": "NYK",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 19.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 13.5
+      },
       {
         "stat_type": "Pts+Rebs+Asts",
         "line_score": 20.5
       },
       {
-        "stat_type": "Points",
-        "line_score": 14.5
+        "stat_type": "Blks+Stls",
+        "line_score": 1.5
       },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 14.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Michael Porter Jr.",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Michael_Porter_Jr._3a7d6510-00e9-4265-81df-864a1f547269.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Michael Porter Jr.",
+      "position": "F",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "183158": {
+    "name": "OG Anunoby",
+    "opposing_team_abv": "DEN",
+    "strike_values": [
       {
         "stat_type": "3-PT Made",
         "line_score": 1.5
@@ -336,6 +284,14 @@
       {
         "stat_type": "Rebounds",
         "line_score": 4.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 14.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 20.5
       },
       {
         "stat_type": "Pts+Rebs",
@@ -359,6 +315,124 @@
       "team_name": "Knicks"
     }
   },
+  "1732": {
+    "name": "Joel Embiid",
+    "opposing_team_abv": "IND",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 36.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 48.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 53.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 5.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Joel Embiid",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Philadelphia",
+      "name": "Joel Embiid",
+      "position": "C-F",
+      "team": "PHI",
+      "team_name": "76ers"
+    }
+  },
+  "37691": {
+    "name": "Aaron Gordon",
+    "opposing_team_abv": "NYK",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 18.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 21.5
+      },
+      {
+        "stat_type": "Blocked Shots",
+        "line_score": 0.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 13.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 15.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 5.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Aaron Gordon",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Aaron Gordon",
+      "position": "F",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "54125": {
+    "name": "Julius Randle",
+    "opposing_team_abv": "DEN",
+    "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 34.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 8.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 30.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 13.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 25.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 39.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Julius Randle",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Julius_Randle_24c85a15-686e-4161-934b-40948188fa36.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "New York",
+      "name": "Julius Randle",
+      "position": "F-C",
+      "team": "NYK",
+      "team_name": "Knicks"
+    }
+  },
   "56229": {
     "name": "Alex Caruso",
     "opposing_team_abv": "LAL",
@@ -368,20 +442,20 @@
         "line_score": 13.5
       },
       {
-        "stat_type": "Rebounds",
-        "line_score": 3.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 10.5
-      },
-      {
         "stat_type": "Pts+Asts",
         "line_score": 13.5
       },
       {
+        "stat_type": "Rebounds",
+        "line_score": 3.5
+      },
+      {
         "stat_type": "Pts+Rebs+Asts",
         "line_score": 17.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 10.5
       },
       {
         "stat_type": "Blks+Stls",
@@ -401,63 +475,21 @@
       "team_name": "Bulls"
     }
   },
-  "57556": {
-    "name": "LeBron James",
-    "opposing_team_abv": "CHI",
-    "strike_values": [
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 33.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 40.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 33.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "LeBron James",
-      "image_url": "https://static.prizepicks.com/images/players/nba/LeBron_James_0afbe608-940a-4d5d-a1f7-468718c67d91.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Los Angeles",
-      "name": "LeBron James",
-      "position": "F",
-      "team": "LAL",
-      "team_name": "Lakers"
-    }
-  },
   "54957": {
     "name": "DeMar DeRozan",
     "opposing_team_abv": "LAL",
     "strike_values": [
       {
-        "stat_type": "Rebs+Asts",
-        "line_score": 9.5
+        "stat_type": "Rebounds",
+        "line_score": 4.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
         "line_score": 32.5
       },
       {
-        "stat_type": "Rebounds",
-        "line_score": 4.5
+        "stat_type": "Rebs+Asts",
+        "line_score": 9.5
       },
       {
         "stat_type": "Pts+Rebs",
@@ -489,180 +521,68 @@
       "team_name": "Bulls"
     }
   },
-  "87498": {
-    "name": "Aaron Nesmith",
-    "opposing_team_abv": "PHI",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 11.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Aaron Nesmith",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Nesmith_90d63a71-e4fe-411c-9773-2e74b5e1cb3b.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Indiana",
-      "name": "Aaron Nesmith",
-      "position": "G-F",
-      "team": "IND",
-      "team_name": "Pacers"
-    }
-  },
-  "1291": {
-    "name": "Nikola Jokic",
-    "opposing_team_abv": "NYK",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 47.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 26.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 20.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 38.5
-      },
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 35.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Nikola Jokic",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Denver",
-      "name": "Nikola Jokic",
-      "position": "C",
-      "team": "DEN",
-      "team_name": "Nuggets"
-    }
-  },
-  "37560": {
-    "name": "Nikola Vucevic",
+  "10731": {
+    "name": "Coby White",
     "opposing_team_abv": "LAL",
     "strike_values": [
       {
-        "stat_type": "Pts+Asts",
-        "line_score": 22.5
+        "stat_type": "3-PT Made",
+        "line_score": 2.5
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 31.5
+        "line_score": 26.5
       },
       {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
+        "stat_type": "Assists",
+        "line_score": 5.5
       },
       {
         "stat_type": "Pts+Rebs+Asts",
-        "line_score": 34.5
-      },
-      {
-        "stat_type": "Turnovers",
-        "line_score": 1.5
+        "line_score": 32.5
       },
       {
         "stat_type": "Points",
-        "line_score": 18.5
-      },
-      {
-        "stat_type": "Rebounds",
-        "line_score": 12.5
+        "line_score": 21.5
       },
       {
         "stat_type": "Rebs+Asts",
-        "line_score": 16.5
+        "line_score": 10.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 27.5
       }
     ],
     "attributes": {
       "combo": false,
-      "display_name": "Nikola Vucevic",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Vucevic_7366b2b7-5959-4dd9-9204-760e861b3119.webp",
+      "display_name": "Coby White",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Coby_White_a1e46e84-bd9e-454d-9117-a8fa1aab0ce4.webp",
       "league": "NBA",
       "league_id": 7,
       "market": "Chicago",
-      "name": "Nikola Vucevic",
-      "position": "C",
+      "name": "Coby White",
+      "position": "G",
       "team": "CHI",
       "team_name": "Bulls"
-    }
-  },
-  "2023": {
-    "name": "Michael Porter Jr.",
-    "opposing_team_abv": "NYK",
-    "strike_values": [
-      {
-        "stat_type": "Pts+Asts",
-        "line_score": 14.5
-      },
-      {
-        "stat_type": "Blks+Stls",
-        "line_score": 1.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 20.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 19.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Michael Porter Jr.",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Michael_Porter_Jr._3a7d6510-00e9-4265-81df-864a1f547269.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Denver",
-      "name": "Michael Porter Jr.",
-      "position": "F",
-      "team": "DEN",
-      "team_name": "Nuggets"
-    }
-  },
-  "185263": {
-    "name": "Pascal Siakam",
-    "opposing_team_abv": "PHI",
-    "strike_values": [
-      {
-        "stat_type": "Points",
-        "line_score": 20.5
-      }
-    ],
-    "attributes": {
-      "combo": false,
-      "display_name": "Pascal Siakam",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Pascal_Siakam_3df1db1d-6596-489e-8e26-80f60fd9b1f4.webp",
-      "league": "NBA",
-      "league_id": 7,
-      "market": "Indiana",
-      "name": "Pascal Siakam",
-      "position": "F",
-      "team": "IND",
-      "team_name": "Pacers"
     }
   },
   "85745": {
     "name": "Jalen Brunson",
     "opposing_team_abv": "DEN",
     "strike_values": [
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 31.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 10.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 27.5
+      },
       {
         "stat_type": "Turnovers",
         "line_score": 2.5
@@ -674,18 +594,6 @@
       {
         "stat_type": "Pts+Rebs+Asts",
         "line_score": 38.5
-      },
-      {
-        "stat_type": "Points",
-        "line_score": 27.5
-      },
-      {
-        "stat_type": "Pts+Rebs",
-        "line_score": 31.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 10.5
       }
     ],
     "attributes": {
@@ -701,44 +609,180 @@
       "team_name": "Knicks"
     }
   },
-  "54125": {
-    "name": "Julius Randle",
-    "opposing_team_abv": "DEN",
+  "87402": {
+    "name": "Kentavious Caldwell-Pope",
+    "opposing_team_abv": "NYK",
     "strike_values": [
       {
-        "stat_type": "Points",
-        "line_score": 25.5
-      },
-      {
-        "stat_type": "Rebs+Asts",
-        "line_score": 13.5
-      },
-      {
-        "stat_type": "Pts+Rebs+Asts",
-        "line_score": 39.5
-      },
-      {
         "stat_type": "Pts+Asts",
-        "line_score": 30.5
+        "line_score": 11.5
       },
       {
-        "stat_type": "Rebounds",
-        "line_score": 8.5
+        "stat_type": "Steals",
+        "line_score": 1.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 9.5
       },
       {
         "stat_type": "Pts+Rebs",
-        "line_score": 34.5
+        "line_score": 12.5
+      },
+      {
+        "stat_type": "Rebounds",
+        "line_score": 2.5
       }
     ],
     "attributes": {
       "combo": false,
-      "display_name": "Julius Randle",
-      "image_url": "https://static.prizepicks.com/images/players/nba/Julius_Randle_24c85a15-686e-4161-934b-40948188fa36.webp",
+      "display_name": "Kentavious Caldwell-Pope",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Kentavious Caldwell-Pope",
+      "position": "G",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "1291": {
+    "name": "Nikola Jokic",
+    "opposing_team_abv": "NYK",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 26.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 38.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 35.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 47.5
+      },
+      {
+        "stat_type": "Rebs+Asts",
+        "line_score": 20.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Nikola Jokic",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Denver",
+      "name": "Nikola Jokic",
+      "position": "C",
+      "team": "DEN",
+      "team_name": "Nuggets"
+    }
+  },
+  "87498": {
+    "name": "Aaron Nesmith",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 11.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 17.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 15.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Aaron Nesmith",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Nesmith_90d63a71-e4fe-411c-9773-2e74b5e1cb3b.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Indiana",
+      "name": "Aaron Nesmith",
+      "position": "G-F",
+      "team": "IND",
+      "team_name": "Pacers"
+    }
+  },
+  "1604": {
+    "name": "Myles Turner",
+    "opposing_team_abv": "PHI",
+    "strike_values": [
+      {
+        "stat_type": "Rebounds",
+        "line_score": 6.5
+      },
+      {
+        "stat_type": "Points",
+        "line_score": 16.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 24.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 23.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Myles Turner",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Myles_Turner_323f9ef8-ecdd-41a7-859e-dd3db48ba913.webp",
+      "league": "NBA",
+      "league_id": 7,
+      "market": "Indiana",
+      "name": "Myles Turner",
+      "position": "C-F",
+      "team": "IND",
+      "team_name": "Pacers"
+    }
+  },
+  "174284": {
+    "name": "Donte DiVincenzo",
+    "opposing_team_abv": "DEN",
+    "strike_values": [
+      {
+        "stat_type": "Points",
+        "line_score": 12.5
+      },
+      {
+        "stat_type": "Assists",
+        "line_score": 2.5
+      },
+      {
+        "stat_type": "Pts+Asts",
+        "line_score": 14.5
+      },
+      {
+        "stat_type": "Pts+Rebs+Asts",
+        "line_score": 18.5
+      },
+      {
+        "stat_type": "Pts+Rebs",
+        "line_score": 15.5
+      }
+    ],
+    "attributes": {
+      "combo": false,
+      "display_name": "Donte DiVincenzo",
+      "image_url": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
       "league": "NBA",
       "league_id": 7,
       "market": "New York",
-      "name": "Julius Randle",
-      "position": "F-C",
+      "name": "Donte DiVincenzo",
+      "position": "G",
       "team": "NYK",
       "team_name": "Knicks"
     }

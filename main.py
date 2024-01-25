@@ -35,6 +35,14 @@ points_assists_json = "json files/points_assists.json"                      # pl
 points_rebounds_json = "json files/points_rebounds.json"                    # player pts+rebs recommendations json
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
+print("""
+______      _         _____ _      _    _____              _ _      _   _                 
+|  __ \    (_)       |  __ (_)    | |  |  __ \            | (_)    | | (_)                
+| |__) | __ _ _______| |__) |  ___| | _| |__) | __ ___  __| |_  ___| |_ _  ___  _ __  ___ 
+|  ___/ '__| |_  / _ \  ___/ |/ __| |/ /  ___/ '__/ _ \/ _` | |/ __| __| |/ _ \| '_ \/ __|
+| |   | |  | |/ /  __/ |   | | (__|   <| |   | | |  __/ (_| | | (__| |_| | (_) | | | \__ |
+|_|   |_|  |_/___\___|_|   |_|\___|_|\_\_|   |_|  \___|\__,_|_|\___|\__|_|\___/|_| |_|___/\n""")
+
 """ =============================================
 Because PP does not allow public API, this is a work around
 that uses a webdriver to access the PP end point to scrape the data
@@ -79,11 +87,11 @@ if json_div:
         with open(filename, 'w', encoding='utf-8') as json_file:
             json.dump(json_data, json_file, indent=2)
 
-        print(f"Content saved to {filename}")
+        print(f"[🟢] Successfully pulled and saved Prize Pick data to {filename}\n")
     except json.JSONDecodeError:
-        print("Invalid JSON content.")
+        print("[🔴]Invalid JSON content.")
 else:
-    print("No 'div' tag with ID 'json' found on the page.")
+    print("[🔴] No 'div' tag with ID 'json' found on the page.")
 
 driver.quit()
 
