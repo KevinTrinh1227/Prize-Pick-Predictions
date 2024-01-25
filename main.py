@@ -20,6 +20,12 @@ from utils.current_player_stats import *
 import requests
 # from utils.team_finder import *
 
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
+from bs4 import BeautifulSoup
+import json
+
 pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
 post_json = "json files/post_formatted_projections.json"                    # organized json file
 points_json = "json files/points.json"                                      # player points recommendations json
@@ -30,24 +36,56 @@ points_rebounds_json = "json files/points_rebounds.json"                    # pl
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 
 """ =============================================
-Note: The request below does not work as Oct 19, 2023
-Therefore we must copy and paste it ourselves into the json
-=================================================
+Because PP does not allow public API, this is a work around
+that uses a webdriver to access the PP end point to scrape the data
+
+IMPORTANT: This method uses Firefox and requires a Gecko Driver
+Download the correct version here: https://github.com/mozilla/geckodriver/releases
+================================================= """
+
+gecko_path = './drivers/geckodriver.exe'  # Replace with the correct path to your GeckoDriver
+service = Service(gecko_path)
+
+# Create Firefox options
+firefox_options = Options()
+firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Update with your Firefox binary location
+
+# Create a Firefox WebDriver with the Service and Firefox options
+driver = webdriver.Firefox(service=service, options=firefox_options)
+
 
 url = 'https://api.prizepicks.com/projections?league_id=7'
-response = requests.get(url)
-if response.status_code == 200:
-    # Parse the JSON data from the response
-    data = response.json()
+driver.get(url)
 
-    with open(pre_json, "w") as json_file:
-        json.dump(data, json_file, indent=4)
+content = driver.page_source
+soup = BeautifulSoup(content, 'html.parser')
+
+# Find the 'div' tag with ID "json"
+json_div = soup.find('div', {'id': 'json'})
+
+# Check if 'json_div' is not None before saving its content to a JSON file
+if json_div:
     
-    print(f"Data has been successfully saved to {pre_json}")
+    json_content = json_div.get_text(strip=True, separator='\n')
+
+    try:
+        # Try to parse the extracted content as JSON
+        json_data = json.loads(json_content)
+
+        
+        filename = "./json files/pre_formatted_projections.json"
+
+        
+        with open(filename, 'w', encoding='utf-8') as json_file:
+            json.dump(json_data, json_file, indent=2)
+
+        print(f"Content saved to {filename}")
+    except json.JSONDecodeError:
+        print("Invalid JSON content.")
 else:
-    print(f"Faile API Fetching. Status code: {response.status_code}")
-    
-============================================= """
+    print("No 'div' tag with ID 'json' found on the page.")
+
+driver.quit()
 
 """ =============================================
 * Here we call parse/clean our json file and extract
