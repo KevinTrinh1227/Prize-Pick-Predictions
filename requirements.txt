@@ -1,3 +1,7 @@
 requests==2.31.0
+<<<<<<< HEAD
 flask==3.0.0
 selenium==3.141.0
+=======
+flask==3.0.1
+>>>>>>> refs/remotes/origin/main
