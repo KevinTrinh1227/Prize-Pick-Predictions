@@ -1,7 +1,7 @@
 ![ppplogo](/static/images/ppp.png)
 #
 <p align="center">
-    A Flask application that displays current NBA player score predictions. Please read below.
+    A Flask application that displays current NBA player score predictions. Please take a look below.
 </p>
 <div align="center">
   <img src="https://img.shields.io/badge/maintenance-experimental-blue.svg" alt="Maintained status" />
@@ -15,7 +15,7 @@ This project was made as just a concept. Due to many project constraints, and te
 While this project is no longer in an archive, I will slowly commit and integrate appropriate machine-learning algorithms to generate more accurate predictions using the correlation between different combinations of points, rebounds, and assists with the opponent team's ELO, and potentially other variables down the way including home court advantage, fouls, injuries, etc. 
 
 ## 🏀 What is Prize Pick Predictions?
-This Python project is a Flask application that provides "recommendations" for sports betting. With a focus on accuracy and data-driven insights, the app delivers relevant and timely information through multiple APIs, ensuring users have access to up-to-date data and statistics. Designed to offer valuable insights and recommendations, this app caters to both experienced and novice sports bettors, providing an edge in the competitive world of sports betting.
+This Python project is a Flask application that provides "recommendations" for sports betting. With a focus on accuracy and data-driven insights, the app delivers relevant and timely information through multiple APIs, ensuring users can access up-to-date data and statistics. Designed to offer valuable insights and recommendations, this app caters to experienced and novice sports bettors, providing an edge in the competitive world of sports betting.
 
 ##  🛠 Getting Started
 
@@ -28,21 +28,16 @@ This Python project is a Flask application that provides "recommendations" for s
     ```
 
 ### Initial set-up process
-1. Use the link below or [click here](https://api.prizepicks.com/projections?league_id=7) then copy everything to clipboard
 
-   ```sh
-   https://api.prizepicks.com/projections?league_id=7
-   ```
-
-2. Paste everything into the JSON file below (since prize picks no longer support public API)
-   ```sh
-   json files/pre_formatted.json
-   ```
-
-3. Install dependencies
+1. Install dependencies
 
    ```sh
    pip install -r requirements.txt
+   ```
+2. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/) & [Gecko Driver](https://github.com/mozilla/geckodriver/releases)
+   
+   ```sh
+   driver = webdriver.Firefox()
    ```
    
 ## 🚀 Host the app locally
