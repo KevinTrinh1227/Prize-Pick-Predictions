@@ -40,7 +40,7 @@ This Python project is a Flask application that provides "recommendations" for s
    ```sh
    # Windows driver creation
    firefox_options = Options()
-   firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Firefox binary location
+   firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
    driver = webdriver.Firefox(service=service, options=firefox_options)
    ```
    ```sh
