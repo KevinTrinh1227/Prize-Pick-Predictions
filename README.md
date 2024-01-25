@@ -37,6 +37,7 @@ This Python project is a Flask application that provides "recommendations" for s
 2. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/) & [Gecko Driver](https://github.com/mozilla/geckodriver/releases)
    
    ```sh
+   # Windows driver creation
    firefox_options = Options()
    firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Firefox binary location
    driver = webdriver.Firefox(service=service, options=firefox_options)
