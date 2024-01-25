@@ -5,6 +5,7 @@
 </p>
 <div align="center">
   <img src="https://img.shields.io/badge/maintenance-experimental-blue.svg" alt="Maintained status" />
+  <img src="https://img.shields.io/github/v/release/KevinTrinh1227/Prize-Pick-Predictions.svg" alt="Release badge" />
 </div>
 
 ![3b3f8646e52a86ce072b400c358e9a22](https://user-images.githubusercontent.com/48145892/234551198-3f3d0d0a-fd37-486f-836c-31a0f97fc26e.gif)
