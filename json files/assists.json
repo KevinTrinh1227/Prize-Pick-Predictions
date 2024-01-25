@@ -1,18 +1,69 @@
 [
   {
-    "Joel Embiid": {
+    "Jrue Holiday": {
       "general": {
-        "team_name": "76ers",
-        "team_market": "Philadelphia",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
-        "player_position": "C-F"
+        "team_name": "Celtics",
+        "team_market": "Boston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jrue_Holiday_65700e81-3aa0-49a9-8a94-004f2cfb64e5.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 7.39,
+        "bet_recommendation": "Higher",
+        "difference": 2.89
+      }
+    }
+  },
+  {
+    "Donte DiVincenzo": {
+      "general": {
+        "team_name": "Knicks",
+        "team_market": "New York",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 2.5,
+        "predicted_value": 3.5,
+        "bet_recommendation": "Higher",
+        "difference": 1.0
+      }
+    }
+  },
+  {
+    "Collin Sexton": {
+      "general": {
+        "team_name": "Jazz",
+        "team_market": "Utah",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Collin_Sexton_80b5cccf-203b-4482-92aa-76d1598216be.webp",
+        "player_position": "G"
       },
       "stats": {
         "type": "assists",
         "strike_value": 5.5,
-        "predicted_value": 4.15,
+        "predicted_value": 2.88,
         "bet_recommendation": "Lower",
-        "difference": 1.35
+        "difference": 2.62
+      }
+    }
+  },
+  {
+    "Tyrese Maxey": {
+      "general": {
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Tyrese_Maxey_75fc46eb-71d8-4d1a-984f-3747ccd7a4c9.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 7.5,
+        "predicted_value": 3.53,
+        "bet_recommendation": "Lower",
+        "difference": 3.97
       }
     }
   },
@@ -34,19 +85,70 @@
     }
   },
   {
-    "Donte DiVincenzo": {
+    "Joel Embiid": {
       "general": {
-        "team_name": "Knicks",
-        "team_market": "New York",
-        "picture_link": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
-        "player_position": "G"
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+        "player_position": "C-F"
       },
       "stats": {
         "type": "assists",
-        "strike_value": 2.5,
-        "predicted_value": 3.5,
+        "strike_value": 5.5,
+        "predicted_value": 4.15,
+        "bet_recommendation": "Lower",
+        "difference": 1.35
+      }
+    }
+  },
+  {
+    "Bam Adebayo": {
+      "general": {
+        "team_name": "Heat",
+        "team_market": "Miami",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Bam_Adebayo_11c303dc-540c-4090-8e0c-76c2fb2c125a.webp",
+        "player_position": "C-F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 3.22,
+        "bet_recommendation": "Lower",
+        "difference": 1.28
+      }
+    }
+  },
+  {
+    "Mikal Bridges": {
+      "general": {
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 3.5,
+        "predicted_value": 3.29,
+        "bet_recommendation": "Lower",
+        "difference": 0.21
+      }
+    }
+  },
+  {
+    "Jayson Tatum": {
+      "general": {
+        "team_name": "Celtics",
+        "team_market": "Boston",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
+        "player_position": "F-G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 4.62,
         "bet_recommendation": "Higher",
-        "difference": 1.0
+        "difference": 0.12
       }
     }
   }

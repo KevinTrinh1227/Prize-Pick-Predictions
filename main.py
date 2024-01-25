@@ -54,12 +54,15 @@ Download the correct version here: https://github.com/mozilla/geckodriver/releas
 gecko_path = './drivers/geckodriver.exe'  # Replace with the correct path to your GeckoDriver
 service = Service(gecko_path)
 
-# Create Firefox options
-firefox_options = Options()
-firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Update with your Firefox binary location
+"""
+Windows driver creation
+# firefox_options = Options()
+# firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Update with your Firefox binary location
+# driver = webdriver.Firefox(service=service, options=firefox_options)
+"""
 
-# Create a Firefox WebDriver with the Service and Firefox options
-driver = webdriver.Firefox(service=service, options=firefox_options)
+# Linux Ubuntu driver creation
+driver = webdriver.Firefox()
 
 
 url = 'https://api.prizepicks.com/projections?league_id=7'
