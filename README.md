@@ -35,7 +35,10 @@ This Python project is a Flask application that provides "recommendations" for s
    ```sh
    pip install -r requirements.txt
    ```
-2. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/) & [Gecko Driver](https://github.com/mozilla/geckodriver/releases)
+2. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/) & [Gecko Driver](https://github.com/mozilla/geckodriver/releases) (Save it inside the driver folder)
+   ```sh
+   gecko_path = './drivers/geckodriver.exe'
+   ```
    
 ## 🚀 Host the app locally
 
