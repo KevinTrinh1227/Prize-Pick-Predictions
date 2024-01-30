@@ -19,6 +19,8 @@ from utils.bet_recommendation import *
 from utils.current_player_stats import *
 import requests
 # from utils.team_finder import *
+from utils.calculate_elo import *
+from utils.get_all_matches import *
 
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
@@ -34,6 +36,8 @@ rebounds_json = "json files/rebounds.json"                                  # pl
 points_assists_json = "json files/points_assists.json"                      # player pts+asts recommendations json
 points_rebounds_json = "json files/points_rebounds.json"                    # player pts+rebs recommendations json
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
+season_matches_json = "json files/match_results.json"                       # displays the season's match results
+team_elos_json = "json files/team_elos.json"                                # All 30 NBA team's elo ratings and history
 
 print("""
 ______      _         _____ _      _    _____              _ _      _   _                 
@@ -51,13 +55,18 @@ IMPORTANT: This method uses Firefox and requires a Gecko Driver
 Download the correct version here: https://github.com/mozilla/geckodriver/releases
 ================================================= """
 
+current_season_year = 2023      # 2023 means 2023-24 NBA season (Change if needed)
+
+get_all_matches(season_matches_json, current_season_year)
+start_calculating(season_matches_json, team_elos_json) # params(read file, write file)
+
 gecko_path = './drivers/geckodriver.exe'  # Replace with the correct path to your GeckoDriver
 service = Service(gecko_path)
 
 # Windows driver creation
-firefox_options = Options()
-firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Firefox binary location
-driver = webdriver.Firefox(service=service, options=firefox_options)
+# firefox_options = Options()
+# firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Firefox binary location
+# driver = webdriver.Firefox(service=service, options=firefox_options)
 
 
 # Linux Ubuntu driver creation
