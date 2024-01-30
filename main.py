@@ -57,19 +57,14 @@ Download the correct version here: https://github.com/mozilla/geckodriver/releas
 
 current_season_year = 2023      # 2023 means 2023-24 NBA season (Change if needed)
 
-get_all_matches(season_matches_json, current_season_year)
-start_calculating(season_matches_json, team_elos_json) # params(read file, write file)
+get_all_matches(season_matches_json, current_season_year)       # params (read file, current season yyyy)
+start_calculating(season_matches_json, team_elos_json)          # params(read file, write file)
+sort_and_print(team_elos_json)                                  # will sort and print out elo table
 
-gecko_path = './drivers/geckodriver.exe'  # Replace with the correct path to your GeckoDriver
+# you can change this out if you want to use a different driver/browser combo
+# information about driver and browser in README.md
+gecko_path = "./drivers/geckodriver.exe"
 service = Service(gecko_path)
-
-# Windows driver creation
-# firefox_options = Options()
-# firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Firefox binary location
-# driver = webdriver.Firefox(service=service, options=firefox_options)
-
-
-# Linux Ubuntu driver creation
 driver = webdriver.Firefox()
 
 
@@ -356,13 +351,13 @@ for idx, key in enumerate(data):
             except:
                 if i < max_attempts - 1:
                     load_status = "FAILED"
-                    start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
+                    start_str = f"[🟡] Load Status: {load_status:<15} Player: {player_name:<25}"
                     print(
                         f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({n_a:0>2}/{n_a} | {n_a}%) \t[In: {i} sec(s)]")
                     time.sleep(i)
                 else:
                     load_status = "FAILED"
-                    start_str = f"[🟡] Load Status: {load_status:<15} Player name: {player_name:<30}"
+                    start_str = f"[🟡] Load Status: {load_status:<15} Player: {player_name:<25}"
                     print(
                         f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({n_a:0>2}/{n_a} | {n_a}%) \t[Final attempt]")
 
@@ -390,7 +385,7 @@ for idx, key in enumerate(data):
 
         players_printed += 1
         load_status = "Successful"
-        start_str = f"[🟢] Load Status: {load_status:<15} Player name: {player_name:<30}"
+        start_str = f"[🟢] Load Status: {load_status:<15} Player: {player_name:<25}"
         players_percentage = round((players_printed / num_players) * 100)
         print(f"{start_str:<60} Attempts: {num_attempts}/{(max_attempts - 1):<5} ({players_printed:0>2}/{num_players} | {players_percentage:0>2}%)")
 

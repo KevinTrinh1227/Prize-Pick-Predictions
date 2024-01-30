@@ -68,6 +68,14 @@ def print_team_stats(team_stats):
             stats['win_rate']
         ))
 
+def sort_and_print(elo_json):
+    # Example usage:
+    with open(elo_json, "r") as file:
+        team_stats = json.load(file)
+
+    sorted_teams = sort_teams_by_elo(team_stats)
+    print_team_stats(sorted_teams)
+
 def start_calculating(read_file, write_file):
     with open(read_file, "r") as file:
         matches = json.load(file)
@@ -89,13 +97,6 @@ def start_calculating(read_file, write_file):
     print("[🟢] Successfully calculated and saved all NBA team ELOs to respective json file.")
     
     return None
-
-# Example usage:
-#with open("../json files/team_elos.json", "r") as file:
-#    team_stats = json.load(file)
-
-#sorted_teams = sort_teams_by_elo(team_stats)
-#print_team_stats(sorted_teams)
 
 if __name__ == "__main__":
     start_calculating()
