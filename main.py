@@ -113,18 +113,27 @@ table = []                                      # table were printing out
 n_a = "--"                                      # default value if a stat is NULL
 
 # Each stat type is going to be separated into its own json file
-with open(points_json, 'r') as f_points:
-    points_data = []
-with open(assists_json, 'r') as f_assists:
-    assists_data = []
-with open(rebounds_json, 'r') as f_rebounds:
-    rebounds_data = []
-with open(points_assists_json, 'r') as f_points_assists:
-    points_assists_data = []
-with open(points_rebounds_json, 'r') as f_points_rebounds:
-    points_rebounds_data = []
-with open(points_assists_rebounds_json, 'r') as f_points_assists_rebounds:
-    points_assists_rebounds_data = []
+# Function to handle file opening or creation
+def open_or_create_json(file_path, default_data):
+    try:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        # Create the file if it doesn't exist
+        with open(file_path, 'w') as file:
+            json.dump(default_data, file)
+        data = default_data
+    return data
+
+default_data = []
+
+# Open or create each JSON file and initialize data
+points_data = open_or_create_json(points_json, default_data)
+assists_data = open_or_create_json(assists_json, default_data)
+rebounds_data = open_or_create_json(rebounds_json, default_data)
+points_assists_data = open_or_create_json(points_assists_json, default_data)
+points_rebounds_data = open_or_create_json(points_rebounds_json, default_data)
+points_assists_rebounds_data = open_or_create_json(points_assists_rebounds_json, default_data)
 
 """ =============================================
 * Looping through each player inside our new
