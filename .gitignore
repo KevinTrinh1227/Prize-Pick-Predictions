@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 #json files
-/json files/*.json
+*.json
 
 # Distribution / packaging
 .idea
