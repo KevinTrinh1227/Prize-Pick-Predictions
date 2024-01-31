@@ -1,0 +1,56 @@
+[
+  {
+    "Tobias Harris": {
+      "general": {
+        "player_id": 200,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Tobias_Harris_82f09975-6a8d-42e4-b42c-a52b9349ed50.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "pts+rebs+asts",
+        "strike_value": 28.5,
+        "predicted_value": 26.52,
+        "bet_recommendation": "Lower",
+        "difference": 1.98
+      }
+    }
+  },
+  {
+    "Andrew Wiggins": {
+      "general": {
+        "player_id": 475,
+        "team_name": "Warriors",
+        "team_market": "Golden State",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Andrew_Wiggins_77c425f0-0fce-4fab-bd1e-c915c8fb5bc7.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "pts+rebs+asts",
+        "strike_value": 21.5,
+        "predicted_value": 18.05,
+        "bet_recommendation": "Lower",
+        "difference": 3.45
+      }
+    }
+  },
+  {
+    "Joel Embiid": {
+      "general": {
+        "player_id": 145,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+        "player_position": "C-F"
+      },
+      "stats": {
+        "type": "pts+rebs+asts",
+        "strike_value": 53.5,
+        "predicted_value": 53.12,
+        "bet_recommendation": "Lower",
+        "difference": 0.38
+      }
+    }
+  }
+]

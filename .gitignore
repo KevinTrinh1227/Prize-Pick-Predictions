@@ -6,9 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-#json files
-*.json
-
 # Distribution / packaging
 .idea
 .Python

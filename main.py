@@ -21,6 +21,7 @@ import requests
 # from utils.team_finder import *
 from utils.calculate_elo import *
 from utils.get_all_matches import *
+from utils.json_functions import *
 
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
@@ -28,6 +29,7 @@ from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup
 import json
 
+json_dir_location = "json files"
 pre_json = "json files/pre_formatted_projections.json"                      # where we copied and paste api into
 post_json = "json files/post_formatted_projections.json"                    # organized json file
 points_json = "json files/points.json"                                      # player points recommendations json
@@ -38,6 +40,8 @@ points_rebounds_json = "json files/points_rebounds.json"                    # pl
 points_assists_rebounds_json = "json files/points_assists_rebounds.json"    # player pts+asts+rebs recommendations json
 season_matches_json = "json files/match_results.json"                       # displays the season's match results
 team_elos_json = "json files/team_elos.json"                                # All 30 NBA team's elo ratings and history
+
+wipe_json_files(json_dir_location)                                          # we clean all json files for new data only
 
 print("""
 ______      _         _____ _      _    _____              _ _      _   _                 
@@ -87,7 +91,7 @@ if json_div:
         json_data = json.loads(json_content)
 
         
-        filename = "./json files/pre_formatted_projections.json"
+        filename = pre_json
 
         
         with open(filename, 'w', encoding='utf-8') as json_file:
@@ -113,18 +117,6 @@ table = []                                      # table were printing out
 n_a = "--"                                      # default value if a stat is NULL
 
 # Each stat type is going to be separated into its own json file
-# Function to handle file opening or creation
-def open_or_create_json(file_path, default_data):
-    try:
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        # Create the file if it doesn't exist
-        with open(file_path, 'w') as file:
-            json.dump(default_data, file)
-        data = default_data
-    return data
-
 default_data = []
 
 # Open or create each JSON file and initialize data
@@ -182,7 +174,7 @@ for idx, key in enumerate(data):
             num_attempts = i
             try:
                 fp_player_stats, fp_player_id, fp_team_name, fp_points, fp_rebounds, fp_assists, fp_ftm, fp_points_rebounds, fp_points_assists, fp_points_rebounds_assists = get_player_stats(
-            player_name)
+            player_name, current_season_year)
 
                 # making the recommendations on points
                 recommendation_pts = predict(points, fp_points, n_a)
@@ -241,6 +233,7 @@ for idx, key in enumerate(data):
                     points_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,
@@ -261,6 +254,7 @@ for idx, key in enumerate(data):
                     assists_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,
@@ -281,6 +275,7 @@ for idx, key in enumerate(data):
                     rebounds_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,
@@ -301,6 +296,7 @@ for idx, key in enumerate(data):
                     points_assists_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,
@@ -321,6 +317,7 @@ for idx, key in enumerate(data):
                     points_rebounds_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,
@@ -341,6 +338,7 @@ for idx, key in enumerate(data):
                     points_assists_rebounds_data.append({
                         player_name: {
                             "general": {
+                                "player_id": fp_player_id,
                                 "team_name": team_name,
                                 "team_market": team_city_state,
                                 "picture_link": photo_link,

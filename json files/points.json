@@ -1,0 +1,146 @@
+[
+  {
+    "Cameron Johnson": {
+      "general": {
+        "player_id": 666679,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Cameron_Johnson_2fe5b749-7bd4-4dbc-acfb-6d675f541e37.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 9.5,
+        "predicted_value": 13.86,
+        "bet_recommendation": "Higher",
+        "difference": 4.36
+      }
+    }
+  },
+  {
+    "Tobias Harris": {
+      "general": {
+        "player_id": 200,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Tobias_Harris_82f09975-6a8d-42e4-b42c-a52b9349ed50.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 18.5,
+        "predicted_value": 17.5,
+        "bet_recommendation": "Lower",
+        "difference": 1.0
+      }
+    }
+  },
+  {
+    "Bradley Beal": {
+      "general": {
+        "player_id": 37,
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Bradley_Beal_ff461754-ad20-4eeb-af02-2b46cc980b24.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 19.5,
+        "predicted_value": 17.48,
+        "bet_recommendation": "Lower",
+        "difference": 2.02
+      }
+    }
+  },
+  {
+    "Kevin Durant": {
+      "general": {
+        "player_id": 140,
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 19.5,
+        "predicted_value": 28.28,
+        "bet_recommendation": "Higher",
+        "difference": 8.78
+      }
+    }
+  },
+  {
+    "Andrew Wiggins": {
+      "general": {
+        "player_id": 475,
+        "team_name": "Warriors",
+        "team_market": "Golden State",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Andrew_Wiggins_77c425f0-0fce-4fab-bd1e-c915c8fb5bc7.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 9.5,
+        "predicted_value": 12.26,
+        "bet_recommendation": "Higher",
+        "difference": 2.76
+      }
+    }
+  },
+  {
+    "Joel Embiid": {
+      "general": {
+        "player_id": 145,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+        "player_position": "C-F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 39.5,
+        "predicted_value": 35.97,
+        "bet_recommendation": "Lower",
+        "difference": 3.53
+      }
+    }
+  },
+  {
+    "Mikal Bridges": {
+      "general": {
+        "player_id": 61,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 29.5,
+        "predicted_value": 21.91,
+        "bet_recommendation": "Lower",
+        "difference": 7.59
+      }
+    }
+  },
+  {
+    "Cam Thomas": {
+      "general": {
+        "player_id": 17896048,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Cameron_Thomas_c6289b1b-7bb2-4ee6-8111-1a6e96aa9104.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "points",
+        "strike_value": 19.5,
+        "predicted_value": 21.03,
+        "bet_recommendation": "Higher",
+        "difference": 1.53
+      }
+    }
+  }
+]

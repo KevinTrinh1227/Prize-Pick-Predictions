@@ -1,0 +1,164 @@
+[
+  {
+    "Cameron Johnson": {
+      "general": {
+        "player_id": 666679,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Cameron_Johnson_2fe5b749-7bd4-4dbc-acfb-6d675f541e37.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 1.5,
+        "predicted_value": 2.62,
+        "bet_recommendation": "Higher",
+        "difference": 1.12
+      }
+    }
+  },
+  {
+    "Tobias Harris": {
+      "general": {
+        "player_id": 200,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Tobias_Harris_82f09975-6a8d-42e4-b42c-a52b9349ed50.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 3.14,
+        "bet_recommendation": "Lower",
+        "difference": 1.36
+      }
+    }
+  },
+  {
+    "Bradley Beal": {
+      "general": {
+        "player_id": 37,
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Bradley_Beal_ff461754-ad20-4eeb-af02-2b46cc980b24.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 5.5,
+        "predicted_value": 4.3,
+        "bet_recommendation": "Lower",
+        "difference": 1.2
+      }
+    }
+  },
+  {
+    "Kevin Durant": {
+      "general": {
+        "player_id": 140,
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 3.5,
+        "predicted_value": 5.7,
+        "bet_recommendation": "Higher",
+        "difference": 2.2
+      }
+    }
+  },
+  {
+    "Andrew Wiggins": {
+      "general": {
+        "player_id": 475,
+        "team_name": "Warriors",
+        "team_market": "Golden State",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Andrew_Wiggins_77c425f0-0fce-4fab-bd1e-c915c8fb5bc7.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 2.5,
+        "predicted_value": 1.56,
+        "bet_recommendation": "Lower",
+        "difference": 0.94
+      }
+    }
+  },
+  {
+    "Devin Booker": {
+      "general": {
+        "player_id": 57,
+        "team_name": "Suns",
+        "team_market": "Phoenix",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Devin_Booker_31baa84f-c759-4f92-8e1f-a92305ade3d6.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 7.29,
+        "bet_recommendation": "Higher",
+        "difference": 2.79
+      }
+    }
+  },
+  {
+    "Joel Embiid": {
+      "general": {
+        "player_id": 145,
+        "team_name": "76ers",
+        "team_market": "Philadelphia",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Joel_Embiid_bf9ad0fd-0cb8-4360-8970-5f1b5cf3fa8d.webp",
+        "player_position": "C-F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 7.5,
+        "predicted_value": 5.79,
+        "bet_recommendation": "Lower",
+        "difference": 1.71
+      }
+    }
+  },
+  {
+    "Mikal Bridges": {
+      "general": {
+        "player_id": 61,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
+        "player_position": "F"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 4.5,
+        "predicted_value": 3.7,
+        "bet_recommendation": "Lower",
+        "difference": 0.8
+      }
+    }
+  },
+  {
+    "Cam Thomas": {
+      "general": {
+        "player_id": 17896048,
+        "team_name": "Nets",
+        "team_market": "Brooklyn",
+        "picture_link": "https://static.prizepicks.com/images/players/nba/Cameron_Thomas_c6289b1b-7bb2-4ee6-8111-1a6e96aa9104.webp",
+        "player_position": "G"
+      },
+      "stats": {
+        "type": "assists",
+        "strike_value": 3.5,
+        "predicted_value": 2.32,
+        "bet_recommendation": "Lower",
+        "difference": 1.18
+      }
+    }
+  }
+]

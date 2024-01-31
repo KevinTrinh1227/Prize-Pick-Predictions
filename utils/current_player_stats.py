@@ -8,7 +8,7 @@
 import json
 import requests
 
-def get_player_stats(player_name):
+def get_player_stats(player_name, current_season_year):
 
     # API endpoint for player search
     player_search_url = "https://www.balldontlie.io/api/v1/players?search=" + player_name
@@ -19,7 +19,7 @@ def get_player_stats(player_name):
     fp_team_name = player_data['data'][0]['team']['full_name']
 
     # API endpoint for player stats
-    player_stats_url = "https://www.balldontlie.io/api/v1/season_averages?season=2022&player_ids[]=" + str(fp_player_id)
+    player_stats_url = f"https://www.balldontlie.io/api/v1/season_averages?season={current_season_year}&player_ids[]=" + str(fp_player_id)
 
     # Retrieve player stats
     response = requests.get(player_stats_url)
