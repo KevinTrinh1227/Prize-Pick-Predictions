@@ -31,6 +31,7 @@ def update_elo(match, team_elos):
 
     home_team_history.append({
         "match_id": match["id"],
+        "date": match["date"],
         "elo": home_team_elo,
         "result": "Win" if result == 1 else "Loss",
         "opposing_team": visitor_team_name,
@@ -39,6 +40,7 @@ def update_elo(match, team_elos):
 
     visitor_team_history.append({
         "match_id": match["id"],
+        "date": match["date"],
         "elo": visitor_team_elo,
         "result": "Win" if result == 0 else "Loss",
         "opposing_team": home_team_name,
