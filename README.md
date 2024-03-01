@@ -1,6 +1,7 @@
 ![ppplogo](/static/images/ppp.png)
 #
 <p align="center">
+    **IMPORTANT: I AM CURRENTLY WORKING ON Prize-Pick-Predictions VERSION 2.**</br>
     A Flask application that displays current NBA player score predictions. Please take a look below.
 </p>
 <div align="center">
@@ -45,6 +46,11 @@ This Python project is a Flask application that provides "recommendations" for s
 2. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/) & [Gecko Driver](https://github.com/mozilla/geckodriver/releases) (Save it inside the driver folder)
    ```sh
    gecko_path = './drivers/geckodriver.exe'
+   ```
+3. Create a "`.env`" file with your [balldontlie](https://new.balldontlie.io/) API key (Free account will work fine)
+
+   ```sh
+   THE_BALL_DONT_LIEAPI_KEY=<YOUR_API_KEY>
    ```
    
 ## 🚀 Host the app locally
