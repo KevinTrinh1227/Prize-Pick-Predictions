@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# test files
+test.py
+
 # Distribution / packaging
 .idea
 .Python
