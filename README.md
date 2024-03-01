@@ -63,7 +63,7 @@ This Python project is a Flask application that provides "recommendations" for s
 2. Open the `http://127.0.0.1:5000` link on a web browser
 
    ```sh
-   ~\Prize-Pick-Predications>app.py
+   ~\Prize-Pick-Predications>python main.py
     * Serving Flask app 'app'
     * Debug mode: off
     * Running on http://127.0.0.1:5000
