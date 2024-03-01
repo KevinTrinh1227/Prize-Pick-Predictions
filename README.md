@@ -15,6 +15,13 @@ This project was made as just a concept. Due to many project constraints, and te
 
 While this project is no longer in an archive, I will slowly commit and integrate appropriate machine-learning algorithms to generate more accurate predictions using the correlation between different combinations of points, rebounds, and assists with the opponent team's ELO, and potentially other variables down the way including home court advantage, fouls, injuries, etc. 
 
+## 📋 Todo List
+1. ~~Calculate team seasonal elo~~
+2. ~~Get teams season match history~~
+3. ~~Get match IDS~~
+4. Get the player's stats for that exact game
+5. Make regression line & get predictions
+
 ## 🏀 What is Prize Pick Predictions?
 This Python project is a Flask application that provides "recommendations" for sports betting. With a focus on accuracy and data-driven insights, the app delivers relevant and timely information through multiple APIs, ensuring users can access up-to-date data and statistics. Designed to offer valuable insights and recommendations, this app caters to experienced and novice sports bettors, providing an edge in the competitive world of sports betting.
 
